@@ -24,8 +24,32 @@ export default function CharacterView() {
   }, [id, select]);
 
   return (
-    <div className="flex flex-col gap-4 p-4 md:flex-row">
-      <nav aria-label="Figures" className="panel max-h-[80dvh] overflow-auto p-3 md:w-64 md:shrink-0">
+    <div className="flex flex-col gap-3 p-3 md:flex-row md:gap-4 md:p-4">
+      <div className="panel p-3 md:hidden">
+        <label htmlFor="figure-select" className="font-display block text-2xl text-gold">
+          Characters
+        </label>
+        <select
+          id="figure-select"
+          value={id ?? ''}
+          onChange={(e) => select({ kind: 'entity', id: e.target.value })}
+          className="mt-1 w-full rounded-md border border-gold/30 bg-cosmos-3 px-2 py-2 text-base"
+        >
+          {GROUPS.map(([type, label]) => {
+            const list = data.entities.filter((e) => e.type === type).sort((a, b) => a.name.localeCompare(b.name));
+            return list.length ? (
+              <optgroup key={type} label={label}>
+                {list.map((e) => (
+                  <option key={e.id} value={e.id}>
+                    {e.name}
+                  </option>
+                ))}
+              </optgroup>
+            ) : null;
+          })}
+        </select>
+      </div>
+      <nav aria-label="Figures" className="panel hidden max-h-[80dvh] overflow-auto p-3 md:block md:w-64 md:shrink-0">
         <h1 className="font-display mb-2 text-3xl text-gold">Characters</h1>
         {GROUPS.map(([type, label]) => {
           const list = data.entities.filter((e) => e.type === type).sort((a, b) => a.name.localeCompare(b.name));
@@ -51,7 +75,7 @@ export default function CharacterView() {
           );
         })}
       </nav>
-      <div className="panel min-w-0 flex-1 p-5" data-testid="character-panel">
+      <div className="panel min-w-0 flex-1 p-4 md:p-5" data-testid="character-panel">
         {id ? <CharacterPanel id={id} /> : null}
       </div>
     </div>

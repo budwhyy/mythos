@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState } from 'react';
 import { useStore } from '@/lib/store';
-import { hasWebGL, useMounted, useReducedMotion } from '@/lib/hooks';
+import { hasWebGL, useIsMobile, useMounted, useReducedMotion } from '@/lib/hooks';
 import { classificationLabel, data, locationsById } from '@/lib/data';
 import { activeIn, journeyGeometry, odysseus } from '@/lib/geo';
 import { tokens } from '@/lib/tokens';
@@ -30,6 +30,8 @@ export default function MapView() {
   const selection = useStore((s) => s.selection);
   const reduced = useReducedMotion();
   const mounted = useMounted();
+  const isMobile = useIsMobile();
+  const [optionsOpen, setOptionsOpen] = useState(false);
 
   const [layer, setLayer] = useState<MapLayer>('myth');
   const [era, setEra] = useState<string>('all');
@@ -113,52 +115,63 @@ export default function MapView() {
   const countFor = (c: Classification) => data.locations.filter((l) => l.classification === c).length;
 
   return (
-    <div className="flex flex-col gap-3 p-3 xl:flex-row">
+    <div className="flex flex-col gap-3 p-2 sm:p-3 xl:flex-row">
       <div className="flex min-w-0 flex-1 flex-col gap-3">
-        <div className="panel flex flex-wrap items-end gap-3 p-3">
-          <h1 className="font-display mr-2 text-3xl text-gold">Map</h1>
-          <div role="radiogroup" aria-label="Map layer" className="flex flex-wrap gap-1">
-            {LAYERS.map((l) => (
-              <button key={l.id} type="button" role="radio" aria-checked={layer === l.id} title={l.hint} className={`btn ${layer === l.id ? 'btn-active' : ''}`} onClick={() => setLayer(l.id)}>
-                {l.label}
-              </button>
-            ))}
-          </div>
-          <div>
-            <label htmlFor="era" className="block text-xs text-mist">
-              Era (historical layer only)
-            </label>
-            <select
-              id="era"
-              value={era}
-              disabled={layer !== 'ancient'}
-              onChange={(e) => setEra(e.target.value)}
-              className="rounded-md border border-gold/30 bg-cosmos-3 px-2 py-1 text-sm disabled:opacity-50"
-            >
-              <option value="all">All eras</option>
-              {data.periods.map((p) => (
-                <option key={p.id} value={p.id}>
-                  {p.name}
-                </option>
+        <div className="panel p-3">
+          <div className="flex items-center gap-2">
+            <h1 className="font-display text-3xl text-gold">Map</h1>
+            <div role="radiogroup" aria-label="Map layer" className="scroll-x-hint ml-2 flex gap-1 overflow-x-auto whitespace-nowrap">
+              {LAYERS.map((l) => (
+                <button key={l.id} type="button" role="radio" aria-checked={layer === l.id} title={l.hint} className={`btn shrink-0 ${layer === l.id ? 'btn-active' : ''}`} onClick={() => setLayer(l.id)}>
+                  {l.label}
+                </button>
               ))}
-            </select>
+            </div>
+            {isMobile ? (
+              <button type="button" className="btn ml-auto shrink-0" aria-expanded={optionsOpen} aria-controls="map-options" onClick={() => setOptionsOpen((o) => !o)}>
+                {optionsOpen ? 'Hide' : 'Options'}
+              </button>
+            ) : null}
           </div>
-          <label className="flex items-center gap-1.5 text-sm">
-            <input type="checkbox" checked={showMythic} onChange={(e) => setShowMythic(e.target.checked)} className="accent-[#C9A227]" />
-            Mythical places (symbolic map)
-          </label>
-          <label className="flex items-center gap-1.5 text-sm">
-            <input type="checkbox" checked={showJourney} onChange={(e) => setShowJourney(e.target.checked)} className="accent-[#C9A227]" />
-            Odysseus&apos; route
-          </label>
-          <label className="flex items-center gap-1.5 text-sm">
-            <input type="checkbox" checked={globe} onChange={(e) => setGlobe(e.target.checked)} className="accent-[#C9A227]" />
-            Globe
-          </label>
+          <div id="map-options" className={`mt-3 flex flex-wrap items-end gap-3 ${isMobile && !optionsOpen ? 'hidden' : ''}`}>
+            <div>
+              <label htmlFor="era" className="block text-xs text-mist">
+                Era (historical layer only)
+              </label>
+              <select
+                id="era"
+                value={era}
+                disabled={layer !== 'ancient'}
+                onChange={(e) => setEra(e.target.value)}
+                className="rounded-md border border-gold/30 bg-cosmos-3 px-2 py-1 text-sm disabled:opacity-50"
+              >
+                <option value="all">All eras</option>
+                {data.periods.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <label className="flex items-center gap-1.5 text-sm">
+              <input type="checkbox" checked={showMythic} onChange={(e) => setShowMythic(e.target.checked)} className="accent-[#C9A227]" />
+              Mythical places (symbolic map)
+            </label>
+            <label className="flex items-center gap-1.5 text-sm">
+              <input type="checkbox" checked={showJourney} onChange={(e) => setShowJourney(e.target.checked)} className="accent-[#C9A227]" />
+              Odysseus&apos; route
+            </label>
+            <label className="flex items-center gap-1.5 text-sm">
+              <input type="checkbox" checked={globe} onChange={(e) => setGlobe(e.target.checked)} className="accent-[#C9A227]" />
+              Globe
+            </label>
+          </div>
         </div>
-        <p className="px-1 text-xs text-mist">{LAYERS.find((l) => l.id === layer)!.hint} The era selector filters historical sites only; mythical places are toggled separately because myth has no era.</p>
+        <p className="hidden px-1 text-xs text-mist md:block">
+          {LAYERS.find((l) => l.id === layer)!.hint} The era selector filters historical sites only; mythical places are toggled separately because myth has no era.
+        </p>
 
-        <div className="panel relative h-[58vh] min-h-[360px] overflow-hidden" data-testid="map">
+        <div className="panel relative h-[52dvh] min-h-[300px] overflow-hidden md:h-[58vh] md:min-h-[360px]" data-testid="map">
           {webgl ? (
             <MapCanvas
               layer={layer}
@@ -178,7 +191,16 @@ export default function MapView() {
             </div>
           )}
           {notice ? <p className="absolute left-2 top-2 rounded bg-cosmos/90 px-2 py-1 text-xs text-debated">{notice}</p> : null}
-          <ul className="absolute bottom-2 left-2 space-y-0.5 rounded bg-cosmos/85 p-2 text-xs" aria-label="Legend">
+          {isMobile && activeGeo && showJourney ? (
+            <div className="absolute inset-x-2 bottom-2 rounded-md border-l-4 bg-cosmos/90 p-2 text-xs" style={{ borderColor: tokens.color[activeGeo.leg.certainty] }} aria-live="polite">
+              <span className="block font-medium text-marble">
+                {activeGeo.index + 1}. {activeGeo.leg.label}
+              </span>
+              <span style={{ color: tokens.color[activeGeo.leg.certainty] }}>{classificationLabel[activeGeo.leg.certainty]}</span>
+              {!activeGeo.drawable ? <span className="text-mythic"> · symbolic map only</span> : null}
+            </div>
+          ) : null}
+          <ul className="absolute bottom-2 left-2 hidden space-y-0.5 rounded bg-cosmos/85 p-2 text-xs sm:block" aria-label="Legend">
             {CLASSES.map((c) => (
               <li key={c} className="flex items-center gap-1.5">
                 <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: c === 'mythical' ? 'transparent' : tokens.color[c], border: `2px solid ${tokens.color[c]}` }} />
@@ -188,6 +210,16 @@ export default function MapView() {
             <li className="text-mist">Hollow ring = proposed identification</li>
           </ul>
         </div>
+
+        <ul className="flex flex-wrap gap-x-3 gap-y-1 px-1 text-[11px] text-mist sm:hidden" aria-label="Legend">
+          {CLASSES.map((c) => (
+            <li key={c} className="flex items-center gap-1">
+              <span className="inline-block h-2 w-2 rounded-full" style={{ background: c === 'mythical' ? 'transparent' : tokens.color[c], border: `2px solid ${tokens.color[c]}` }} />
+              {classificationLabel[c].replace(' — no terrestrial location', '').replace(' identification', '')}
+            </li>
+          ))}
+          <li>○ proposed</li>
+        </ul>
 
         {showMythic ? (
           <div className="mx-auto w-full max-w-2xl">

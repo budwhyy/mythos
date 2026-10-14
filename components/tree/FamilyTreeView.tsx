@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import { useMemo, useState } from 'react';
 import { useStore } from '@/lib/store';
-import { use2D, useReducedMotion } from '@/lib/hooks';
+import { use2D, useIsMobile, useReducedMotion } from '@/lib/hooks';
 import { data, entitiesById, sourcesById } from '@/lib/data';
 import { ALL_KINDS, CONFLICTED, EDGE_SOURCES, branchOf, curvatures, filterEdges, generations, shortestPath } from '@/lib/graph';
 import { edgeColor } from '@/lib/tokens';
@@ -24,6 +24,8 @@ export default function FamilyTreeView() {
   const select = useStore((s) => s.select);
   const { use2D: twoD, reason, mounted } = use2D();
   const reduced = useReducedMotion();
+  const isMobile = useIsMobile();
+  const [controlsOpen, setControlsOpen] = useState(false);
 
   const [kinds, setKinds] = useState<Set<RelationshipKind>>(new Set(ALL_KINDS));
   const [sources, setSources] = useState<Set<string>>(new Set(EDGE_SOURCES.map((s) => s.id)));
@@ -82,14 +84,25 @@ export default function FamilyTreeView() {
   const graphProps = { nodes, links, selectedId, highlightNodes, highlightLinks, reduced, onNodeClick: (id: string) => select({ kind: 'entity', id }), fitSignal };
 
   return (
-    <div className="flex flex-col gap-3 p-3 lg:flex-row">
-      <section className="panel space-y-4 p-3 lg:w-72 lg:shrink-0" aria-labelledby="tree-controls">
-        <h1 id="tree-controls" className="font-display text-3xl text-gold">
-          Family Tree
-        </h1>
-        <p className="text-xs text-mist">
-          {nodes.length} of {data.entities.length} figures shown · {links.length} relationships. Drag to rotate, scroll to zoom, right-drag to pan. ⚑ = sources disagree.
-        </p>
+    <div className="flex flex-col gap-3 p-2 sm:p-3 lg:flex-row">
+      <section className="panel order-2 p-3 lg:order-1 lg:w-72 lg:shrink-0" aria-labelledby="tree-controls">
+        <div className="flex items-start justify-between gap-2">
+          <div>
+            <h1 id="tree-controls" className="font-display hidden text-3xl text-gold lg:block">
+              Family Tree
+            </h1>
+            <p className="text-xs text-mist">
+              {nodes.length} of {data.entities.length} figures shown · {links.length} relationships.{' '}
+              {isMobile ? 'Drag to rotate, pinch to zoom.' : 'Drag to rotate, scroll to zoom, right-drag to pan.'} ⚑ = sources disagree.
+            </p>
+          </div>
+          {isMobile ? (
+            <button type="button" className="btn shrink-0" aria-expanded={controlsOpen} aria-controls="tree-controls-body" onClick={() => setControlsOpen((o) => !o)}>
+              {controlsOpen ? 'Hide filters' : 'Filters & path'}
+            </button>
+          ) : null}
+        </div>
+        <div id="tree-controls-body" className={`mt-4 space-y-4 ${isMobile && !controlsOpen ? 'hidden' : ''}`}>
 
         <fieldset>
           <legend className="mb-1 text-xs font-semibold uppercase tracking-wide text-mist">Relationships</legend>
@@ -208,10 +221,14 @@ export default function FamilyTreeView() {
             ) : null}
           </div>
         </fieldset>
+        </div>
       </section>
 
-      <div className="flex min-w-0 flex-1 flex-col gap-3">
-        <div className="panel relative h-[62vh] min-h-[380px] overflow-hidden" data-testid="family-graph">
+      <div className="order-1 flex min-w-0 flex-1 flex-col gap-3 lg:order-2">
+        <h2 className="font-display px-1 text-3xl text-gold lg:hidden" aria-hidden="true">
+          Family Tree
+        </h2>
+        <div className="panel relative h-[55dvh] min-h-[320px] overflow-hidden lg:h-[62vh] lg:min-h-[380px]" data-testid="family-graph">
           {mounted ? twoD ? <Graph2D {...graphProps} /> : <Graph3D {...graphProps} /> : null}
           {reason ? <p className="absolute bottom-2 left-2 rounded bg-cosmos/80 px-2 py-1 text-xs text-mist">{reason}</p> : null}
         </div>

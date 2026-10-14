@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useStore } from '@/lib/store';
 import {
   attestationsById,
@@ -11,7 +12,6 @@ import {
   locationsById,
   periodOf,
   stageOfMythicRef,
-
   classificationLabel,
   sourcesById,
 } from '@/lib/data';
@@ -56,9 +56,7 @@ export function describeWhere(sel: Selection | null, stageFocus: string | null):
 
   if (sel?.kind === 'location') {
     const l = locationsById.get(sel.id)!;
-    const stages = new Set(
-      l.linkedEvents.map((e) => stageOfMythicRef(e)?.name).filter(Boolean) as string[],
-    );
+    const stages = new Set(l.linkedEvents.map((e) => stageOfMythicRef(e)?.name).filter(Boolean) as string[]);
     return {
       mythic: stages.size ? `Mythic: ${[...stages].join(', ')}` : 'Mythic: —',
       historical: `Place: ${classificationLabel[l.classification]}`,
@@ -69,16 +67,51 @@ export function describeWhere(sel: Selection | null, stageFocus: string | null):
   return { mythic: 'Mythic: choose a stage, figure or event', historical: 'History: dates appear only on the historical track' };
 }
 
-export default function WhereAmI() {
+/**
+ * The dual indicator. On phones it is a single tappable line (subject · mythic · first-attested, truncated)
+ * that expands to the full two-clock reading; on larger screens both values are always visible.
+ */
+export default function WhereAmI({ compact = false }: { compact?: boolean }) {
   const selection = useStore((s) => s.selection);
   const stageFocus = useStore((s) => s.stageFocus);
+  const [expanded, setExpanded] = useState(false);
   const w = describeWhere(selection, stageFocus);
+
+  if (compact) {
+    const subject = w.subject && !w.mythic.endsWith(w.subject) ? w.subject : null;
+    return (
+      <div className="border-t border-gold/10 bg-cosmos-2/80" data-testid="where-am-i" aria-live="polite">
+        <button
+          type="button"
+          aria-expanded={expanded}
+          onClick={() => setExpanded((e) => !e)}
+          className="flex w-full items-center gap-2 px-3 py-1.5 text-left text-xs"
+        >
+          <span className="shrink-0 font-semibold uppercase tracking-wider text-mist">Where?</span>
+          {expanded ? (
+            <span className="min-w-0 flex-1 space-y-0.5">
+              {subject ? <span className="font-display block text-base text-marble">{subject}</span> : null}
+              <span className="block text-mythic">{w.mythic}</span>
+              <span className="block text-gold">{w.historical}</span>
+            </span>
+          ) : (
+            <span className="min-w-0 flex-1 truncate">
+              {subject ? <span className="font-display text-sm text-marble">{subject} · </span> : null}
+              <span className="text-mythic">{w.mythic.replace(/^Mythic: /, '')}</span>
+              <span className="text-mist"> · </span>
+              <span className="text-gold">{w.historical.replace(/^(First attested|Historical|Recorded|Place|History): /, '')}</span>
+            </span>
+          )}
+          <span aria-hidden="true" className="shrink-0 text-mist">
+            {expanded ? '▴' : '▾'}
+          </span>
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <div
-      className="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-gold/10 bg-cosmos-2/80 px-4 py-1.5 text-xs sm:text-sm"
-      aria-live="polite"
-      data-testid="where-am-i"
-    >
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-gold/10 bg-cosmos-2/80 px-4 py-1.5 text-xs sm:text-sm" aria-live="polite" data-testid="where-am-i">
       <span className="font-semibold uppercase tracking-wider text-mist">Where am I?</span>
       {w.subject ? <span className="font-display text-base text-marble">{w.subject}</span> : null}
       <span className="text-mythic">{w.mythic}</span>
@@ -89,4 +122,3 @@ export default function WhereAmI() {
     </div>
   );
 }
-

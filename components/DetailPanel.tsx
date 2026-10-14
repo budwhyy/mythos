@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { isBookmarked, useStore } from '@/lib/store';
 import {
   attestationKindLabel,
@@ -328,7 +328,8 @@ export function SelectionDetail({ sel }: { sel: Selection }) {
   }
 }
 
-export default function DetailPanel() {
+/** Mobile: a bottom sheet with a drag handle (peek / full / dismiss). Desktop: a sticky side panel. */
+export default function DetailPanel({ mobile = false }: { mobile?: boolean }) {
   const sel = useStore((s) => s.selection);
   const select = useStore((s) => s.select);
   const bookmarks = useStore((s) => s.bookmarks);
@@ -336,33 +337,99 @@ export default function DetailPanel() {
   const back = useStore((s) => s.back);
   const canGoBack = useStore((s) => s.history.length > 1);
   const ref = useRef<HTMLElement>(null);
+  const [full, setFull] = useState(false);
+  const [drag, setDrag] = useState<{ startY: number; dy: number } | null>(null);
 
   useEffect(() => {
     ref.current?.scrollTo({ top: 0 });
+    setFull(false);
   }, [sel]);
 
   if (!sel || !kindOf(sel.id)) return null;
   const marked = isBookmarked(bookmarks, sel);
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
+    setDrag({ startY: e.clientY, dy: 0 });
+  };
+  const onPointerMove = (e: React.PointerEvent) => {
+    if (drag) setDrag({ ...drag, dy: e.clientY - drag.startY });
+  };
+  const onPointerUp = () => {
+    if (!drag) return;
+    const { dy } = drag;
+    setDrag(null);
+    if (dy > 70) {
+      if (full) setFull(false);
+      else select(null);
+    } else if (dy < -50) setFull(true);
+    else if (Math.abs(dy) < 6) setFull((f) => !f); // a tap on the handle toggles
+  };
+
+  const actions = (
+    <div className="mb-2 flex justify-end gap-2">
+      {canGoBack ? (
+        <button type="button" className="btn mr-auto" onClick={back} aria-label="Back to previous item">
+          ← Back
+        </button>
+      ) : null}
+      <button type="button" className="btn" aria-pressed={marked} onClick={() => toggleBookmark(sel)}>
+        {marked ? '★ Bookmarked' : '☆ Bookmark'}
+      </button>
+      <button type="button" className="btn" onClick={() => select(null)} aria-label="Close details">
+        ✕
+      </button>
+    </div>
+  );
+
+  if (mobile) {
+    return (
+      <aside
+        ref={ref}
+        aria-label="Details"
+        data-testid="detail-panel"
+        className="panel safe-bottom fixed inset-x-0 bottom-14 z-20 flex flex-col rounded-b-none shadow-2xl"
+        style={{
+          height: full ? 'calc(88dvh - 3.5rem)' : 'calc(46dvh - 3.5rem)',
+          transform: drag ? `translateY(${Math.max(0, drag.dy)}px)` : undefined,
+          transition: drag ? 'none' : 'height 0.25s ease, transform 0.2s ease',
+        }}
+      >
+        <div
+          className="shrink-0 cursor-grab touch-none px-4 pt-1"
+          role="button"
+          tabIndex={0}
+          aria-label={full ? 'Collapse details' : 'Expand details'}
+          aria-expanded={full}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerUp}
+          onPointerCancel={() => setDrag(null)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              setFull((f) => !f);
+            }
+          }}
+        >
+          <div className="sheet-handle" />
+          {actions}
+        </div>
+        <div className="min-h-0 flex-1 overflow-auto px-4 pb-4">
+          <SelectionDetail sel={sel} />
+        </div>
+      </aside>
+    );
+  }
+
   return (
     <aside
       ref={ref}
       aria-label="Details"
       data-testid="detail-panel"
-      className="panel fixed inset-x-2 bottom-2 z-20 max-h-[60dvh] overflow-auto p-4 shadow-2xl md:sticky md:inset-auto md:top-[7.5rem] md:m-2 md:max-h-[calc(100dvh-8.5rem)] md:w-[24rem] md:shrink-0"
+      className="panel sticky top-[7.5rem] z-20 m-2 max-h-[calc(100dvh-8.5rem)] w-[24rem] shrink-0 overflow-auto p-4 shadow-2xl"
     >
-      <div className="mb-2 flex justify-end gap-2">
-        {canGoBack ? (
-          <button type="button" className="btn mr-auto" onClick={back} aria-label="Back to previous item">
-            ← Back
-          </button>
-        ) : null}
-        <button type="button" className="btn" aria-pressed={marked} onClick={() => toggleBookmark(sel)}>
-          {marked ? '★ Bookmarked' : '☆ Bookmark'}
-        </button>
-        <button type="button" className="btn" onClick={() => select(null)} aria-label="Close details">
-          ✕
-        </button>
-      </div>
+      {actions}
       <SelectionDetail sel={sel} />
     </aside>
   );

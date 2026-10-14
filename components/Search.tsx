@@ -33,7 +33,7 @@ const ITEMS: Item[] = [
   })),
 ];
 
-export default function Search() {
+export default function Search({ fullWidth = false }: { fullWidth?: boolean }) {
   const [q, setQ] = useState('');
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
@@ -57,7 +57,7 @@ export default function Search() {
   };
 
   return (
-    <div className="relative">
+    <div className={`relative ${fullWidth ? 'w-full' : ''}`}>
       <label htmlFor="global-search" className="sr-only">
         Search gods, heroes, events and places
       </label>
@@ -70,7 +70,7 @@ export default function Search() {
         aria-controls="search-results"
         aria-autocomplete="list"
         aria-activedescendant={open && results[active] ? `sr-${active}` : undefined}
-        placeholder="Search  ( / )"
+        placeholder={fullWidth ? 'Search gods, heroes, events, places' : 'Search  ( / )'}
         value={q}
         onChange={(e) => {
           setQ(e.target.value);
@@ -93,10 +93,10 @@ export default function Search() {
             inputRef.current?.blur();
           }
         }}
-        className="w-44 rounded-md border border-gold/30 bg-cosmos-3 px-3 py-1.5 text-sm placeholder:text-mist sm:w-56"
+        className={`rounded-md border border-gold/30 bg-cosmos-3 px-3 py-1.5 text-sm placeholder:text-mist ${fullWidth ? 'w-full' : 'w-44 sm:w-56'}`}
       />
       {open && results.length > 0 ? (
-        <ul id="search-results" role="listbox" className="panel absolute right-0 z-40 mt-1 max-h-80 w-72 overflow-auto p-1 shadow-xl">
+        <ul id="search-results" role="listbox" className={`panel absolute right-0 z-40 mt-1 max-h-80 overflow-auto p-1 shadow-xl ${fullWidth ? 'left-0 w-full' : 'w-72'}`}>
           {results.map((r, i) => (
             <li
               key={r.sel.kind + r.sel.id}

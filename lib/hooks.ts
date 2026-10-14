@@ -48,3 +48,18 @@ export function use2D(): { use2D: boolean; reason: string | null; mounted: boole
   if (reduced) return { use2D: true, reason: 'Reduced motion is on, so the 2D view is shown. You can switch to 3D.', mounted };
   return { use2D: false, reason: null, mounted };
 }
+
+const MOBILE_QUERY = '(max-width: 767px)';
+
+/** True below the `md` breakpoint. False during SSR, so desktop markup is the server default. */
+export function useIsMobile(): boolean {
+  return useSyncExternalStore(
+    (cb) => {
+      const mq = window.matchMedia(MOBILE_QUERY);
+      mq.addEventListener('change', cb);
+      return () => mq.removeEventListener('change', cb);
+    },
+    () => window.matchMedia(MOBILE_QUERY).matches,
+    () => false,
+  );
+}

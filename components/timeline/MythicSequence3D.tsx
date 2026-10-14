@@ -6,6 +6,7 @@ import { Line, Stars } from '@react-three/drei';
 import * as THREE from 'three';
 import { data, stagesOrdered } from '@/lib/data';
 import { useStore } from '@/lib/store';
+import { useIsMobile } from '@/lib/hooks';
 import { tokens } from '@/lib/tokens';
 
 export const stagePos = (i: number): [number, number, number] => [i * 12, Math.sin(i * 0.8) * 2.5, -Math.cos(i * 0.5) * 4];
@@ -38,14 +39,14 @@ const LABELS: Label[] = CONSTELLATIONS.flatMap((c) => [
   ...c.stars.map((s) => ({ key: `star:${s.id}`, pos: s.pos, stageIndex: c.index })),
 ]);
 
-function CameraRig({ focusIndex, reduced }: { focusIndex: number; reduced: boolean }) {
+function CameraRig({ focusIndex, reduced, distance }: { focusIndex: number; reduced: boolean; distance: number }) {
   const { camera } = useThree();
   const look = useRef(new THREE.Vector3(...stagePos(0)));
   const tPos = useMemo(() => new THREE.Vector3(), []);
   const tLook = useMemo(() => new THREE.Vector3(), []);
   useFrame((_, dt) => {
     const c = stagePos(focusIndex);
-    tPos.set(c[0] - 1.5, c[1] + 1.2, c[2] + 11);
+    tPos.set(c[0] - 1.5, c[1] + 1.2, c[2] + distance);
     tLook.set(c[0], c[1] + 0.6, c[2]);
     const k = reduced ? 1 : 1 - Math.exp(-dt * 1.6);
     camera.position.lerp(tPos, k);
@@ -103,7 +104,7 @@ function ChaosNebula({ center, reduced }: { center: [number, number, number]; re
 
 const PATH = stagesOrdered.map((_, i) => new THREE.Vector3(...stagePos(i)));
 
-function Scene({ reduced, focusIndex, labelRefs }: { reduced: boolean; focusIndex: number; labelRefs: MutableRefObject<Map<string, HTMLElement>> }) {
+function Scene({ reduced, focusIndex, labelRefs, distance }: { reduced: boolean; focusIndex: number; labelRefs: MutableRefObject<Map<string, HTMLElement>>; distance: number }) {
   const selection = useStore((s) => s.selection);
   const select = useStore((s) => s.select);
   const setStageFocus = useStore((s) => s.setStageFocus);
@@ -153,7 +154,7 @@ function Scene({ reduced, focusIndex, labelRefs }: { reduced: boolean; focusInde
           </group>
         );
       })}
-      <CameraRig focusIndex={focusIndex} reduced={reduced} />
+      <CameraRig focusIndex={focusIndex} reduced={reduced} distance={distance} />
       <LabelProjector refs={labelRefs} focusIndex={focusIndex} />
     </>
   );
@@ -164,6 +165,7 @@ export default function MythicSequence3D({ reduced }: { reduced: boolean }) {
   const selection = useStore((s) => s.selection);
   const focusIndex = Math.max(0, stagesOrdered.findIndex((s) => s.id === stageFocus));
   const labelRefs = useRef(new Map<string, HTMLElement>());
+  const isMobile = useIsMobile();
   const start = stagePos(0);
   const setRef = (key: string) => (el: HTMLElement | null) => {
     if (el) labelRefs.current.set(key, el);
@@ -178,7 +180,7 @@ export default function MythicSequence3D({ reduced }: { reduced: boolean }) {
         gl={{ antialias: true, powerPreference: 'high-performance' }}
         aria-hidden="true"
       >
-        <Scene reduced={reduced} focusIndex={focusIndex} labelRefs={labelRefs} />
+        <Scene reduced={reduced} focusIndex={focusIndex} labelRefs={labelRefs} distance={isMobile ? 15 : 11} />
       </Canvas>
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         {CONSTELLATIONS.map((c) => (
@@ -188,7 +190,7 @@ export default function MythicSequence3D({ reduced }: { reduced: boolean }) {
             className="absolute left-0 top-0 text-center transition-opacity duration-500"
             style={{ opacity: 0, textShadow: '0 0 8px #000' }}
           >
-            <div className={`font-display whitespace-nowrap ${c.index === focusIndex ? 'text-3xl text-gold sm:text-4xl' : 'text-xl text-marble/80'}`}>{c.stage.name}</div>
+            <div className={`font-display whitespace-nowrap ${c.index === focusIndex ? 'text-2xl text-gold sm:text-4xl' : 'text-lg text-marble/80 sm:text-xl'}`}>{c.stage.name}</div>
             {c.index === focusIndex ? <div className="font-display whitespace-nowrap text-base italic text-marble/85 sm:text-lg">{c.stage.tagline}</div> : null}
           </div>
         ))}
@@ -197,7 +199,7 @@ export default function MythicSequence3D({ reduced }: { reduced: boolean }) {
             <span
               key={s.id}
               ref={setRef(`star:${s.id}`)}
-              className={`absolute left-0 top-0 whitespace-nowrap rounded px-1 text-xs transition-opacity duration-500 ${
+              className={`absolute left-0 top-0 whitespace-nowrap rounded px-1 text-[11px] transition-opacity duration-500 sm:text-xs ${
                 s.kind === 'mythicEvent' ? 'italic text-marble' : 'text-gold'
               } ${selection?.id === s.id ? 'bg-gold/30' : ''}`}
               style={{ opacity: 0, textShadow: '0 0 4px #000', marginTop: 14 }}

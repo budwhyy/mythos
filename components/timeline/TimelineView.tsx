@@ -55,7 +55,7 @@ export default function TimelineView() {
         <h1 id="mythic-title" className="sr-only">
           Mythic sequence and historical timeline
         </h1>
-        <div className="relative h-[42vh] min-h-[280px] w-full overflow-hidden border-b border-gold/15" data-testid="mythic-sequence">
+        <div className="relative h-[50dvh] min-h-[280px] w-full overflow-hidden border-b border-gold/15 md:h-[42vh]" data-testid="mythic-sequence">
           {mounted && !twoD ? <MythicSequence3D reduced={reduced} /> : <MythicSequence2D />}
         </div>
         <div className="flex flex-wrap items-center gap-2 px-4 py-2">

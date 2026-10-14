@@ -50,6 +50,20 @@ Built 2026-10-14 by Claude Code from the MYTHOS build brief.
 13. **The era selector applies only to the Ancient Historical layer**, filtering by `Location.periods`. Mythical places have their own toggle.
 14. **Periods overlap on purpose** (e.g. the Roman period, 509 BCE–330 CE, runs parallel to the Greek periods). Period boundaries are conventions.
 
+## Mobile pass (2026-10-14, after first deploy)
+
+The first deploy stacked the desktop header (266 px, sticky), a two-line "Where am I?" bar and a 60 dvh detail panel on phones, and put controls above content on Tree, Map and Character. Changes:
+
+- Below `md` (768 px): a 52 px top bar (logo, search, menu), a five-tab bottom bar (Timeline, Tree, Figures, Map, More), and a "More" sheet with the remaining modes plus reading level, 2D/3D and history/bookmarks.
+- "Where am I?" is a single tappable line that expands to the full two-clock reading.
+- The detail panel is a bottom sheet with a drag handle: tap to toggle peek/full, drag down to dismiss. It sits above the tab bar.
+- Tree, Map and Character show the graph, map or figure first; filters and options collapse behind a button; the character list becomes a grouped dropdown.
+- The 3D camera pulls back on narrow screens so a whole constellation fits; the map shows the current journey leg as an overlay.
+- Touch targets are at least 40 px on coarse pointers; safe-area insets are respected.
+- Verification: a `mobile` Playwright project (Pixel 5) with six smoke tests; Lighthouse mobile accessibility 100 and best practices 100 on Timeline, Tree, Map, Character and Learning. No horizontal overflow at 375 px.
+- Known rough edge: in stages with many events (Olympian Age) the 3D event labels can overlap at phone width. A label-collision pass is future work.
+- Netlify's "Built with Netlify" badge was disabled through the API (`built_with_badge_enabled: false`); it had overlapped the bottom tab bar.
+
 ## Data-model gaps
 
 - **No `nymph` or `deity` entity type.** The brief's enum is followed, so:

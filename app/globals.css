@@ -135,3 +135,30 @@ body {
 .maplibregl-popup-tip {
   border-top-color: var(--color-cosmos-2) !important;
 }
+
+/* Touch ergonomics: comfortable targets on coarse pointers, room for the bottom nav and the home indicator. */
+@media (pointer: coarse) {
+  .btn,
+  .chip,
+  select,
+  input[type='search'] {
+    min-height: 40px;
+  }
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.sheet-handle {
+  width: 2.5rem;
+  height: 0.3rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-marble) 35%, transparent);
+  margin: 0.25rem auto 0.6rem;
+}
+
+.scroll-x-hint {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}

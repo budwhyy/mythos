@@ -62,7 +62,8 @@ export default function DualTrack() {
           <span className="text-marble">┄</span> Attestation bridge — where a tradition is first recorded
         </li>
       </ul>
-      <div ref={wrapRef} className="overflow-x-auto px-2" tabIndex={0} aria-label="Dual timeline (scrolls horizontally)">
+      <p className="px-4 text-xs text-mist md:hidden">Swipe sideways to move along both tracks.</p>
+      <div ref={wrapRef} className="scroll-x-hint overflow-x-auto px-2" tabIndex={0} aria-label="Dual timeline (scrolls horizontally)">
         <svg width={L.width} height={L.height} role="img" aria-labelledby="dual-track-title dual-track-desc" className="block">
           <desc id="dual-track-desc">
             Top: the eight mythic stages in order, without dates. Bottom: dated historical periods and events. Dashed lines connect mythic traditions to the historical evidence in

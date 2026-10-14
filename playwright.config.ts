@@ -10,7 +10,10 @@ export default defineConfig({
     reducedMotion: 'reduce',
     trace: 'retain-on-failure',
   },
-  projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } } }],
+  projects: [
+    { name: 'chromium', testIgnore: /mobile/, use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } } },
+    { name: 'mobile', testMatch: /mobile/, use: { ...devices['Pixel 5'] } },
+  ],
   webServer: {
     command: 'npx serve out -l 4173 --no-clipboard',
     url: 'http://localhost:4173',

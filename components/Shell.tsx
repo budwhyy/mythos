@@ -4,22 +4,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useStore } from '@/lib/store';
-import { use2D } from '@/lib/hooks';
+import { use2D, useIsMobile } from '@/lib/hooks';
 import Search from './Search';
 import WhereAmI from './WhereAmI';
 import DetailPanel from './DetailPanel';
 import LibraryDrawer from './LibraryDrawer';
-
-export const MODES = [
-  { href: '/timeline/', label: 'Timeline', key: 'timeline' },
-  { href: '/tree/', label: 'Family Tree', key: 'tree' },
-  { href: '/character/', label: 'Character', key: 'character' },
-  { href: '/map/', label: 'Map', key: 'map' },
-  { href: '/relationship/', label: 'Relationship', key: 'relationship' },
-  { href: '/learn/', label: 'Learning', key: 'learn' },
-  { href: '/compare/', label: 'Civilizations', key: 'compare', soon: true },
-  { href: '/story/', label: 'Story', key: 'story', soon: true },
-] as const;
+import BottomNav from './BottomNav';
+import MobileMenu from './MobileMenu';
+import { MODES, isActiveMode } from '@/lib/modes';
 
 export default function Shell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname() ?? '/';
@@ -29,11 +21,20 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const setReadingLevel = useStore((s) => s.setReadingLevel);
   const setPrefer2D = useStore((s) => s.setPrefer2D);
   const { use2D: twoD, mounted } = use2D();
+  const isMobile = useIsMobile();
   const [libraryOpen, setLibraryOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
     useStore.persist.rehydrate();
   }, []);
+
+  // Close transient UI on navigation.
+  useEffect(() => {
+    setMenuOpen(false);
+    setSearchOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -41,17 +42,50 @@ export default function Shell({ children }: { children: React.ReactNode }) {
       const typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable);
       if (e.key === '/' && !typing) {
         e.preventDefault();
-        document.getElementById('global-search')?.focus();
+        if (isMobile) setSearchOpen(true);
+        // The mobile search row mounts on the next frame.
+        requestAnimationFrame(() => document.getElementById('global-search')?.focus());
       } else if (e.key === 'Escape' && !typing) {
-        if (libraryOpen) setLibraryOpen(false);
+        if (menuOpen) setMenuOpen(false);
+        else if (libraryOpen) setLibraryOpen(false);
+        else if (searchOpen) setSearchOpen(false);
         else select(null);
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [libraryOpen, select]);
+  }, [libraryOpen, menuOpen, searchOpen, select, isMobile]);
 
-  const isActive = (href: string) => pathname === href || pathname === href.slice(0, -1) || (href === '/timeline/' && pathname === '/');
+  const showDetail = selection && !(selection.kind === 'entity' && pathname.startsWith('/character'));
+
+  const viewToggle = (
+    <button
+      type="button"
+      className="btn"
+      aria-pressed={mounted ? twoD : undefined}
+      onClick={() => setPrefer2D(!twoD)}
+      title="Switch between 3D views and accessible 2D fallbacks"
+    >
+      {mounted ? (twoD ? '2D view' : '3D view') : 'View'}
+    </button>
+  );
+  const levelSelect = (id: string) => (
+    <>
+      <label className="sr-only" htmlFor={id}>
+        Reading level
+      </label>
+      <select
+        id={id}
+        value={readingLevel}
+        onChange={(e) => setReadingLevel(e.target.value as typeof readingLevel)}
+        className="rounded-md border border-gold/30 bg-cosmos-3 px-2 py-1.5 text-sm"
+      >
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="scholarly">Scholarly</option>
+      </select>
+    </>
+  );
 
   return (
     <div className="flex min-h-dvh flex-col">
@@ -59,7 +93,37 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         Skip to content
       </a>
       <header className="sticky top-0 z-30 border-b border-gold/20 bg-cosmos/95 backdrop-blur">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2">
+        {/* Mobile top bar: logo, search, menu. Modes live in the bottom nav. */}
+        <div className="flex items-center gap-2 px-3 py-1.5 md:hidden">
+          <Link href="/" className="font-display text-xl font-semibold tracking-[0.25em] text-gold" aria-label="MYTHOS home">
+            MYTHOS
+          </Link>
+          <div className="ml-auto flex items-center gap-1">
+            <button
+              type="button"
+              className="btn px-3"
+              aria-label={searchOpen ? 'Close search' : 'Search'}
+              aria-expanded={searchOpen}
+              onClick={() => {
+                setSearchOpen((o) => !o);
+                if (!searchOpen) requestAnimationFrame(() => document.getElementById('global-search')?.focus());
+              }}
+            >
+              {searchOpen ? '✕' : '⌕'}
+            </button>
+            <button type="button" className="btn px-3" aria-label="Menu and settings" aria-haspopup="dialog" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}>
+              ☰
+            </button>
+          </div>
+        </div>
+        {isMobile && searchOpen ? (
+          <div className="px-3 pb-2 md:hidden">
+            <Search fullWidth />
+          </div>
+        ) : null}
+
+        {/* Desktop header */}
+        <div className="hidden flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2 md:flex">
           <Link href="/" className="font-display text-2xl font-semibold tracking-[0.25em] text-gold" aria-label="MYTHOS home">
             MYTHOS
           </Link>
@@ -69,9 +133,9 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                 <li key={m.key}>
                   <Link
                     href={m.href}
-                    aria-current={isActive(m.href) ? 'page' : undefined}
+                    aria-current={isActiveMode(pathname, m.href) ? 'page' : undefined}
                     className={`block rounded-md px-2.5 py-1.5 text-sm transition-colors ${
-                      isActive(m.href) ? 'bg-gold/20 text-gold' : 'text-marble/85 hover:bg-cosmos-3 hover:text-marble'
+                      isActiveMode(pathname, m.href) ? 'bg-gold/20 text-gold' : 'text-marble/85 hover:bg-cosmos-3 hover:text-marble'
                     }`}
                   >
                     {m.label}
@@ -83,41 +147,38 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           </nav>
           <div className="ml-auto flex flex-wrap items-center gap-2">
             <Search />
-            <label className="sr-only" htmlFor="reading-level">
-              Reading level
-            </label>
-            <select
-              id="reading-level"
-              value={readingLevel}
-              onChange={(e) => setReadingLevel(e.target.value as typeof readingLevel)}
-              className="rounded-md border border-gold/30 bg-cosmos-3 px-2 py-1.5 text-sm"
-            >
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="scholarly">Scholarly</option>
-            </select>
-            <button
-              type="button"
-              className="btn"
-              aria-pressed={mounted ? twoD : undefined}
-              onClick={() => setPrefer2D(!twoD)}
-              title="Switch between 3D views and accessible 2D fallbacks"
-            >
-              {mounted ? (twoD ? '2D view' : '3D view') : 'View'}
-            </button>
+            {levelSelect('reading-level')}
+            {viewToggle}
             <button type="button" className="btn" onClick={() => setLibraryOpen(true)} aria-haspopup="dialog">
               History &amp; bookmarks
             </button>
           </div>
         </div>
-        <WhereAmI />
+        <WhereAmI compact={isMobile} />
       </header>
+
       <div className="relative flex flex-1">
-        <main id="main" className="min-w-0 flex-1" tabIndex={-1}>
+        <main id="main" className="min-w-0 flex-1 pb-20 md:pb-0" tabIndex={-1}>
           {children}
         </main>
-        {selection && !(selection.kind === 'entity' && pathname.startsWith('/character')) ? <DetailPanel /> : null}
+        {showDetail ? <DetailPanel mobile={isMobile} /> : null}
       </div>
+
+      <BottomNav pathname={pathname} onMore={() => setMenuOpen(true)} />
+      <MobileMenu
+        open={isMobile && menuOpen}
+        onClose={() => setMenuOpen(false)}
+        pathname={pathname}
+        onLibrary={() => {
+          setMenuOpen(false);
+          setLibraryOpen(true);
+        }}
+      >
+        <div className="flex flex-wrap items-center gap-2">
+          {levelSelect('reading-level-mobile')}
+          {viewToggle}
+        </div>
+      </MobileMenu>
       <LibraryDrawer open={libraryOpen} onClose={() => setLibraryOpen(false)} />
     </div>
   );
