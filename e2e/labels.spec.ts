@@ -7,7 +7,11 @@ test('3D sequence labels do not overlap (Olympian Age, the densest stage)', asyn
   await page.goto('/timeline/');
   await page.getByRole('list', { name: 'Mythic stages' }).getByRole('button', { name: 'Olympian Age' }).click();
   await page.getByRole('button', { name: 'Close details' }).click();
-  await page.waitForTimeout(1500); // under reduced motion the camera snaps; allow the label pass a few frames
+  // The 3D chunk is lazy-loaded (slow over a real network); wait until labels are actually showing, then let the pass settle.
+  await expect
+    .poll(() => page.evaluate(() => [...document.querySelectorAll<HTMLElement>('[data-kind]')].filter((e) => getComputedStyle(e).opacity === '1').length), { timeout: 30_000 })
+    .toBeGreaterThan(0);
+  await page.waitForTimeout(800);
   const result = await page.evaluate(() => {
     const vis = [...document.querySelectorAll<HTMLElement>('[data-kind]')].filter((e) => getComputedStyle(e).opacity === '1');
     const pairs: string[] = [];
