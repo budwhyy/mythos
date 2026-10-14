@@ -11,7 +11,9 @@ import {
   type Source,
 } from './schema';
 
-const result = validateDataset(raw);
+// The build runs scripts/validate-data.ts first, so production pages skip re-validating in the browser.
+// Dev and tests validate on load. All defaulted fields are written out explicitly in /data.
+const result = process.env.NODE_ENV === 'production' ? { ok: true as const, data: raw as unknown as Dataset } : validateDataset(raw);
 if (!result.ok) {
   throw new Error('MYTHOS data invalid:\n' + result.errors.join('\n'));
 }

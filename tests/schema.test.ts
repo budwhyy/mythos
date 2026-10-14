@@ -98,3 +98,11 @@ describe('shipped data', () => {
     expect(r.ok ? [] : r.errors).toEqual([]);
   });
 });
+
+describe('raw data needs no Zod defaults', () => {
+  it('parses to exactly the raw JSON, so production can skip runtime validation', () => {
+    const r = validateDataset(clone());
+    expect(r.ok).toBe(true);
+    if (r.ok) expect(JSON.parse(JSON.stringify(r.data))).toEqual(JSON.parse(JSON.stringify(raw)));
+  });
+});
