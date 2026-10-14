@@ -331,6 +331,8 @@ export default function DetailPanel() {
   const select = useStore((s) => s.select);
   const bookmarks = useStore((s) => s.bookmarks);
   const toggleBookmark = useStore((s) => s.toggleBookmark);
+  const back = useStore((s) => s.back);
+  const canGoBack = useStore((s) => s.history.length > 1);
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -347,6 +349,11 @@ export default function DetailPanel() {
       className="panel fixed inset-x-2 bottom-2 z-20 max-h-[60dvh] overflow-auto p-4 shadow-2xl md:sticky md:inset-auto md:top-[7.5rem] md:m-2 md:max-h-[calc(100dvh-8.5rem)] md:w-[24rem] md:shrink-0"
     >
       <div className="mb-2 flex justify-end gap-2">
+        {canGoBack ? (
+          <button type="button" className="btn mr-auto" onClick={back} aria-label="Back to previous item">
+            ← Back
+          </button>
+        ) : null}
         <button type="button" className="btn" aria-pressed={marked} onClick={() => toggleBookmark(sel)}>
           {marked ? '★ Bookmarked' : '☆ Bookmark'}
         </button>

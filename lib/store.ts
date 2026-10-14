@@ -21,6 +21,8 @@ type State = {
   introSeen: boolean;
   learnStep: number;
   select: (sel: Selection | null) => void;
+  /** Return to the previously visited item. */
+  back: () => void;
   setFrame: (f: Frame) => void;
   setStageFocus: (id: string | null) => void;
   toggleBookmark: (sel: Selection) => void;
@@ -52,6 +54,11 @@ export const useStore = create<State>()(
         if (!sel) return set({ selection: null });
         const history = [sel, ...get().history.filter((h) => !same(h, sel))].slice(0, 40);
         set({ selection: sel, history, frame: frameFor(sel) });
+      },
+      back: () => {
+        const [, prev, ...rest] = get().history;
+        if (!prev) return;
+        set({ selection: prev, history: [prev, ...rest], frame: frameFor(prev) });
       },
       setFrame: (frame) => set({ frame }),
       setStageFocus: (stageFocus) => set({ stageFocus }),
