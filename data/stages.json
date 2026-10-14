@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "id": "primordial-origins",
+    "name": "Primordial Origins",
+    "order": 0,
+    "tagline": "Before the gods, before Olympus — there was Chaos.",
+    "description": "The first beings simply come to be: Chaos (a yawning gap), then broad-breasted Gaia, misty Tartarus and Eros. From Chaos come Erebus and Night, and from them Aether and Day. No one rules yet; the cosmos is still taking shape.",
+    "sources": ["hesiod-theogony"]
+  },
+  {
+    "id": "primordial-generations",
+    "name": "Primordial Generations",
+    "order": 1,
+    "tagline": "Earth bears Sky, and Sky lies upon Earth.",
+    "description": "Gaia bears Uranus (Sky) and Pontus (Sea) on her own, then with Uranus produces the twelve Titans, the one-eyed Cyclopes and the Hundred-Handers. Uranus hides his most fearsome children inside the earth, and Gaia plots against him.",
+    "sources": ["hesiod-theogony", "apollodorus"]
+  },
+  {
+    "id": "age-of-titans",
+    "name": "Age of Titans",
+    "order": 2,
+    "tagline": "A son's sickle ends one reign and begins another.",
+    "description": "Cronus, youngest Titan, castrates Uranus and takes power. From the blood and foam come the Furies, the Giants and — in Hesiod's account — Aphrodite. Warned that he too will be overthrown, Cronus swallows his children by Rhea, until Rhea hides the infant Zeus on Crete.",
+    "sources": ["hesiod-theogony", "apollodorus"]
+  },
+  {
+    "id": "titanomachy",
+    "name": "Titanomachy",
+    "order": 3,
+    "tagline": "Ten years of war for the rule of the cosmos.",
+    "description": "Zeus frees his swallowed siblings and wars on the Titans from Olympus while they hold Mount Othrys. The freed Cyclopes forge his thunderbolt and the Hundred-Handers turn the battle. The defeated Titans are bound in Tartarus.",
+    "sources": ["hesiod-theogony", "apollodorus"]
+  },
+  {
+    "id": "olympian-age",
+    "name": "Olympian Age",
+    "order": 4,
+    "tagline": "Zeus rules, and the world is divided by lot.",
+    "description": "Zeus defeats the monster Typhon, the three brothers divide sky, sea and underworld, and Zeus fathers a new generation of gods. Prometheus' theft of fire and the abduction of Persephone belong here: the gods' order is fixed, and mortals find their place within it.",
+    "sources": ["hesiod-theogony", "homer-iliad", "hh-demeter"]
+  },
+  {
+    "id": "age-of-heroes",
+    "name": "Age of Heroes",
+    "order": 5,
+    "tagline": "Half-divine mortals walk the earth.",
+    "description": "Hesiod's race of heroes, the 'demigods': Heracles and his labours, Jason and the Argonauts, the wars at Thebes. Gods intervene directly in human affairs and often father children with mortals.",
+    "sources": ["hesiod-works", "apollodorus"]
+  },
+  {
+    "id": "trojan-war",
+    "name": "Trojan War",
+    "order": 6,
+    "tagline": "A judgement, an abduction, ten years before Troy.",
+    "description": "The Judgement of Paris leads to Helen's departure for Troy and a Greek expedition under Agamemnon. The Iliad narrates a few weeks of the tenth year; the sack of the city is told in other poems. In MYTHOS the war is the hinge: a myth in this sequence, and separately a debated archaeological question on the historical track.",
+    "sources": ["homer-iliad", "proclus-cypria", "apollodorus-epitome"]
+  },
+  {
+    "id": "heroic-aftermath",
+    "name": "Heroic Aftermath",
+    "order": 7,
+    "tagline": "The long voyages home.",
+    "description": "The returns (Nostoi) of the Greek leaders: Agamemnon murdered on arrival, Menelaus delayed in Egypt, and Odysseus wandering for years before he reaches Ithaca. With them the age of heroes closes.",
+    "sources": ["homer-odyssey", "apollodorus-epitome"]
+  }
+]

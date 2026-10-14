@@ -1,1 +1,744 @@
-[]
+[
+  {
+    "id": "chaos", "name": "Chaos", "greek": "Χάος", "type": "primordial",
+    "titles": ["The First"], "domains": ["the primal void", "the gap"],
+    "summary": {
+      "beginner": "Chaos is the very first thing that exists in Greek myth. It is not a mess or disorder but an empty, yawning gap.",
+      "intermediate": "In Hesiod's Theogony, Chaos 'came to be' first, before Earth. Chaos then produces Erebus (darkness) and Nyx (Night) without a partner.",
+      "scholarly": "The noun derives from a root meaning 'to gape'; Hesiod's Chaos is a chasm, not the later philosophical notion of disorder (a sense developed by Ovid, Met. 1.5–9). Whether Chaos is a space between earth and sky or a precondition for differentiation is debated in commentaries (West 1966 on Th. 116)."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony", "ovid-met", "west-theogony"],
+    "sourceRefs": { "hesiod-theogony": "116–123", "ovid-met": "1.5–9", "west-theogony": "on 116" }
+  },
+  {
+    "id": "gaia", "name": "Gaia", "greek": "Γαῖα", "type": "primordial",
+    "titles": ["Broad-breasted Earth", "Mother of All"], "domains": ["the earth"],
+    "summary": {
+      "beginner": "Gaia is the Earth itself, imagined as a mother. Almost every later god descends from her.",
+      "intermediate": "Gaia appears right after Chaos. She bears Uranus (Sky), the mountains and Pontus (Sea) on her own, then with Uranus produces the Titans, Cyclopes and Hundred-Handers. She later helps both Cronus and Zeus overthrow their fathers.",
+      "scholarly": "Gaia functions as the stable ground of Hesiod's cosmogony and as a recurring counsellor of succession: she arms Cronus and advises Rhea and Zeus. Her role in the succession myth has close parallels in Near Eastern theogonies such as the Hurrian-Hittite Kumarbi cycle (Burkert; West 1966)."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony", "apollodorus", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "117, 126–138, 159–172, 469–496", "apollodorus": "1.1.1–1.1.4" }
+  },
+  {
+    "id": "tartarus", "name": "Tartarus", "greek": "Τάρταρος", "type": "primordial",
+    "domains": ["the abyss beneath the earth"],
+    "summary": {
+      "beginner": "Tartarus is a deep, dark pit far below the earth. It is both a place and a primordial being.",
+      "intermediate": "Hesiod names Tartarus among the first beings. Later it becomes the prison of the defeated Titans, as far below the earth as the sky is above it. With Gaia, Tartarus fathers the monster Typhon.",
+      "scholarly": "Hesiod's description of Tartarus (Th. 720–819) measures its depth by a falling anvil taking nine days to reach it. The passage has layered and possibly interpolated sections, and its geography of 'roots' and gates is a key text for early Greek cosmology (West 1966)."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony", "west-theogony"],
+    "sourceRefs": { "hesiod-theogony": "119, 720–819, 821–822" }
+  },
+  {
+    "id": "eros", "name": "Eros", "greek": "Ἔρως", "type": "primordial",
+    "titles": ["Loosener of Limbs"], "domains": ["desire", "procreation"],
+    "summary": {
+      "beginner": "Eros is the force of desire. In the oldest version he is one of the very first beings, older than the gods.",
+      "intermediate": "Hesiod lists Eros with Chaos, Gaia and Tartarus as primordial. Later poets make Eros the young son of Aphrodite, so two quite different genealogies exist side by side.",
+      "scholarly": "The primordial Eros of Hesiod (Th. 120–122) supplies the principle of generation the cosmogony needs. Simonides (fr. 575 PMG) makes him the child of Aphrodite and Ares, the line that leads to the Hellenistic and Roman winged child. MYTHOS records both as separate, source-tagged edges."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony", "simonides-575"],
+    "sourceRefs": { "hesiod-theogony": "120–122", "simonides-575": "575" }
+  },
+  {
+    "id": "erebus", "name": "Erebus", "greek": "Ἔρεβος", "type": "primordial",
+    "domains": ["primordial darkness"],
+    "summary": {
+      "beginner": "Erebus is deep darkness. He is born from Chaos alongside his sister Night.",
+      "intermediate": "With Nyx (Night), Erebus fathers Aether (bright upper air) and Hemera (Day) — light born from darkness. Later the name is also used for the dark region the dead pass through.",
+      "scholarly": "The pairing Erebus–Nyx producing Aether–Hemera (Th. 123–125) is a characteristic Hesiodic generation by opposites. Homer uses 'Erebus' as a place-name for the gloom of the underworld (e.g. Od. 10.528)."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony", "homer-odyssey"],
+    "sourceRefs": { "hesiod-theogony": "123–125", "homer-odyssey": "10.528" }
+  },
+  {
+    "id": "nyx", "name": "Nyx", "greek": "Νύξ", "type": "primordial",
+    "titles": ["Night"], "domains": ["night"],
+    "summary": {
+      "beginner": "Nyx is Night. She is so ancient and powerful that even Zeus is wary of her.",
+      "intermediate": "Born from Chaos, Nyx bears Aether and Day with Erebus, and on her own a long list of forces such as Sleep, Death, the Fates and Strife. In the Iliad, Zeus holds back from angering her.",
+      "scholarly": "Nyx's parthenogenetic brood (Th. 211–232) personifies ills and limits on human life. Iliad 14.258–261 shows Zeus deferring to Night, and Night is prominent in later Orphic cosmogonies, which give her an even more central role."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony", "homer-iliad"],
+    "sourceRefs": { "hesiod-theogony": "123–125, 211–232", "homer-iliad": "14.258–261" }
+  },
+  {
+    "id": "aether", "name": "Aether", "greek": "Αἰθήρ", "type": "primordial",
+    "domains": ["the bright upper air"],
+    "summary": {
+      "beginner": "Aether is the bright, pure air high above the clouds, where the gods breathe.",
+      "intermediate": "Aether is the son of Erebus and Nyx, born with his sister Hemera (Day). Light thus comes out of darkness in Hesiod's account.",
+      "scholarly": "Aether is the clear upper atmosphere as distinct from aer, the lower misty air. His birth from Night and Darkness (Th. 124–125) expresses the alternation of night and day as a kinship relation."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony"],
+    "sourceRefs": { "hesiod-theogony": "124–125" }
+  },
+  {
+    "id": "hemera", "name": "Hemera", "greek": "Ἡμέρα", "type": "primordial",
+    "titles": ["Day"], "domains": ["day"],
+    "summary": {
+      "beginner": "Hemera is Day. She and her mother Night take turns crossing the world.",
+      "intermediate": "Daughter of Erebus and Nyx. Hesiod describes Night and Day passing one another at the threshold of a bronze house at the edge of the world, never at home together.",
+      "scholarly": "The image of Nyx and Hemera alternately entering and leaving their shared house (Th. 748–757) is part of Hesiod's description of the cosmic extremities near Tartarus."
+    },
+    "mythicStage": "primordial-origins",
+    "sources": ["hesiod-theogony"],
+    "sourceRefs": { "hesiod-theogony": "124–125, 748–757" }
+  },
+  {
+    "id": "uranus", "name": "Uranus", "greek": "Οὐρανός", "type": "primordial",
+    "titles": ["Starry Sky"], "domains": ["the sky"],
+    "summary": {
+      "beginner": "Uranus is the Sky. He was the first ruler of the cosmos until his son Cronus overthrew him.",
+      "intermediate": "Gaia bore Uranus to cover her on every side. Their children were the Titans, Cyclopes and Hundred-Handers, but Uranus hated them and kept some hidden inside the earth, until Cronus castrated him with a sickle Gaia made.",
+      "scholarly": "The castration of the sky-god (Th. 154–210) is the first act in the Hesiodic succession myth. It closely parallels the Hurrian-Hittite Kumarbi narrative, where Kumarbi bites off the genitals of Anu (Sky) — a key piece of evidence for Near Eastern influence on Greek theogony (Burkert; West 1966)."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus", "burkert", "west-theogony"],
+    "sourceRefs": { "hesiod-theogony": "126–128, 154–210", "apollodorus": "1.1.1–1.1.4" }
+  },
+  {
+    "id": "pontus", "name": "Pontus", "greek": "Πόντος", "type": "primordial",
+    "domains": ["the open sea"],
+    "summary": {
+      "beginner": "Pontus is the Sea, born from Earth without a father.",
+      "intermediate": "Gaia produced Pontus, 'the barren deep', on her own. With Gaia he later fathered several old sea powers, including Nereus.",
+      "scholarly": "Pontus represents the sea as a primordial element, distinct from Oceanus, the Titan river encircling the world. His line (Th. 233–239) supplies many sea deities, including Nereus, father of Thetis."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony"],
+    "sourceRefs": { "hesiod-theogony": "131–132, 233–239" }
+  },
+  {
+    "id": "oceanus", "name": "Oceanus", "greek": "Ὠκεανός", "type": "titan",
+    "titles": ["Deep-swirling"], "domains": ["the world-encircling river"],
+    "summary": {
+      "beginner": "Oceanus is a Titan and a giant river that flows in a circle around the whole flat world.",
+      "intermediate": "Eldest of the Titans in Hesiod's list. With his sister Tethys he fathers the rivers and three thousand Oceanid nymphs, including Metis and, in Hesiod, Dione. He does not join the war against Zeus.",
+      "scholarly": "The Iliad preserves a different cosmogony in which Oceanus is 'the origin of the gods' and Tethys their mother (Il. 14.201, 14.246, 14.302). This rival scheme, possibly with Near Eastern parallels, shows that Hesiod's genealogy was not the only one in circulation."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "homer-iliad", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "133, 337–370", "homer-iliad": "14.201, 14.246, 14.302" }
+  },
+  {
+    "id": "coeus", "name": "Coeus", "greek": "Κοῖος", "type": "titan",
+    "domains": ["(obscure) inquiry, the celestial axis"],
+    "summary": {
+      "beginner": "Coeus is one of the twelve Titans. He is best known as the grandfather of Apollo and Artemis.",
+      "intermediate": "With his sister Phoebe, Coeus fathers Leto, the mother of Apollo and Artemis, and Asteria.",
+      "scholarly": "Coeus has almost no independent myth; his name's meaning is uncertain. Roles such as 'god of the celestial axis' are modern reconstructions, not ancient attestations."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "134, 404–410", "apollodorus": "1.1.3, 1.2.2" }
+  },
+  {
+    "id": "crius", "name": "Crius", "greek": "Κρεῖος", "type": "titan",
+    "summary": {
+      "beginner": "Crius is one of the twelve Titans, a child of Earth and Sky.",
+      "intermediate": "Crius marries Eurybia, a daughter of Pontus, and fathers Astraeus, Pallas and Perses.",
+      "scholarly": "Crius is attested almost only in genealogies (Th. 134, 375–377). He illustrates how the Titan generation partly serves to connect cosmic powers by kinship rather than through narrative."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "134, 375–377", "apollodorus": "1.1.3" }
+  },
+  {
+    "id": "hyperion", "name": "Hyperion", "greek": "Ὑπερίων", "type": "titan",
+    "titles": ["He who goes above"], "domains": ["light", "watchfulness"],
+    "summary": {
+      "beginner": "Hyperion is a Titan of light. His children are the Sun, the Moon and the Dawn.",
+      "intermediate": "With his sister Theia, Hyperion fathers Helios (Sun), Selene (Moon) and Eos (Dawn). In Homer, 'Hyperion' is sometimes used as a name for the sun itself.",
+      "scholarly": "Hesiod's genealogy (Th. 371–374) separates Hyperion from Helios, whereas Homeric usage (e.g. Od. 12.176) can apply 'Hyperion' as an epithet of Helios — an example of a figure whose identity shifts between sources."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "homer-odyssey"],
+    "sourceRefs": { "hesiod-theogony": "134, 371–374", "homer-odyssey": "12.176" }
+  },
+  {
+    "id": "iapetus", "name": "Iapetus", "greek": "Ἰαπετός", "type": "titan",
+    "summary": {
+      "beginner": "Iapetus is a Titan whose sons, Prometheus and Atlas, are among the most famous figures in myth.",
+      "intermediate": "With the Oceanid Clymene, Iapetus fathers Atlas, Menoetius, Prometheus and Epimetheus. His family's quarrels with Zeus shape the fate of humankind.",
+      "scholarly": "Through Prometheus, Hesiod ties Iapetus' line to the origin of sacrifice, fire and woman (Th. 507–616). Some scholars compare the name to the biblical Japheth, but the link is unproven."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "134, 507–511", "apollodorus": "1.2.3" }
+  },
+  {
+    "id": "theia", "name": "Theia", "greek": "Θεία", "type": "titan",
+    "domains": ["sight", "radiance"],
+    "summary": {
+      "beginner": "Theia is a Titaness associated with brightness. She is the mother of the Sun, the Moon and the Dawn.",
+      "intermediate": "With her brother Hyperion, Theia bears Helios, Selene and Eos. Pindar praises her as the source of the value of gold.",
+      "scholarly": "Theia's role is mostly genealogical (Th. 135, 371–374). Pindar's Isthmian 5 opens with an address to 'Theia of many names', showing that she could carry a richer cult or poetic significance outside Hesiod."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony"],
+    "sourceRefs": { "hesiod-theogony": "135, 371–374" }
+  },
+  {
+    "id": "rhea", "name": "Rhea", "greek": "Ῥέα", "type": "titan",
+    "titles": ["Mother of the Gods"], "domains": ["motherhood", "generation"],
+    "summary": {
+      "beginner": "Rhea is the mother of Zeus and his siblings. She tricked her husband Cronus to save baby Zeus.",
+      "intermediate": "Married to Cronus, Rhea saw each child swallowed at birth. On Gaia's advice she bore Zeus in secret on Crete and gave Cronus a stone wrapped in swaddling clothes instead.",
+      "scholarly": "Rhea's deception (Th. 467–491) enables the next succession. In later cult Rhea is closely associated with the Anatolian Mother of the Gods (Cybele); this is a cult identification made by worshippers, not evidence that the two were originally one goddess."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "135, 453–491", "apollodorus": "1.1.5–1.1.7" }
+  },
+  {
+    "id": "themis", "name": "Themis", "greek": "Θέμις", "type": "titan",
+    "titles": ["Good Counsel"], "domains": ["divine law", "right order", "custom"],
+    "summary": {
+      "beginner": "Themis is the Titaness of divine law and right order. She advises the gods.",
+      "intermediate": "Themis becomes Zeus' second wife in Hesiod and bears the Seasons (Horae) and, in Hesiod, the Fates. In the Iliad she calls the gods to assembly.",
+      "scholarly": "Themis personifies what is established as right. Aeschylus (Eumenides 1–8) makes her a holder of the Delphic oracle before Apollo; the Eumenides prologue is a literary, not historical, account of the oracle's succession."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "homer-iliad"],
+    "sourceRefs": { "hesiod-theogony": "135, 901–906", "homer-iliad": "20.4–6" }
+  },
+  {
+    "id": "mnemosyne", "name": "Mnemosyne", "greek": "Μνημοσύνη", "type": "titan",
+    "titles": ["Memory"], "domains": ["memory"],
+    "summary": {
+      "beginner": "Mnemosyne is Memory. She is the mother of the nine Muses, who inspire poets.",
+      "intermediate": "Zeus lies with Mnemosyne for nine nights, and she bears the Muses. Hesiod's own poem begins with the Muses meeting him on Mount Helicon.",
+      "scholarly": "Making Memory the mother of the Muses (Th. 53–62, 915–917) reflects the importance of memory in an oral poetic tradition. The figure links Hesiod's claim to authority directly to the divine genealogy he narrates."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony"],
+    "sourceRefs": { "hesiod-theogony": "53–62, 135, 915–917" }
+  },
+  {
+    "id": "phoebe", "name": "Phoebe", "greek": "Φοίβη", "type": "titan",
+    "titles": ["Golden-crowned"], "domains": ["brightness", "(later) prophecy"],
+    "summary": {
+      "beginner": "Phoebe is a Titaness and the grandmother of Apollo and Artemis.",
+      "intermediate": "With Coeus she bears Leto and Asteria. Her name, meaning 'bright', is later passed to Apollo as the epithet 'Phoebus'.",
+      "scholarly": "Aeschylus (Eumenides 6–8) has Phoebe give the Delphic oracle to Apollo as a birthday gift — a poetic aetiology for the epithet Phoebus, not a record of cult history."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony"],
+    "sourceRefs": { "hesiod-theogony": "136, 404–410" }
+  },
+  {
+    "id": "tethys", "name": "Tethys", "greek": "Τηθύς", "type": "titan",
+    "domains": ["fresh water", "nursing"],
+    "summary": {
+      "beginner": "Tethys is a Titaness and the wife of Oceanus. Together they are parents of all the rivers.",
+      "intermediate": "Tethys bears the river gods and the Oceanid nymphs. In the Iliad, Hera says Oceanus and Tethys raised her during the war with the Titans.",
+      "scholarly": "In Iliad 14 Tethys appears as 'mother' of the gods in a cosmogony that rivals Hesiod's. The coexistence of these schemes is one reason MYTHOS keeps genealogies source-tagged."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "homer-iliad"],
+    "sourceRefs": { "hesiod-theogony": "136, 337–370", "homer-iliad": "14.200–204, 14.302" }
+  },
+  {
+    "id": "cronus", "name": "Cronus", "greek": "Κρόνος", "type": "titan",
+    "titles": ["Crooked-counselled"], "domains": ["kingship of the Titans", "(later) harvest"],
+    "summary": {
+      "beginner": "Cronus is the youngest Titan. He overthrew his father Uranus and then swallowed his own children so none could overthrow him.",
+      "intermediate": "Armed by Gaia with a sickle, Cronus castrated Uranus and became king. Warned that a son would replace him, he swallowed each child Rhea bore, until Rhea gave him a stone in place of Zeus. Zeus later forced him to disgorge his siblings and defeated him.",
+      "scholarly": "Cronus' role as the middle king in a three-generation succession matches the Kumarbi cycle, where Kumarbi also swallows and disgorges. Ancient writers sometimes linked Kronos with Chronos (Time), but this is a later folk etymology."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "137–138, 154–210, 453–506", "apollodorus": "1.1.4–1.2.1" }
+  },
+  {
+    "id": "cyclopes", "name": "Cyclopes", "greek": "Κύκλωπες", "type": "creature",
+    "titles": ["Brontes, Steropes, Arges"], "domains": ["thunder", "lightning", "craft"],
+    "summary": {
+      "beginner": "The Cyclopes are three one-eyed giants who make Zeus' thunderbolts.",
+      "intermediate": "Hesiod's Cyclopes are sons of Gaia and Uranus named Thunder, Lightning and Bright. Freed by Zeus, they give him thunder and lightning. These are different from Homer's shepherd Cyclopes such as Polyphemus.",
+      "scholarly": "Two distinct traditions share the name: Hesiod's divine smiths (Th. 139–146, 501–506) and the lawless pastoral Cyclopes of the Odyssey (book 9). Later authors blend them, e.g. as Hephaestus' workmen under Etna."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus", "homer-odyssey"],
+    "sourceRefs": { "hesiod-theogony": "139–146, 501–506", "apollodorus": "1.1.2, 1.2.1", "homer-odyssey": "9.105–115" }
+  },
+  {
+    "id": "hekatoncheires", "name": "Hundred-Handers", "greek": "Ἑκατόγχειρες", "type": "creature",
+    "titles": ["Cottus, Briareus, Gyges"], "domains": ["overwhelming strength"],
+    "summary": {
+      "beginner": "The Hundred-Handers are three giants, each with fifty heads and a hundred arms. They help Zeus win his war.",
+      "intermediate": "Their father Uranus imprisoned them. Zeus frees them, and they hurl rocks three hundred at a time at the Titans, then guard them in Tartarus.",
+      "scholarly": "The Hundred-Handers' release and decisive intervention (Th. 617–735) is a narrative of alliance-for-freedom. The Iliad mentions Briareus, called Aegaeon by men, summoned by Thetis to protect Zeus (Il. 1.396–406), a different episode."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "homer-iliad"],
+    "sourceRefs": { "hesiod-theogony": "147–153, 617–735", "homer-iliad": "1.396–406" }
+  },
+  {
+    "id": "hestia", "name": "Hestia", "greek": "Ἑστία", "type": "olympian",
+    "titles": ["First and Last"], "domains": ["the hearth", "home", "civic fire"],
+    "summary": {
+      "beginner": "Hestia is the goddess of the hearth fire at the centre of every home and city.",
+      "intermediate": "Firstborn of Cronus and Rhea, so first to be swallowed and last to be released. She refuses marriage, and receives a share of every sacrifice.",
+      "scholarly": "The Homeric Hymn to Aphrodite (5.21–32) explains her virginity and her honour at every sacrifice. Hestia has few narratives, and her membership of 'the Twelve' varies by source and place."
+    },
+    "mythicStage": "age-of-titans",
+    "sources": ["hesiod-theogony", "hh-aphrodite", "hh-hestia"],
+    "sourceRefs": { "hesiod-theogony": "454", "hh-aphrodite": "21–32" }
+  },
+  {
+    "id": "demeter", "name": "Demeter", "greek": "Δημήτηρ", "type": "olympian",
+    "titles": ["Thesmophoros (Law-bringer)"], "domains": ["grain", "agriculture", "the Mysteries"],
+    "summary": {
+      "beginner": "Demeter is the goddess of grain and farming. When her daughter Persephone was taken, nothing would grow.",
+      "intermediate": "Daughter of Cronus and Rhea, Demeter bore Persephone to Zeus. In the Homeric Hymn she searches for her stolen daughter, stops the crops, and founds her Mysteries at Eleusis.",
+      "scholarly": "The Hymn to Demeter is the foundation text for the Eleusinian Mysteries. Whether Mycenaean 'si-to-po-ti-ni-ja' ('Mistress of Grain') refers to an earlier form of Demeter is debated; MYTHOS does not equate them."
+    },
+    "mythicStage": "age-of-titans",
+    "sources": ["hesiod-theogony", "hh-demeter", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "454, 912–914", "hh-demeter": "1–495" }
+  },
+  {
+    "id": "hera", "name": "Hera", "greek": "Ἥρα", "type": "olympian",
+    "titles": ["Queen of the Gods", "Ox-eyed", "White-armed"], "domains": ["marriage", "women", "Argos"],
+    "summary": {
+      "beginner": "Hera is the queen of the gods and wife of Zeus. She protects marriage and is famous for her anger at his affairs.",
+      "intermediate": "A daughter of Cronus and Rhea, Hera becomes Zeus' wife and bears Ares, Hebe and Eileithyia. Hesiod says she bore Hephaestus alone. She persecutes Heracles and supports the Greeks at Troy.",
+      "scholarly": "Hera's name appears on a Linear B tablet from Pylos ('e-ra', PY Tn 316), listed beside Zeus. Her major sanctuaries at Argos and Samos are among the earliest monumental temples. Her hostility in myth is often read as reflecting rivalry between local cults."
+    },
+    "mythicStage": "age-of-titans",
+    "sources": ["hesiod-theogony", "homer-iliad", "ventris-chadwick"],
+    "sourceRefs": { "hesiod-theogony": "454, 921–929", "homer-iliad": "4.50–54" }
+  },
+  {
+    "id": "hades", "name": "Hades", "greek": "ᾍδης", "type": "olympian",
+    "titles": ["Zeus of the Underworld", "Plouton (the Wealthy)"], "domains": ["the underworld", "the dead"],
+    "summary": {
+      "beginner": "Hades is the god of the underworld, where the dead go. He took Persephone to be his queen.",
+      "intermediate": "When the sons of Cronus divided the world by lot, Hades received the misty darkness below. With Zeus' consent he carries off Persephone. He rarely leaves his realm and is not counted among the Olympians in most lists.",
+      "scholarly": "Iliad 15.187–193 gives the three-way division by lot. Hades' name was avoided in cult, which preferred euphemisms like Plouton. Despite the classification 'olympian' used in MYTHOS for Cronus' children, Hades does not dwell on Olympus."
+    },
+    "mythicStage": "age-of-titans",
+    "sources": ["hesiod-theogony", "homer-iliad", "hh-demeter"],
+    "sourceRefs": { "hesiod-theogony": "455–456", "homer-iliad": "15.187–193", "hh-demeter": "1–39" }
+  },
+  {
+    "id": "poseidon", "name": "Poseidon", "greek": "Ποσειδῶν", "type": "olympian",
+    "titles": ["Earth-shaker", "Dark-haired"], "domains": ["the sea", "earthquakes", "horses"],
+    "summary": {
+      "beginner": "Poseidon is the god of the sea, earthquakes and horses. He carries a trident.",
+      "intermediate": "Son of Cronus and Rhea, he received the sea in the division by lot. In the Odyssey he persecutes Odysseus for blinding his son Polyphemus. He lost the contest for Athens to Athena.",
+      "scholarly": "Poseidon ('po-se-da-o') is one of the most frequently named gods on the Pylos Linear B tablets, suggesting major Mycenaean importance. His epithet Earth-shaker may reflect an older role connected with earth and earthquakes."
+    },
+    "mythicStage": "age-of-titans",
+    "sources": ["hesiod-theogony", "homer-iliad", "homer-odyssey", "ventris-chadwick"],
+    "sourceRefs": { "hesiod-theogony": "456", "homer-iliad": "15.187–193", "homer-odyssey": "1.68–75" }
+  },
+  {
+    "id": "zeus", "name": "Zeus", "greek": "Ζεύς", "type": "olympian",
+    "titles": ["Father of gods and men", "Cloud-gatherer", "Olympian"], "domains": ["sky", "weather", "kingship", "hospitality", "oaths"],
+    "summary": {
+      "beginner": "Zeus is the king of the gods. He rules from Mount Olympus and throws thunderbolts.",
+      "intermediate": "Youngest son of Cronus and Rhea, Zeus was hidden on Crete, grew up, freed his siblings and led them to victory over the Titans. He then defeated Typhon and became ruler of the sky, fathering many gods and heroes.",
+      "scholarly": "Zeus' name is Indo-European (cognate with Sanskrit Dyaus and Latin Iu-piter) and appears on Linear B tablets ('di-we', 'di-wo'). In Hesiod his rule is the end-point of the succession myth: he swallows Metis to prevent the cycle repeating."
+    },
+    "mythicStage": "age-of-titans",
+    "sources": ["hesiod-theogony", "homer-iliad", "apollodorus", "ventris-chadwick", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "457–506, 617–735, 820–900", "homer-iliad": "15.187–193", "apollodorus": "1.1.6–1.2.1" }
+  },
+  {
+    "id": "metis", "name": "Metis", "greek": "Μῆτις", "type": "titan",
+    "titles": ["Cunning Intelligence"], "domains": ["wisdom", "craft", "cunning"],
+    "summary": {
+      "beginner": "Metis is the goddess of clever thinking. Zeus swallowed her, and Athena was born from his head.",
+      "intermediate": "An Oceanid, daughter of Oceanus and Tethys, Metis was Zeus' first wife. Warned that her son would rule the gods, Zeus swallowed her while she was pregnant, taking her wisdom into himself.",
+      "scholarly": "Hesiod (Th. 886–900) makes the swallowing of Metis the act that ends the succession cycle: Zeus internalises 'metis', the cunning that overthrew Uranus and Cronus. MYTHOS types her with the Titan generation by descent."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "358, 886–900", "apollodorus": "1.2.1, 1.3.6" }
+  },
+  {
+    "id": "dione", "name": "Dione", "greek": "Διώνη", "type": "titan",
+    "domains": ["(cult) Dodona"],
+    "summary": {
+      "beginner": "Dione is a goddess who, in Homer, is the mother of Aphrodite.",
+      "intermediate": "Hesiod lists Dione among the daughters of Oceanus and Tethys; Apollodorus calls her a Titaness. In the Iliad, wounded Aphrodite runs to her mother Dione for comfort.",
+      "scholarly": "Dione's name is a feminine form related to Zeus' name. She shared Zeus' cult at Dodona. Her role as Aphrodite's mother (Il. 5.370–372) is the main rival to Hesiod's account of Aphrodite's birth from the sea."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "homer-iliad", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "353", "homer-iliad": "5.370–417", "apollodorus": "1.1.3, 1.3.1" }
+  },
+  {
+    "id": "leto", "name": "Leto", "greek": "Λητώ", "type": "titan",
+    "domains": ["motherhood", "modesty"],
+    "summary": {
+      "beginner": "Leto is the mother of the twins Apollo and Artemis.",
+      "intermediate": "Daughter of the Titans Coeus and Phoebe, Leto bore Apollo and Artemis to Zeus. In the Homeric Hymn, every land refuses her until the small island of Delos lets her give birth there.",
+      "scholarly": "The Hymn to Apollo (25–126) explains Delos' sacred status through Leto's labour. Leto's cult was important in Asia Minor, especially in Lycia."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "hh-apollo"],
+    "sourceRefs": { "hesiod-theogony": "404–408, 918–920", "hh-apollo": "25–126" }
+  },
+  {
+    "id": "prometheus", "name": "Prometheus", "greek": "Προμηθεύς", "type": "titan",
+    "titles": ["Forethought"], "domains": ["fire", "craft", "trickery"],
+    "summary": {
+      "beginner": "Prometheus is the Titan who stole fire from the gods and gave it to humans. He was punished for it.",
+      "intermediate": "Son of Iapetus. Prometheus tricks Zeus over the division of sacrificial meat, then steals fire hidden in a fennel stalk. Zeus chains him to a rock where an eagle eats his liver daily, until Heracles frees him.",
+      "scholarly": "Hesiod's version (Th. 521–616; Works and Days 42–105) frames Prometheus as a trickster whose cleverness brings mortals both fire and misery (Pandora). The tragedy Prometheus Bound recasts him as a rebel benefactor who sided with Zeus in the Titanomachy."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "hesiod-works", "aeschylus-pv"],
+    "sourceRefs": { "hesiod-theogony": "510–616", "hesiod-works": "42–105", "aeschylus-pv": "199–241" }
+  },
+  {
+    "id": "atlas", "name": "Atlas", "greek": "Ἄτλας", "type": "titan",
+    "titles": ["Enduring"], "domains": ["holding up the sky"],
+    "summary": {
+      "beginner": "Atlas is the Titan who holds up the sky on his shoulders, at the far western edge of the world.",
+      "intermediate": "Son of Iapetus. As his punishment from Zeus, Atlas stands near the Hesperides holding up the heavens. He is the father of Maia and, in the Odyssey, of Calypso.",
+      "scholarly": "Hesiod places Atlas at the ends of the earth near the Hesperides (Th. 517–520). Identification of 'Atlas' with the North African mountains comes later (e.g. Herodotus 4.184) — a mythic figure mapped onto a real place."
+    },
+    "mythicStage": "primordial-generations",
+    "sources": ["hesiod-theogony", "homer-odyssey", "herodotus"],
+    "sourceRefs": { "hesiod-theogony": "509, 517–520, 938", "homer-odyssey": "1.52–54", "herodotus": "4.184" }
+  },
+  {
+    "id": "maia", "name": "Maia", "greek": "Μαῖα", "type": "mortal",
+    "titles": ["Nymph of Cyllene"], "domains": ["(nymph) Mount Cyllene"],
+    "summary": {
+      "beginner": "Maia is a shy mountain nymph and the mother of the god Hermes.",
+      "intermediate": "Daughter of Atlas, Maia lived in a cave on Mount Cyllene in Arcadia, where Zeus visited her secretly and she bore Hermes.",
+      "scholarly": "The Hymn to Hermes (1–19) sets the birth in Maia's cave. Maia is a nymph rather than a mortal woman; MYTHOS uses the 'mortal' type for her only because the data model has no separate nymph type (noted in BUILD_LOG)."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "hh-hermes"],
+    "sourceRefs": { "hesiod-theogony": "938–939", "hh-hermes": "1–19" }
+  },
+  {
+    "id": "semele", "name": "Semele", "greek": "Σεμέλη", "type": "mortal",
+    "titles": ["Princess of Thebes"], "domains": [],
+    "summary": {
+      "beginner": "Semele is a mortal princess of Thebes and the mother of Dionysus.",
+      "intermediate": "Daughter of Cadmus. Tricked by Hera, she asked Zeus to appear in his true form and was burned up by his lightning. Zeus saved the unborn Dionysus and carried him in his thigh.",
+      "scholarly": "Hesiod (Th. 940–942) has a mortal mother bear an immortal son. The story of Semele's destruction is told in Euripides' Bacchae and Apollodorus. Some scholars connect her name with a Thraco-Phrygian earth-goddess, a debated proposal."
+    },
+    "mythicStage": "age-of-heroes",
+    "sources": ["hesiod-theogony", "euripides-bacchae", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "940–942", "euripides-bacchae": "1–9, 88–104", "apollodorus": "3.4.3" }
+  },
+  {
+    "id": "athena", "name": "Athena", "greek": "Ἀθηνᾶ", "type": "olympian",
+    "titles": ["Pallas", "Grey-eyed", "Parthenos"], "domains": ["wisdom", "war strategy", "crafts", "Athens"],
+    "summary": {
+      "beginner": "Athena is the goddess of wisdom and skill in war. She was born fully grown from Zeus' head.",
+      "intermediate": "In Hesiod, she is the daughter of Zeus and Metis, born from Zeus' head after he swallowed Metis. She champions heroes like Odysseus and Heracles and wins the city of Athens from Poseidon.",
+      "scholarly": "A Knossos tablet names 'a-ta-na-po-ti-ni-ja' ('Mistress of Atana'), possibly an early form of Athena, though the reading is debated. Homer (Il. 5.875–880) implies Zeus begot her alone; Hesiod includes Metis. MYTHOS keeps both."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "homer-iliad", "homer-odyssey", "apollodorus", "ventris-chadwick"],
+    "sourceRefs": { "hesiod-theogony": "886–900, 924–926", "homer-iliad": "5.875–880", "apollodorus": "1.3.6, 3.14.1" }
+  },
+  {
+    "id": "apollo", "name": "Apollo", "greek": "Ἀπόλλων", "type": "olympian",
+    "titles": ["Phoebus", "Far-shooter", "Pythian"], "domains": ["prophecy", "music", "healing", "plague", "archery"],
+    "summary": {
+      "beginner": "Apollo is the god of music, prophecy, healing and archery. His great oracle was at Delphi.",
+      "intermediate": "Son of Zeus and Leto, twin of Artemis, born on Delos. In the Homeric Hymn he kills a serpent at Pytho and founds his oracle there. In the Iliad he sends plague on the Greek army.",
+      "scholarly": "Apollo's name has not been securely identified in Linear B, which some read as evidence of a later arrival or a fusion of several gods. The Delphic cult develops archaeologically during the early Archaic period."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "hh-apollo", "homer-iliad", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "918–920", "hh-apollo": "1–178, 282–374", "homer-iliad": "1.43–52" }
+  },
+  {
+    "id": "artemis", "name": "Artemis", "greek": "Ἄρτεμις", "type": "olympian",
+    "titles": ["Mistress of Animals", "Huntress"], "domains": ["the hunt", "wild animals", "childbirth", "young women"],
+    "summary": {
+      "beginner": "Artemis is the goddess of the hunt and wild places. She is Apollo's twin sister.",
+      "intermediate": "Daughter of Zeus and Leto. She roams mountains with her nymphs, protects young animals and girls, and can bring sudden death with her arrows.",
+      "scholarly": "A Pylos tablet form 'a-te-mi-to' is commonly read as Artemis, though not universally. Homer calls her 'Mistress of Animals' (Il. 21.470), an epithet that links her to a widespread Aegean and Near Eastern iconography."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "homer-iliad", "ventris-chadwick"],
+    "sourceRefs": { "hesiod-theogony": "918–920", "homer-iliad": "21.470–496" }
+  },
+  {
+    "id": "ares", "name": "Ares", "greek": "Ἄρης", "type": "olympian",
+    "titles": ["Bane of mortals"], "domains": ["war", "battle-rage"],
+    "summary": {
+      "beginner": "Ares is the god of war and violent battle. Even other gods find him hard to like.",
+      "intermediate": "Son of Zeus and Hera. He fights for Troy in the Iliad and is wounded by Diomedes with Athena's help. Zeus calls him the most hateful of the gods to him. His affair with Aphrodite is sung in the Odyssey.",
+      "scholarly": "'a-re' appears in Linear B, possibly as a god's name or epithet. Greek Ares is distinct from Roman Mars, with whom he was later identified through interpretatio; their cults and characters differ considerably."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "homer-iliad", "homer-odyssey"],
+    "sourceRefs": { "hesiod-theogony": "921–923", "homer-iliad": "5.855–898", "homer-odyssey": "8.266–366" }
+  },
+  {
+    "id": "hephaestus", "name": "Hephaestus", "greek": "Ἥφαιστος", "type": "olympian",
+    "titles": ["Famed Craftsman", "Lame one"], "domains": ["fire", "metalwork", "craft"],
+    "summary": {
+      "beginner": "Hephaestus is the blacksmith god. He builds wonderful things, like Achilles' shield.",
+      "intermediate": "Hesiod says Hera bore him alone, in anger at Zeus. Homer calls him the son of Zeus and Hera. He was thrown from Olympus and landed on Lemnos. He forges the armour of Achilles.",
+      "scholarly": "The two genealogies (Th. 927–929 vs. Il. 1.577–579, Od. 8.312) are both kept as source-tagged edges. His wife is Aphrodite in Odyssey 8 but Charis in Iliad 18.382–383 — another source conflict."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "homer-iliad", "homer-odyssey", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "927–929", "homer-iliad": "1.571–600, 18.368–617", "homer-odyssey": "8.266–366", "apollodorus": "1.3.5" }
+  },
+  {
+    "id": "aphrodite", "name": "Aphrodite", "greek": "Ἀφροδίτη", "type": "olympian",
+    "titles": ["Cyprian", "Cytherean", "Golden"], "domains": ["love", "desire", "beauty"],
+    "summary": {
+      "beginner": "Aphrodite is the goddess of love and beauty. There are two different stories of her birth.",
+      "intermediate": "In Hesiod she rises from the sea-foam around Uranus' severed genitals and comes ashore at Cyprus. In Homer she is the daughter of Zeus and Dione. She promises Helen to Paris, starting the Trojan War.",
+      "scholarly": "The two birth accounts (Th. 188–206; Il. 5.370–372) are presented here as parallel, source-tagged genealogies. Her strong links to Cyprus and close parallels with Near Eastern goddesses such as Astarte suggest eastern influence; this is a scholarly hypothesis about origins, not an identity."
+    },
+    "mythicStage": "age-of-titans",
+    "sources": ["hesiod-theogony", "homer-iliad", "homer-odyssey", "hh-aphrodite", "burkert"],
+    "sourceRefs": { "hesiod-theogony": "188–206", "homer-iliad": "5.311–430", "homer-odyssey": "8.266–366" }
+  },
+  {
+    "id": "hermes", "name": "Hermes", "greek": "Ἑρμῆς", "type": "olympian",
+    "titles": ["Slayer of Argus", "Guide of Souls"], "domains": ["messengers", "travel", "trade", "thieves", "guiding the dead"],
+    "summary": {
+      "beginner": "Hermes is the messenger of the gods. On the day he was born he stole Apollo's cattle.",
+      "intermediate": "Son of Zeus and the nymph Maia. In the Homeric Hymn he invents the lyre from a tortoise shell, steals Apollo's cattle, and trades the lyre to make peace with his brother. He guides souls to the underworld.",
+      "scholarly": "'e-ma-a2' on Pylos tablet Tn 316 is read as Hermes (Hermāhās). The Hymn to Hermes is a comic narrative that negotiates Hermes' place among the Olympians by exchange with Apollo."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "hh-hermes", "homer-odyssey", "ventris-chadwick"],
+    "sourceRefs": { "hesiod-theogony": "938–939", "hh-hermes": "1–580", "homer-odyssey": "24.1–14" }
+  },
+  {
+    "id": "dionysus", "name": "Dionysus", "greek": "Διόνυσος", "type": "olympian",
+    "titles": ["Bacchus", "Twice-born", "Bromios"], "domains": ["wine", "ecstasy", "theatre", "transformation"],
+    "summary": {
+      "beginner": "Dionysus is the god of wine, festivity and theatre. He was 'born twice'.",
+      "intermediate": "Usually the son of Zeus and the mortal Semele: when Semele died, Zeus sewed the infant into his thigh until he was ready to be born. He travels the world spreading his worship and punishes those who reject it.",
+      "scholarly": "Once thought a late foreign arrival, Dionysus is named in Linear B ('di-wo-nu-so'), which ended that theory. An Orphic tradition makes him the son of Zeus and Persephone (reported by Diodorus) — recorded here as a separate edge."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "euripides-bacchae", "hh-dionysus", "diodorus", "ventris-chadwick"],
+    "sourceRefs": { "hesiod-theogony": "940–942", "euripides-bacchae": "1–63", "diodorus": "4.4.1" }
+  },
+  {
+    "id": "persephone", "name": "Persephone", "greek": "Περσεφόνη", "type": "olympian",
+    "titles": ["Kore (the Maiden)", "Queen of the Dead"], "domains": ["the underworld", "spring growth", "the Mysteries"],
+    "summary": {
+      "beginner": "Persephone is Demeter's daughter. Hades took her to the underworld, and she spends part of each year there.",
+      "intermediate": "Daughter of Zeus and Demeter. While picking flowers she is seized by Hades. Because she ate pomegranate seeds in the underworld, she must spend a third of each year below and the rest with her mother.",
+      "scholarly": "The Hymn to Demeter (360–413) explains her divided year. The common seasonal reading (winter = her absence) is a modern interpretation; the hymn itself is more concerned with the founding of the Eleusinian rites."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "hh-demeter"],
+    "sourceRefs": { "hesiod-theogony": "912–914", "hh-demeter": "1–39, 360–413" }
+  },
+  {
+    "id": "typhon", "name": "Typhon", "greek": "Τυφῶν", "type": "creature",
+    "domains": ["storm winds", "chaos"],
+    "summary": {
+      "beginner": "Typhon is a gigantic monster with a hundred snake heads. He was Zeus' last great enemy.",
+      "intermediate": "Gaia and Tartarus produce Typhon after the Titans' defeat. He would have ruled the world had Zeus not blasted him with thunderbolts and hurled him into Tartarus.",
+      "scholarly": "The Typhonomachy (Th. 820–880) has close Near Eastern parallels, notably the Hittite storm-god's battles with the dragon Illuyanka and with Ullikummi. Some scholars have suspected parts of the episode are later additions to the poem."
+    },
+    "mythicStage": "olympian-age",
+    "sources": ["hesiod-theogony", "apollodorus", "west-theogony"],
+    "sourceRefs": { "hesiod-theogony": "820–880", "apollodorus": "1.6.3" }
+  },
+  {
+    "id": "heracles", "name": "Heracles", "greek": "Ἡρακλῆς", "type": "hero",
+    "titles": ["Alcides", "Averter of evil"], "domains": ["strength", "endurance", "protection"],
+    "summary": {
+      "beginner": "Heracles is the strongest hero of all. He completed twelve impossible labours and became a god.",
+      "intermediate": "Son of Zeus and the mortal Alcmene, Heracles is hated by Hera. Driven mad, he kills his family and serves King Eurystheus, performing the twelve labours. After death on a pyre, he is taken up to Olympus.",
+      "scholarly": "The canonical twelve labours are a later systematisation; earlier sources mention individual exploits. Hesiod's Theogony already refers to his deification and marriage to Hebe (950–955). Apollodorus 2.4–2.7 is the fullest compilation."
+    },
+    "mythicStage": "age-of-heroes",
+    "sources": ["hesiod-theogony", "homer-iliad", "apollodorus"],
+    "sourceRefs": { "hesiod-theogony": "526–531, 943–944, 950–955", "homer-iliad": "19.95–133", "apollodorus": "2.4.8–2.7.7" }
+  },
+  {
+    "id": "alcmene", "name": "Alcmene", "greek": "Ἀλκμήνη", "type": "mortal",
+    "titles": ["Queen of Tiryns"], "domains": [],
+    "summary": {
+      "beginner": "Alcmene is the mortal mother of Heracles.",
+      "intermediate": "Zeus visited Alcmene disguised as her husband Amphitryon. Hera delayed Heracles' birth so that his cousin Eurystheus would be born first and become king.",
+      "scholarly": "The story of Hera delaying the birth is told in Iliad 19.95–133 as a warning against rash oaths. Alcmene also had cult honours in some places, such as Thebes."
+    },
+    "mythicStage": "age-of-heroes",
+    "sources": ["homer-iliad", "hesiod-theogony", "apollodorus"],
+    "sourceRefs": { "homer-iliad": "14.323–324, 19.95–133", "hesiod-theogony": "943–944", "apollodorus": "2.4.7–2.4.8" }
+  },
+  {
+    "id": "jason", "name": "Jason", "greek": "Ἰάσων", "type": "hero",
+    "titles": ["Leader of the Argonauts"], "domains": [],
+    "summary": {
+      "beginner": "Jason sailed the ship Argo with a crew of heroes to bring back the Golden Fleece.",
+      "intermediate": "Sent by his uncle Pelias to Colchis at the far end of the Black Sea, Jason wins the Fleece with the help of the princess Medea, whom he brings back to Greece.",
+      "scholarly": "The Argo is called 'known to all' already in Odyssey 12.69–72. The fullest surviving telling is the Argonautica of Apollonius of Rhodes, a learned poem written long after the archaic epics."
+    },
+    "mythicStage": "age-of-heroes",
+    "sources": ["homer-odyssey", "apollonius", "apollodorus"],
+    "sourceRefs": { "homer-odyssey": "12.69–72", "apollodorus": "1.9.16–1.9.28" }
+  },
+  {
+    "id": "thetis", "name": "Thetis", "greek": "Θέτις", "type": "creature",
+    "titles": ["Silver-footed"], "domains": ["the sea (a Nereid)"],
+    "summary": {
+      "beginner": "Thetis is a sea-nymph and the mother of Achilles.",
+      "intermediate": "Zeus and Poseidon both wanted Thetis until they learned her son would be greater than his father. She was married to the mortal Peleus instead. At their wedding the quarrel began that led to the Trojan War.",
+      "scholarly": "In Iliad 1.396–406 Achilles recalls Thetis saving Zeus from a revolt by summoning Briareus, which may hint at a lost myth of her power. MYTHOS uses the 'creature' type for her because the model has no separate nymph type."
+    },
+    "mythicStage": "age-of-heroes",
+    "sources": ["homer-iliad", "apollodorus", "proclus-cypria"],
+    "sourceRefs": { "homer-iliad": "1.396–406, 18.429–441", "apollodorus": "3.13.5" }
+  },
+  {
+    "id": "peleus", "name": "Peleus", "greek": "Πηλεύς", "type": "hero",
+    "titles": ["King of Phthia"], "domains": [],
+    "summary": {
+      "beginner": "Peleus is a hero and king who married the sea-goddess Thetis. Their son was Achilles.",
+      "intermediate": "Peleus sailed with the Argonauts. His wedding to Thetis was attended by the gods — and by Eris (Strife), whose golden apple set up the Judgement of Paris.",
+      "scholarly": "The wedding and apple episode is reported in the summary of the lost Cypria. In the Iliad, Peleus is an old man left at home in Phthia, and Achilles knows he will never see him again."
+    },
+    "mythicStage": "age-of-heroes",
+    "sources": ["homer-iliad", "proclus-cypria", "apollodorus"],
+    "sourceRefs": { "homer-iliad": "24.534–542", "apollodorus": "3.13.1–3.13.6" }
+  },
+  {
+    "id": "achilles", "name": "Achilles", "greek": "Ἀχιλλεύς", "type": "hero",
+    "titles": ["Swift-footed", "Best of the Achaeans"], "domains": [],
+    "summary": {
+      "beginner": "Achilles is the greatest Greek warrior at Troy. The Iliad is the story of his anger.",
+      "intermediate": "Son of Peleus and Thetis. Insulted by Agamemnon, Achilles withdraws from battle. He returns only after Hector kills his friend Patroclus, kills Hector, and finally returns Hector's body to Priam.",
+      "scholarly": "The Iliad's subject is announced in its first word, 'menis' (wrath). Achilles' death and the heel motif are not in Homer; the heel story appears much later (e.g. Statius)."
+    },
+    "mythicStage": "trojan-war",
+    "sources": ["homer-iliad", "proclus-cypria"],
+    "sourceRefs": { "homer-iliad": "1.1–7, 1.101–303, 24.468–676" }
+  },
+  {
+    "id": "agamemnon", "name": "Agamemnon", "greek": "Ἀγαμέμνων", "type": "hero",
+    "titles": ["Lord of men", "King of Mycenae"], "domains": [],
+    "summary": {
+      "beginner": "Agamemnon is the king of Mycenae and the leader of the Greek army at Troy.",
+      "intermediate": "Brother of Menelaus. He quarrels with Achilles over a captive woman. After Troy falls, he returns home and is murdered by his wife Clytemnestra and her lover Aegisthus.",
+      "scholarly": "The Odyssey uses Agamemnon's death as a repeated counter-example to Odysseus' return (e.g. Od. 1.29–43, 11.405–434). The gold 'Mask of Agamemnon' from Mycenae predates any possible historical Agamemnon; the name is Schliemann's romantic label."
+    },
+    "mythicStage": "trojan-war",
+    "sources": ["homer-iliad", "homer-odyssey"],
+    "sourceRefs": { "homer-iliad": "1.101–303, 2.100–108", "homer-odyssey": "11.405–434" }
+  },
+  {
+    "id": "priam", "name": "Priam", "greek": "Πρίαμος", "type": "mortal",
+    "titles": ["King of Troy"], "domains": [],
+    "summary": {
+      "beginner": "Priam is the old king of Troy. He bravely goes to Achilles to beg for his son Hector's body.",
+      "intermediate": "Father of Hector, Paris and many others. In Iliad 24 he crosses the battlefield at night guided by Hermes to ransom Hector's body. He dies when Troy is sacked.",
+      "scholarly": "Priam's meeting with Achilles (Il. 24.468–676) is often read as the moral climax of the Iliad. His death at the altar is told in later poems and in Aeneid 2."
+    },
+    "mythicStage": "trojan-war",
+    "sources": ["homer-iliad", "virgil-aeneid"],
+    "sourceRefs": { "homer-iliad": "24.468–676", "virgil-aeneid": "2.506–558" }
+  },
+  {
+    "id": "paris", "name": "Paris", "greek": "Πάρις", "type": "mortal",
+    "titles": ["Alexandros"], "domains": [],
+    "summary": {
+      "beginner": "Paris is the Trojan prince who took Helen from Sparta, starting the Trojan War.",
+      "intermediate": "Son of Priam. Asked to judge which goddess was most beautiful — Hera, Athena or Aphrodite — he chose Aphrodite, who promised him Helen. He later kills Achilles with an arrow guided by Apollo.",
+      "scholarly": "The Judgement of Paris is mentioned only once in the Iliad (24.28–30) and was narrated in the lost Cypria. A Trojan prince named 'Alaksandu' of Wilusa appears in a Hittite treaty — an intriguing parallel, but not proof of a historical Paris."
+    },
+    "mythicStage": "trojan-war",
+    "sources": ["homer-iliad", "proclus-cypria", "latacz-2004"],
+    "sourceRefs": { "homer-iliad": "3.15–75, 24.28–30" }
+  },
+  {
+    "id": "helen", "name": "Helen", "greek": "Ἑλένη", "type": "mortal",
+    "titles": ["Helen of Sparta", "Helen of Troy"], "domains": [],
+    "summary": {
+      "beginner": "Helen is said to be the most beautiful woman in the world. Her going to Troy with Paris caused the war.",
+      "intermediate": "Daughter of Zeus, wife of Menelaus of Sparta. Whether she went willingly or was taken is a question ancient authors argued about. After Troy falls, she returns home with Menelaus.",
+      "scholarly": "Homer calls her a daughter of Zeus (Il. 3.418); her mother is usually Leda, sometimes Nemesis. Stesichorus and Herodotus (2.112–120) report that Helen never went to Troy at all and stayed in Egypt — a deliberate ancient counter-version."
+    },
+    "mythicStage": "trojan-war",
+    "sources": ["homer-iliad", "homer-odyssey", "herodotus"],
+    "sourceRefs": { "homer-iliad": "3.121–244, 3.418", "homer-odyssey": "4.120–305", "herodotus": "2.112–120" }
+  },
+  {
+    "id": "odysseus", "name": "Odysseus", "greek": "Ὀδυσσεύς", "type": "hero",
+    "titles": ["Man of many turns", "Sacker of cities", "King of Ithaca"], "domains": [],
+    "summary": {
+      "beginner": "Odysseus is the clever king of Ithaca. After the Trojan War, it took him ten years to get home.",
+      "intermediate": "He devises the wooden horse that takes Troy. On his way home he meets the Cyclops, Circe, the Sirens and Calypso, loses all his companions, and finally returns to Ithaca to defeat the suitors of his wife Penelope.",
+      "scholarly": "The Odyssey tells most of the wanderings in Odysseus' own voice at the Phaeacian court (books 9–12), which raises questions of narrative reliability. Attempts to map the wanderings onto real geography began in antiquity and remain contested."
+    },
+    "mythicStage": "heroic-aftermath",
+    "sources": ["homer-odyssey", "homer-iliad", "strabo"],
+    "sourceRefs": { "homer-odyssey": "1.1–10, 9–12, 22", "strabo": "1.2.11–1.2.18" }
+  },
+  {
+    "id": "penelope", "name": "Penelope", "greek": "Πηνελόπεια", "type": "mortal",
+    "titles": ["Queen of Ithaca"], "domains": [],
+    "summary": {
+      "beginner": "Penelope is Odysseus' faithful wife who waits twenty years for him to return.",
+      "intermediate": "To delay the suitors who want to marry her, she weaves a shroud by day and unpicks it by night. She tests the returned Odysseus with the secret of their bed.",
+      "scholarly": "Penelope's intelligence parallels her husband's. Ancient and modern readers debate whether she recognises Odysseus before the bed test in book 23."
+    },
+    "mythicStage": "heroic-aftermath",
+    "sources": ["homer-odyssey"],
+    "sourceRefs": { "homer-odyssey": "2.93–110, 19, 23.173–230" }
+  },
+  {
+    "id": "polyphemus", "name": "Polyphemus", "greek": "Πολύφημος", "type": "creature",
+    "titles": ["the Cyclops"], "domains": [],
+    "summary": {
+      "beginner": "Polyphemus is a one-eyed giant who traps Odysseus and his men in his cave.",
+      "intermediate": "Son of Poseidon. He eats several of Odysseus' men. Odysseus gets him drunk, says his name is 'Nobody', and blinds him. Polyphemus' prayer to Poseidon brings the god's anger on Odysseus.",
+      "scholarly": "The episode adapts a widespread folktale type (the blinded ogre). Homer's pastoral Cyclopes differ from Hesiod's divine smiths of the same name."
+    },
+    "mythicStage": "heroic-aftermath",
+    "sources": ["homer-odyssey"],
+    "sourceRefs": { "homer-odyssey": "1.68–75, 9.105–566" }
+  },
+  {
+    "id": "circe", "name": "Circe", "greek": "Κίρκη", "type": "creature",
+    "titles": ["Dread goddess with lovely hair"], "domains": ["magic", "transformation"],
+    "summary": {
+      "beginner": "Circe is a powerful enchantress who turns Odysseus' men into pigs.",
+      "intermediate": "Daughter of Helios. On her island Aeaea she transforms the crew, but Hermes gives Odysseus a herb called moly to resist her. She then hosts them for a year and directs them to the underworld.",
+      "scholarly": "Circe is a goddess in Homer, not a mortal witch. Her island Aeaea is unlocated; ancient writers identified it with Monte Circeo in Italy, an identification MYTHOS shows only as an alternative."
+    },
+    "mythicStage": "heroic-aftermath",
+    "sources": ["homer-odyssey", "hesiod-theogony"],
+    "sourceRefs": { "homer-odyssey": "10.133–574", "hesiod-theogony": "956–957, 1011–1014" }
+  },
+  {
+    "id": "calypso", "name": "Calypso", "greek": "Καλυψώ", "type": "creature",
+    "titles": ["the Concealer"], "domains": [],
+    "summary": {
+      "beginner": "Calypso is a nymph who keeps Odysseus on her island for seven years and offers to make him immortal.",
+      "intermediate": "Daughter of Atlas, living on the remote island of Ogygia. Zeus sends Hermes to order her to release Odysseus, and she helps him build a raft.",
+      "scholarly": "Her name relates to 'kalyptein', to conceal. Odysseus' refusal of immortality to return to Penelope is a central statement of the poem's values."
+    },
+    "mythicStage": "heroic-aftermath",
+    "sources": ["homer-odyssey"],
+    "sourceRefs": { "homer-odyssey": "1.48–59, 5.1–281, 7.244–266" }
+  }
+]

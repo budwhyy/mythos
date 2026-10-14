@@ -1,1 +1,205 @@
-[]
+[
+  {
+    "id": "emergence-of-chaos", "frame": "mythic", "name": "Chaos comes to be", "stage": "primordial-origins",
+    "before": ["night-and-day"],
+    "participants": ["chaos", "gaia", "tartarus", "eros"],
+    "summary": "First of all Chaos came to be; then Gaia, Tartarus and Eros. Nothing creates them — they simply emerge.",
+    "sources": ["hesiod-theogony"], "sourceRefs": { "hesiod-theogony": "116–122" }
+  },
+  {
+    "id": "night-and-day", "frame": "mythic", "name": "Night and Darkness bear Day", "stage": "primordial-origins",
+    "after": ["emergence-of-chaos"], "before": ["earth-bears-sky"],
+    "participants": ["chaos", "erebus", "nyx", "aether", "hemera"],
+    "summary": "From Chaos come Erebus and Night; Night, joined with Erebus, bears the bright Aether and Day.",
+    "sources": ["hesiod-theogony"], "sourceRefs": { "hesiod-theogony": "123–125" }
+  },
+  {
+    "id": "earth-bears-sky", "frame": "mythic", "name": "Earth bears Sky and Sea", "stage": "primordial-generations",
+    "after": ["night-and-day"], "before": ["birth-of-titans"],
+    "participants": ["gaia", "uranus", "pontus"],
+    "summary": "Gaia bears starry Uranus, equal to herself, to cover her on every side, and the barren sea Pontus — both without a partner.",
+    "sources": ["hesiod-theogony"], "sourceRefs": { "hesiod-theogony": "126–132" }
+  },
+  {
+    "id": "birth-of-titans", "frame": "mythic", "name": "Birth of the Titans, Cyclopes and Hundred-Handers", "stage": "primordial-generations",
+    "after": ["earth-bears-sky"], "before": ["castration-of-uranus"],
+    "participants": ["gaia", "uranus", "oceanus", "coeus", "crius", "hyperion", "iapetus", "theia", "rhea", "themis", "mnemosyne", "phoebe", "tethys", "cronus", "cyclopes", "hekatoncheires"],
+    "summary": "Gaia and Uranus produce twelve Titans, youngest Cronus; then the three Cyclopes and the three Hundred-Handers. Uranus hates them and pushes them back into the earth.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "133–158", "apollodorus": "1.1.1–1.1.3" }
+  },
+  {
+    "id": "castration-of-uranus", "frame": "mythic", "name": "Cronus overthrows Uranus", "stage": "age-of-titans",
+    "after": ["birth-of-titans"], "before": ["birth-of-aphrodite", "cronus-swallows"],
+    "participants": ["gaia", "cronus", "uranus"],
+    "summary": "Gaia forges a sickle of adamant. Cronus ambushes his father as he lies over the earth and castrates him, taking the rule of the world.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "159–187", "apollodorus": "1.1.4" }
+  },
+  {
+    "id": "birth-of-aphrodite", "frame": "mythic", "name": "Aphrodite rises from the foam (Hesiod's account)", "stage": "age-of-titans",
+    "after": ["castration-of-uranus"],
+    "participants": ["aphrodite", "uranus"],
+    "summary": "The severed genitals fall into the sea; from the white foam around them a goddess grows and comes ashore at Cyprus. Homer gives a different parentage (Zeus and Dione), so this event belongs to Hesiod's version only.",
+    "sources": ["hesiod-theogony"], "sourceRefs": { "hesiod-theogony": "188–206" }
+  },
+  {
+    "id": "cronus-swallows", "frame": "mythic", "name": "Cronus swallows his children", "stage": "age-of-titans",
+    "after": ["castration-of-uranus"], "before": ["birth-of-zeus"],
+    "participants": ["cronus", "rhea", "hestia", "demeter", "hera", "hades", "poseidon"],
+    "summary": "Warned that a son will overthrow him, Cronus swallows each child as soon as Rhea gives birth.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "453–467", "apollodorus": "1.1.5" }
+  },
+  {
+    "id": "birth-of-zeus", "frame": "mythic", "name": "Zeus is hidden on Crete", "stage": "age-of-titans",
+    "after": ["cronus-swallows"], "before": ["zeus-frees-siblings"],
+    "participants": ["zeus", "rhea", "gaia", "cronus"],
+    "summary": "Rhea gives birth to Zeus in secret on Crete and hands Cronus a stone wrapped in swaddling clothes, which he swallows.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "468–491", "apollodorus": "1.1.6–1.1.7" }
+  },
+  {
+    "id": "zeus-frees-siblings", "frame": "mythic", "name": "Cronus disgorges his children", "stage": "age-of-titans",
+    "after": ["birth-of-zeus"], "before": ["titanomachy"],
+    "participants": ["zeus", "cronus", "hestia", "demeter", "hera", "hades", "poseidon", "cyclopes"],
+    "summary": "Cronus is made to vomit up the stone and then his children. Zeus frees the Cyclopes, who give him thunder and lightning.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "492–506", "apollodorus": "1.2.1" }
+  },
+  {
+    "id": "titanomachy", "frame": "mythic", "name": "The War of the Titans", "stage": "titanomachy",
+    "after": ["zeus-frees-siblings"], "before": ["titans-imprisoned"],
+    "participants": ["zeus", "cronus", "hekatoncheires", "cyclopes", "poseidon", "hades", "iapetus", "hyperion", "crius", "coeus"],
+    "summary": "For ten years the Olympians fight from Olympus against the Titans on Othrys. Zeus releases the Hundred-Handers, unleashes his thunderbolts, and the earth and sea boil.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "617–712", "apollodorus": "1.2.1" }
+  },
+  {
+    "id": "titans-imprisoned", "frame": "mythic", "name": "Titans bound in Tartarus", "stage": "titanomachy",
+    "after": ["titanomachy"], "before": ["typhonomachy"],
+    "participants": ["zeus", "hekatoncheires", "cronus", "atlas", "tartarus"],
+    "summary": "The defeated Titans are chained in Tartarus behind bronze gates, guarded by the Hundred-Handers. Atlas is set to hold up the sky.",
+    "sources": ["hesiod-theogony"], "sourceRefs": { "hesiod-theogony": "713–735, 517–520" }
+  },
+  {
+    "id": "typhonomachy", "frame": "mythic", "name": "Zeus defeats Typhon", "stage": "olympian-age",
+    "after": ["titans-imprisoned"], "before": ["division-of-cosmos"],
+    "participants": ["zeus", "typhon", "gaia", "tartarus"],
+    "summary": "Gaia and Tartarus bring forth Typhon, a monster of a hundred snake heads. Zeus scorches him with lightning and hurls him into Tartarus.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "820–868", "apollodorus": "1.6.3" }
+  },
+  {
+    "id": "division-of-cosmos", "frame": "mythic", "name": "The world divided by lot", "stage": "olympian-age",
+    "after": ["typhonomachy"], "before": ["birth-of-athena", "prometheus-fire", "abduction-of-persephone"],
+    "participants": ["zeus", "poseidon", "hades"],
+    "summary": "The three sons of Cronus draw lots: Zeus wins the sky, Poseidon the sea, Hades the gloom below. Earth and Olympus remain common to all.",
+    "sources": ["homer-iliad", "hesiod-theogony"], "sourceRefs": { "homer-iliad": "15.187–193", "hesiod-theogony": "881–885" }
+  },
+  {
+    "id": "birth-of-athena", "frame": "mythic", "name": "Athena born from Zeus' head", "stage": "olympian-age",
+    "after": ["division-of-cosmos"], "before": ["birth-of-apollo-artemis"],
+    "participants": ["zeus", "metis", "athena"],
+    "summary": "Zeus swallows the pregnant Metis to stop her bearing a son who would rule. Athena later springs from his head, fully armed.",
+    "sources": ["hesiod-theogony", "apollodorus"], "sourceRefs": { "hesiod-theogony": "886–900, 924–926", "apollodorus": "1.3.6" }
+  },
+  {
+    "id": "birth-of-apollo-artemis", "frame": "mythic", "name": "Leto gives birth on Delos", "stage": "olympian-age",
+    "after": ["birth-of-athena"], "before": ["apollo-at-pytho", "birth-of-hermes"],
+    "participants": ["leto", "apollo", "artemis", "zeus"],
+    "summary": "Refused by every land, Leto is welcomed by the little island of Delos, where she bears Apollo (and, in the tradition, Artemis).",
+    "sources": ["hh-apollo"], "sourceRefs": { "hh-apollo": "25–126" }
+  },
+  {
+    "id": "apollo-at-pytho", "frame": "mythic", "name": "Apollo founds his oracle at Pytho", "stage": "olympian-age",
+    "after": ["birth-of-apollo-artemis"],
+    "participants": ["apollo"],
+    "summary": "Apollo kills the she-dragon at Pytho, below Parnassus, and establishes his oracle there, bringing Cretan sailors to be his priests.",
+    "sources": ["hh-apollo"], "sourceRefs": { "hh-apollo": "282–544" }
+  },
+  {
+    "id": "birth-of-hermes", "frame": "mythic", "name": "Hermes steals Apollo's cattle", "stage": "olympian-age",
+    "after": ["birth-of-apollo-artemis"],
+    "participants": ["hermes", "maia", "apollo", "zeus"],
+    "summary": "Born at dawn in Maia's cave, Hermes invents the lyre by midday and steals Apollo's cattle by evening. Zeus makes them reconcile.",
+    "sources": ["hh-hermes"], "sourceRefs": { "hh-hermes": "1–580" }
+  },
+  {
+    "id": "prometheus-fire", "frame": "mythic", "name": "Prometheus steals fire", "stage": "olympian-age",
+    "after": ["division-of-cosmos"],
+    "participants": ["prometheus", "zeus"],
+    "summary": "At Mecone, Prometheus tricks Zeus over the sacrificial portions. Zeus withholds fire; Prometheus steals it in a fennel stalk, and is chained and tormented by an eagle.",
+    "sources": ["hesiod-theogony", "hesiod-works"], "sourceRefs": { "hesiod-theogony": "521–616", "hesiod-works": "42–105" }
+  },
+  {
+    "id": "abduction-of-persephone", "frame": "mythic", "name": "The abduction of Persephone", "stage": "olympian-age",
+    "after": ["division-of-cosmos"], "before": ["birth-of-dionysus"],
+    "participants": ["persephone", "hades", "demeter", "zeus", "hermes"],
+    "summary": "Hades seizes Persephone in his chariot. Demeter searches, then halts all growth until Zeus sends Hermes to bring her back — but she has eaten a pomegranate seed and must return below for part of each year.",
+    "sources": ["hh-demeter"], "sourceRefs": { "hh-demeter": "1–495" }
+  },
+  {
+    "id": "birth-of-dionysus", "frame": "mythic", "name": "Dionysus, twice born", "stage": "olympian-age",
+    "after": ["abduction-of-persephone"], "before": ["heroic-race"],
+    "participants": ["dionysus", "semele", "zeus"],
+    "summary": "Semele is destroyed by Zeus' true form; Zeus rescues the unborn child and carries him in his thigh until his second birth.",
+    "sources": ["hesiod-theogony", "euripides-bacchae", "apollodorus"], "sourceRefs": { "hesiod-theogony": "940–942", "euripides-bacchae": "1–9, 88–104", "apollodorus": "3.4.3" }
+  },
+  {
+    "id": "heroic-race", "frame": "mythic", "name": "Zeus makes the race of heroes", "stage": "age-of-heroes",
+    "after": ["birth-of-dionysus"], "before": ["labours-of-heracles", "voyage-of-argo"],
+    "participants": ["zeus"],
+    "summary": "Hesiod's fourth race of humankind: the godlike heroes, called demigods, who fought at Thebes and Troy. Some die; others are sent to the Isles of the Blessed.",
+    "sources": ["hesiod-works"], "sourceRefs": { "hesiod-works": "156–173" }
+  },
+  {
+    "id": "labours-of-heracles", "frame": "mythic", "name": "The labours of Heracles", "stage": "age-of-heroes",
+    "after": ["heroic-race"], "before": ["wedding-of-peleus"],
+    "participants": ["heracles", "hera", "athena", "alcmene", "prometheus", "atlas"],
+    "summary": "Bound to serve Eurystheus, Heracles kills the Nemean lion and the Hydra, fetches the apples of the Hesperides with Atlas' help, drags Cerberus from the underworld, and frees Prometheus.",
+    "sources": ["apollodorus", "hesiod-theogony"], "sourceRefs": { "apollodorus": "2.5.1–2.5.12", "hesiod-theogony": "526–531" }
+  },
+  {
+    "id": "voyage-of-argo", "frame": "mythic", "name": "The voyage of the Argo", "stage": "age-of-heroes",
+    "after": ["heroic-race"], "before": ["wedding-of-peleus"],
+    "participants": ["jason", "peleus", "heracles", "hera"],
+    "summary": "Jason gathers the Argonauts and sails to Colchis for the Golden Fleece, which he wins with Medea's help.",
+    "sources": ["apollonius", "homer-odyssey", "apollodorus"], "sourceRefs": { "homer-odyssey": "12.69–72", "apollodorus": "1.9.16–1.9.28" }
+  },
+  {
+    "id": "wedding-of-peleus", "frame": "mythic", "name": "Wedding of Peleus and Thetis", "stage": "age-of-heroes",
+    "after": ["labours-of-heracles", "voyage-of-argo"], "before": ["judgement-of-paris"],
+    "participants": ["peleus", "thetis", "zeus", "hera", "athena", "aphrodite"],
+    "summary": "The gods attend the wedding. Strife, uninvited, throws a golden apple 'for the fairest', and Hera, Athena and Aphrodite each claim it.",
+    "sources": ["proclus-cypria", "apollodorus"], "sourceRefs": { "apollodorus": "3.13.5", "proclus-cypria": "Cypria summary §1" }
+  },
+  {
+    "id": "judgement-of-paris", "frame": "mythic", "name": "The Judgement of Paris", "stage": "trojan-war",
+    "after": ["wedding-of-peleus"], "before": ["trojan-war-myth"],
+    "participants": ["paris", "hera", "athena", "aphrodite", "hermes", "helen"],
+    "summary": "Hermes leads the three goddesses to Paris on Mount Ida. He awards the apple to Aphrodite, who promises him Helen, wife of Menelaus.",
+    "sources": ["proclus-cypria", "homer-iliad"], "sourceRefs": { "homer-iliad": "24.28–30" }
+  },
+  {
+    "id": "trojan-war-myth", "frame": "mythic", "name": "The Trojan War (as narrative)", "stage": "trojan-war",
+    "after": ["judgement-of-paris"], "before": ["fall-of-troy"],
+    "participants": ["agamemnon", "achilles", "odysseus", "helen", "paris", "priam", "apollo", "athena", "hera", "aphrodite", "zeus", "thetis"],
+    "summary": "The Greeks besiege Troy for ten years. In the tenth, Achilles quarrels with Agamemnon, withdraws, returns to kill Hector, and gives the body back to Priam. This is the myth; whether any historical war lies behind it is a separate, historical question.",
+    "sources": ["homer-iliad", "proclus-cypria"], "sourceRefs": { "homer-iliad": "1–24" }
+  },
+  {
+    "id": "fall-of-troy", "frame": "mythic", "name": "The wooden horse and the sack of Troy", "stage": "trojan-war",
+    "after": ["trojan-war-myth"], "before": ["return-of-agamemnon", "return-of-odysseus"],
+    "participants": ["odysseus", "athena", "priam", "helen"],
+    "summary": "Odysseus devises the wooden horse; Greeks hidden inside open the gates, and Troy is sacked. Told by Demodocus in the Odyssey and at length in later poems.",
+    "sources": ["homer-odyssey", "apollodorus-epitome", "virgil-aeneid"], "sourceRefs": { "homer-odyssey": "8.499–520", "apollodorus-epitome": "5.14–5.23", "virgil-aeneid": "2" }
+  },
+  {
+    "id": "return-of-agamemnon", "frame": "mythic", "name": "Agamemnon's homecoming", "stage": "heroic-aftermath",
+    "after": ["fall-of-troy"],
+    "participants": ["agamemnon"],
+    "summary": "Agamemnon reaches Mycenae and is killed at a feast by Aegisthus and Clytemnestra — the Odyssey's dark mirror of Odysseus' return.",
+    "sources": ["homer-odyssey"], "sourceRefs": { "homer-odyssey": "1.29–43, 11.405–434" }
+  },
+  {
+    "id": "return-of-odysseus", "frame": "mythic", "name": "The return of Odysseus", "stage": "heroic-aftermath",
+    "after": ["fall-of-troy"],
+    "participants": ["odysseus", "poseidon", "athena", "polyphemus", "circe", "calypso", "penelope", "hermes"],
+    "summary": "Ten years of wandering: the Cicones, Lotus-Eaters, Cyclops, Aeolus, Laestrygonians, Circe, the underworld, Sirens, Scylla and Charybdis, the cattle of the Sun, Calypso, the Phaeacians — and finally Ithaca.",
+    "sources": ["homer-odyssey"], "sourceRefs": { "homer-odyssey": "5–13, 22–23" }
+  }
+]

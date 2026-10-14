@@ -1,1 +1,1378 @@
-[]
+[
+  {
+    "id": "parent-chaos-erebus-hesiod-theogony",
+    "from": "chaos",
+    "to": "erebus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "123"
+  },
+  {
+    "id": "parent-chaos-nyx-hesiod-theogony",
+    "from": "chaos",
+    "to": "nyx",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "123"
+  },
+  {
+    "id": "parent-erebus-aether-hesiod-theogony",
+    "from": "erebus",
+    "to": "aether",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "124–125"
+  },
+  {
+    "id": "parent-nyx-aether-hesiod-theogony",
+    "from": "nyx",
+    "to": "aether",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "124–125"
+  },
+  {
+    "id": "parent-erebus-hemera-hesiod-theogony",
+    "from": "erebus",
+    "to": "hemera",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "124–125"
+  },
+  {
+    "id": "parent-nyx-hemera-hesiod-theogony",
+    "from": "nyx",
+    "to": "hemera",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "124–125"
+  },
+  {
+    "id": "partner-erebus-nyx-hesiod-theogony",
+    "from": "erebus",
+    "to": "nyx",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "125"
+  },
+  {
+    "id": "parent-gaia-uranus-hesiod-theogony",
+    "from": "gaia",
+    "to": "uranus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "126–128",
+    "note": "Gaia bears Sky without a partner."
+  },
+  {
+    "id": "parent-gaia-pontus-hesiod-theogony",
+    "from": "gaia",
+    "to": "pontus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "131–132",
+    "note": "Gaia bears Sea without a partner."
+  },
+  {
+    "id": "partner-gaia-uranus-hesiod-theogony",
+    "from": "gaia",
+    "to": "uranus",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "133"
+  },
+  {
+    "id": "partner-gaia-tartarus-hesiod-theogony",
+    "from": "gaia",
+    "to": "tartarus",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "821–822"
+  },
+  {
+    "id": "parent-gaia-typhon-hesiod-theogony",
+    "from": "gaia",
+    "to": "typhon",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "821–822"
+  },
+  {
+    "id": "parent-tartarus-typhon-hesiod-theogony",
+    "from": "tartarus",
+    "to": "typhon",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "821–822"
+  },
+  {
+    "id": "sibling-chaos-gaia-hesiod-theogony",
+    "from": "chaos",
+    "to": "gaia",
+    "kind": "sibling",
+    "source": "hesiod-theogony",
+    "ref": "116–117",
+    "note": "Both \"come to be\" first, with no parents."
+  },
+  {
+    "id": "parent-gaia-oceanus-hesiod-theogony",
+    "from": "gaia",
+    "to": "oceanus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-oceanus-hesiod-theogony",
+    "from": "uranus",
+    "to": "oceanus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-coeus-hesiod-theogony",
+    "from": "gaia",
+    "to": "coeus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-coeus-hesiod-theogony",
+    "from": "uranus",
+    "to": "coeus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-crius-hesiod-theogony",
+    "from": "gaia",
+    "to": "crius",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-crius-hesiod-theogony",
+    "from": "uranus",
+    "to": "crius",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-hyperion-hesiod-theogony",
+    "from": "gaia",
+    "to": "hyperion",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-hyperion-hesiod-theogony",
+    "from": "uranus",
+    "to": "hyperion",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-iapetus-hesiod-theogony",
+    "from": "gaia",
+    "to": "iapetus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-iapetus-hesiod-theogony",
+    "from": "uranus",
+    "to": "iapetus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-theia-hesiod-theogony",
+    "from": "gaia",
+    "to": "theia",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-theia-hesiod-theogony",
+    "from": "uranus",
+    "to": "theia",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-rhea-hesiod-theogony",
+    "from": "gaia",
+    "to": "rhea",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-rhea-hesiod-theogony",
+    "from": "uranus",
+    "to": "rhea",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-themis-hesiod-theogony",
+    "from": "gaia",
+    "to": "themis",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-themis-hesiod-theogony",
+    "from": "uranus",
+    "to": "themis",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-mnemosyne-hesiod-theogony",
+    "from": "gaia",
+    "to": "mnemosyne",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-mnemosyne-hesiod-theogony",
+    "from": "uranus",
+    "to": "mnemosyne",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-phoebe-hesiod-theogony",
+    "from": "gaia",
+    "to": "phoebe",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-phoebe-hesiod-theogony",
+    "from": "uranus",
+    "to": "phoebe",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-tethys-hesiod-theogony",
+    "from": "gaia",
+    "to": "tethys",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-tethys-hesiod-theogony",
+    "from": "uranus",
+    "to": "tethys",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-cronus-hesiod-theogony",
+    "from": "gaia",
+    "to": "cronus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-uranus-cronus-hesiod-theogony",
+    "from": "uranus",
+    "to": "cronus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "parent-gaia-cyclopes-hesiod-theogony",
+    "from": "gaia",
+    "to": "cyclopes",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "139–146"
+  },
+  {
+    "id": "parent-uranus-cyclopes-hesiod-theogony",
+    "from": "uranus",
+    "to": "cyclopes",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "139–146"
+  },
+  {
+    "id": "parent-gaia-hekatoncheires-hesiod-theogony",
+    "from": "gaia",
+    "to": "hekatoncheires",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "147–153"
+  },
+  {
+    "id": "parent-uranus-hekatoncheires-hesiod-theogony",
+    "from": "uranus",
+    "to": "hekatoncheires",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "147–153"
+  },
+  {
+    "id": "conflict-uranus-hekatoncheires-hesiod-theogony",
+    "from": "uranus",
+    "to": "hekatoncheires",
+    "kind": "conflict",
+    "source": "hesiod-theogony",
+    "ref": "154–158",
+    "note": "Uranus hides his children inside the earth."
+  },
+  {
+    "id": "conflict-cronus-uranus-hesiod-theogony",
+    "from": "cronus",
+    "to": "uranus",
+    "kind": "conflict",
+    "source": "hesiod-theogony",
+    "ref": "154–182",
+    "note": "Cronus castrates Uranus with Gaia’s sickle."
+  },
+  {
+    "id": "alliance-gaia-cronus-hesiod-theogony",
+    "from": "gaia",
+    "to": "cronus",
+    "kind": "alliance",
+    "source": "hesiod-theogony",
+    "ref": "159–175",
+    "note": "Gaia makes the sickle and sets the ambush."
+  },
+  {
+    "id": "partner-oceanus-tethys-hesiod-theogony",
+    "from": "oceanus",
+    "to": "tethys",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "337"
+  },
+  {
+    "id": "partner-hyperion-theia-hesiod-theogony",
+    "from": "hyperion",
+    "to": "theia",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "371–374"
+  },
+  {
+    "id": "partner-coeus-phoebe-hesiod-theogony",
+    "from": "coeus",
+    "to": "phoebe",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "404"
+  },
+  {
+    "id": "partner-cronus-rhea-hesiod-theogony",
+    "from": "cronus",
+    "to": "rhea",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "453"
+  },
+  {
+    "id": "sibling-cronus-rhea-hesiod-theogony",
+    "from": "cronus",
+    "to": "rhea",
+    "kind": "sibling",
+    "source": "hesiod-theogony",
+    "ref": "133–138"
+  },
+  {
+    "id": "sibling-oceanus-tethys-hesiod-theogony",
+    "from": "oceanus",
+    "to": "tethys",
+    "kind": "sibling",
+    "source": "hesiod-theogony",
+    "ref": "133–136"
+  },
+  {
+    "id": "parent-coeus-leto-hesiod-theogony",
+    "from": "coeus",
+    "to": "leto",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "404–406"
+  },
+  {
+    "id": "parent-phoebe-leto-hesiod-theogony",
+    "from": "phoebe",
+    "to": "leto",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "404–406"
+  },
+  {
+    "id": "parent-oceanus-metis-hesiod-theogony",
+    "from": "oceanus",
+    "to": "metis",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "358"
+  },
+  {
+    "id": "parent-tethys-metis-hesiod-theogony",
+    "from": "tethys",
+    "to": "metis",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "358"
+  },
+  {
+    "id": "parent-oceanus-dione-hesiod-theogony",
+    "from": "oceanus",
+    "to": "dione",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "353",
+    "note": "Hesiod lists Dione among the Oceanids."
+  },
+  {
+    "id": "parent-tethys-dione-hesiod-theogony",
+    "from": "tethys",
+    "to": "dione",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "353",
+    "note": "Hesiod lists Dione among the Oceanids."
+  },
+  {
+    "id": "parent-gaia-dione-apollodorus",
+    "from": "gaia",
+    "to": "dione",
+    "kind": "parent",
+    "source": "apollodorus",
+    "ref": "1.1.3",
+    "note": "Apollodorus counts Dione among the Titans, children of Gaia and Uranus."
+  },
+  {
+    "id": "parent-uranus-dione-apollodorus",
+    "from": "uranus",
+    "to": "dione",
+    "kind": "parent",
+    "source": "apollodorus",
+    "ref": "1.1.3",
+    "note": "Apollodorus counts Dione among the Titans, children of Gaia and Uranus."
+  },
+  {
+    "id": "parent-iapetus-prometheus-hesiod-theogony",
+    "from": "iapetus",
+    "to": "prometheus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "507–511"
+  },
+  {
+    "id": "parent-iapetus-atlas-hesiod-theogony",
+    "from": "iapetus",
+    "to": "atlas",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "507–509"
+  },
+  {
+    "id": "sibling-prometheus-atlas-hesiod-theogony",
+    "from": "prometheus",
+    "to": "atlas",
+    "kind": "sibling",
+    "source": "hesiod-theogony",
+    "ref": "507–511"
+  },
+  {
+    "id": "parent-atlas-maia-hesiod-theogony",
+    "from": "atlas",
+    "to": "maia",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "938"
+  },
+  {
+    "id": "parent-atlas-calypso-homer-odyssey",
+    "from": "atlas",
+    "to": "calypso",
+    "kind": "parent",
+    "source": "homer-odyssey",
+    "ref": "1.52; 7.245"
+  },
+  {
+    "id": "parent-cronus-hestia-hesiod-theogony",
+    "from": "cronus",
+    "to": "hestia",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-rhea-hestia-hesiod-theogony",
+    "from": "rhea",
+    "to": "hestia",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-cronus-demeter-hesiod-theogony",
+    "from": "cronus",
+    "to": "demeter",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-rhea-demeter-hesiod-theogony",
+    "from": "rhea",
+    "to": "demeter",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-cronus-hera-hesiod-theogony",
+    "from": "cronus",
+    "to": "hera",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-rhea-hera-hesiod-theogony",
+    "from": "rhea",
+    "to": "hera",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-cronus-hades-hesiod-theogony",
+    "from": "cronus",
+    "to": "hades",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-rhea-hades-hesiod-theogony",
+    "from": "rhea",
+    "to": "hades",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-cronus-poseidon-hesiod-theogony",
+    "from": "cronus",
+    "to": "poseidon",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-rhea-poseidon-hesiod-theogony",
+    "from": "rhea",
+    "to": "poseidon",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-cronus-zeus-hesiod-theogony",
+    "from": "cronus",
+    "to": "zeus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "parent-rhea-zeus-hesiod-theogony",
+    "from": "rhea",
+    "to": "zeus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "sibling-zeus-poseidon-homer-iliad",
+    "from": "zeus",
+    "to": "poseidon",
+    "kind": "sibling",
+    "source": "homer-iliad",
+    "ref": "15.187–193",
+    "note": "The three brothers divide the world by lot."
+  },
+  {
+    "id": "sibling-zeus-hades-homer-iliad",
+    "from": "zeus",
+    "to": "hades",
+    "kind": "sibling",
+    "source": "homer-iliad",
+    "ref": "15.187–193",
+    "note": "The three brothers divide the world by lot."
+  },
+  {
+    "id": "sibling-poseidon-hades-homer-iliad",
+    "from": "poseidon",
+    "to": "hades",
+    "kind": "sibling",
+    "source": "homer-iliad",
+    "ref": "15.187–193"
+  },
+  {
+    "id": "sibling-zeus-hera-hesiod-theogony",
+    "from": "zeus",
+    "to": "hera",
+    "kind": "sibling",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "sibling-zeus-demeter-hesiod-theogony",
+    "from": "zeus",
+    "to": "demeter",
+    "kind": "sibling",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "sibling-hestia-hera-hesiod-theogony",
+    "from": "hestia",
+    "to": "hera",
+    "kind": "sibling",
+    "source": "hesiod-theogony",
+    "ref": "453–458"
+  },
+  {
+    "id": "conflict-cronus-zeus-hesiod-theogony",
+    "from": "cronus",
+    "to": "zeus",
+    "kind": "conflict",
+    "source": "hesiod-theogony",
+    "ref": "459–506, 617–735",
+    "note": "Cronus swallows his children; Zeus overthrows him."
+  },
+  {
+    "id": "alliance-rhea-zeus-hesiod-theogony",
+    "from": "rhea",
+    "to": "zeus",
+    "kind": "alliance",
+    "source": "hesiod-theogony",
+    "ref": "467–491",
+    "note": "Rhea hides the infant Zeus and gives Cronus a stone."
+  },
+  {
+    "id": "alliance-cyclopes-zeus-hesiod-theogony",
+    "from": "cyclopes",
+    "to": "zeus",
+    "kind": "alliance",
+    "source": "hesiod-theogony",
+    "ref": "501–506",
+    "note": "Freed by Zeus, they give him thunder and lightning."
+  },
+  {
+    "id": "alliance-hekatoncheires-zeus-hesiod-theogony",
+    "from": "hekatoncheires",
+    "to": "zeus",
+    "kind": "alliance",
+    "source": "hesiod-theogony",
+    "ref": "617–735",
+    "note": "Released by Zeus, they decide the Titanomachy."
+  },
+  {
+    "id": "conflict-zeus-typhon-hesiod-theogony",
+    "from": "zeus",
+    "to": "typhon",
+    "kind": "conflict",
+    "source": "hesiod-theogony",
+    "ref": "820–868"
+  },
+  {
+    "id": "conflict-zeus-prometheus-hesiod-theogony",
+    "from": "zeus",
+    "to": "prometheus",
+    "kind": "conflict",
+    "source": "hesiod-theogony",
+    "ref": "521–616",
+    "note": "The trick at Mecone and the theft of fire."
+  },
+  {
+    "id": "alliance-prometheus-zeus-aeschylus-pv",
+    "from": "prometheus",
+    "to": "zeus",
+    "kind": "alliance",
+    "source": "aeschylus-pv",
+    "ref": "199–224",
+    "note": "In Prometheus Bound, Prometheus sides with Zeus during the Titanomachy — a later dramatic version."
+  },
+  {
+    "id": "conflict-zeus-atlas-hesiod-theogony",
+    "from": "zeus",
+    "to": "atlas",
+    "kind": "conflict",
+    "source": "hesiod-theogony",
+    "ref": "517–520",
+    "note": "Zeus sentences Atlas to hold up the sky."
+  },
+  {
+    "id": "alliance-thetis-zeus-homer-iliad",
+    "from": "thetis",
+    "to": "zeus",
+    "kind": "alliance",
+    "source": "homer-iliad",
+    "ref": "1.396–406",
+    "note": "Thetis summons Briareus to save Zeus from a revolt."
+  },
+  {
+    "id": "partner-zeus-metis-hesiod-theogony",
+    "from": "zeus",
+    "to": "metis",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "886–890"
+  },
+  {
+    "id": "partner-zeus-themis-hesiod-theogony",
+    "from": "zeus",
+    "to": "themis",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "901"
+  },
+  {
+    "id": "partner-zeus-demeter-hesiod-theogony",
+    "from": "zeus",
+    "to": "demeter",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "912"
+  },
+  {
+    "id": "partner-zeus-mnemosyne-hesiod-theogony",
+    "from": "zeus",
+    "to": "mnemosyne",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "915"
+  },
+  {
+    "id": "partner-zeus-leto-hesiod-theogony",
+    "from": "zeus",
+    "to": "leto",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "918"
+  },
+  {
+    "id": "partner-zeus-hera-hesiod-theogony",
+    "from": "zeus",
+    "to": "hera",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "921"
+  },
+  {
+    "id": "partner-zeus-maia-hesiod-theogony",
+    "from": "zeus",
+    "to": "maia",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "938"
+  },
+  {
+    "id": "partner-zeus-semele-hesiod-theogony",
+    "from": "zeus",
+    "to": "semele",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "940"
+  },
+  {
+    "id": "partner-zeus-alcmene-hesiod-theogony",
+    "from": "zeus",
+    "to": "alcmene",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "943"
+  },
+  {
+    "id": "partner-zeus-dione-homer-iliad",
+    "from": "zeus",
+    "to": "dione",
+    "kind": "partner",
+    "source": "homer-iliad",
+    "ref": "5.370–372"
+  },
+  {
+    "id": "parent-zeus-athena-hesiod-theogony",
+    "from": "zeus",
+    "to": "athena",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "886–900, 924",
+    "note": "Born from Zeus’ head after he swallowed the pregnant Metis."
+  },
+  {
+    "id": "parent-metis-athena-hesiod-theogony",
+    "from": "metis",
+    "to": "athena",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "886–900",
+    "note": "Hesiod: Metis is Athena’s mother."
+  },
+  {
+    "id": "parent-zeus-athena-homer-iliad",
+    "from": "zeus",
+    "to": "athena",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "5.875–880",
+    "note": "Ares complains that Zeus begot Athena himself — no mother named."
+  },
+  {
+    "id": "parent-zeus-apollo-hesiod-theogony",
+    "from": "zeus",
+    "to": "apollo",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "918–920"
+  },
+  {
+    "id": "parent-leto-apollo-hesiod-theogony",
+    "from": "leto",
+    "to": "apollo",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "918–920"
+  },
+  {
+    "id": "parent-zeus-artemis-hesiod-theogony",
+    "from": "zeus",
+    "to": "artemis",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "918–920"
+  },
+  {
+    "id": "parent-leto-artemis-hesiod-theogony",
+    "from": "leto",
+    "to": "artemis",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "918–920"
+  },
+  {
+    "id": "sibling-apollo-artemis-hh-apollo",
+    "from": "apollo",
+    "to": "artemis",
+    "kind": "sibling",
+    "source": "hh-apollo",
+    "ref": "14–18"
+  },
+  {
+    "id": "parent-zeus-ares-hesiod-theogony",
+    "from": "zeus",
+    "to": "ares",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "921–923"
+  },
+  {
+    "id": "parent-hera-ares-hesiod-theogony",
+    "from": "hera",
+    "to": "ares",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "921–923"
+  },
+  {
+    "id": "parent-hera-hephaestus-hesiod-theogony",
+    "from": "hera",
+    "to": "hephaestus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "927–929",
+    "note": "Hesiod: Hera bears Hephaestus alone, in anger at Zeus."
+  },
+  {
+    "id": "parent-hera-hephaestus-homer-iliad",
+    "from": "hera",
+    "to": "hephaestus",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "1.577–579",
+    "note": "Homer: Hephaestus calls Hera his mother and Zeus his father."
+  },
+  {
+    "id": "parent-zeus-hephaestus-homer-iliad",
+    "from": "zeus",
+    "to": "hephaestus",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "1.577–579",
+    "note": "Homer: Zeus is Hephaestus’ father."
+  },
+  {
+    "id": "parent-zeus-hephaestus-homer-odyssey",
+    "from": "zeus",
+    "to": "hephaestus",
+    "kind": "parent",
+    "source": "homer-odyssey",
+    "ref": "8.312",
+    "note": "Hephaestus blames \"my parents\" for his lameness."
+  },
+  {
+    "id": "parent-hera-hephaestus-homer-odyssey",
+    "from": "hera",
+    "to": "hephaestus",
+    "kind": "parent",
+    "source": "homer-odyssey",
+    "ref": "8.312"
+  },
+  {
+    "id": "parent-zeus-hermes-hesiod-theogony",
+    "from": "zeus",
+    "to": "hermes",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "938–939"
+  },
+  {
+    "id": "parent-maia-hermes-hesiod-theogony",
+    "from": "maia",
+    "to": "hermes",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "938–939"
+  },
+  {
+    "id": "parent-zeus-hermes-hh-hermes",
+    "from": "zeus",
+    "to": "hermes",
+    "kind": "parent",
+    "source": "hh-hermes",
+    "ref": "1–19"
+  },
+  {
+    "id": "parent-maia-hermes-hh-hermes",
+    "from": "maia",
+    "to": "hermes",
+    "kind": "parent",
+    "source": "hh-hermes",
+    "ref": "1–19"
+  },
+  {
+    "id": "parent-zeus-dionysus-hesiod-theogony",
+    "from": "zeus",
+    "to": "dionysus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "940–942"
+  },
+  {
+    "id": "parent-semele-dionysus-hesiod-theogony",
+    "from": "semele",
+    "to": "dionysus",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "940–942"
+  },
+  {
+    "id": "parent-zeus-dionysus-diodorus",
+    "from": "zeus",
+    "to": "dionysus",
+    "kind": "parent",
+    "source": "diodorus",
+    "ref": "4.4.1",
+    "note": "An older Dionysus, son of Zeus and Persephone (the Orphic tradition reported by Diodorus)."
+  },
+  {
+    "id": "parent-persephone-dionysus-diodorus",
+    "from": "persephone",
+    "to": "dionysus",
+    "kind": "parent",
+    "source": "diodorus",
+    "ref": "4.4.1",
+    "note": "Orphic tradition reported by Diodorus."
+  },
+  {
+    "id": "parent-zeus-persephone-hesiod-theogony",
+    "from": "zeus",
+    "to": "persephone",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "912–913"
+  },
+  {
+    "id": "parent-demeter-persephone-hesiod-theogony",
+    "from": "demeter",
+    "to": "persephone",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "912–913"
+  },
+  {
+    "id": "parent-zeus-heracles-hesiod-theogony",
+    "from": "zeus",
+    "to": "heracles",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "943–944"
+  },
+  {
+    "id": "parent-alcmene-heracles-hesiod-theogony",
+    "from": "alcmene",
+    "to": "heracles",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "943–944"
+  },
+  {
+    "id": "parent-zeus-helen-homer-iliad",
+    "from": "zeus",
+    "to": "helen",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "3.418",
+    "note": "Homer calls Helen daughter of Zeus."
+  },
+  {
+    "id": "parent-uranus-aphrodite-hesiod-theogony",
+    "from": "uranus",
+    "to": "aphrodite",
+    "kind": "parent",
+    "source": "hesiod-theogony",
+    "ref": "188–206",
+    "note": "Hesiod: Aphrodite rises from the foam around Uranus’ severed genitals."
+  },
+  {
+    "id": "parent-zeus-aphrodite-homer-iliad",
+    "from": "zeus",
+    "to": "aphrodite",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "5.370–372",
+    "note": "Homer: Aphrodite is the daughter of Zeus and Dione."
+  },
+  {
+    "id": "parent-dione-aphrodite-homer-iliad",
+    "from": "dione",
+    "to": "aphrodite",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "5.370–372",
+    "note": "Homer: Dione is Aphrodite’s mother."
+  },
+  {
+    "id": "parent-aphrodite-eros-simonides-575",
+    "from": "aphrodite",
+    "to": "eros",
+    "kind": "parent",
+    "source": "simonides-575",
+    "ref": "575",
+    "note": "A later tradition: Eros as child of Aphrodite and Ares. Hesiod makes Eros primordial."
+  },
+  {
+    "id": "parent-ares-eros-simonides-575",
+    "from": "ares",
+    "to": "eros",
+    "kind": "parent",
+    "source": "simonides-575",
+    "ref": "575"
+  },
+  {
+    "id": "partner-hephaestus-aphrodite-homer-odyssey",
+    "from": "hephaestus",
+    "to": "aphrodite",
+    "kind": "partner",
+    "source": "homer-odyssey",
+    "ref": "8.266–270",
+    "note": "In the Iliad (18.382–383) his wife is Charis instead."
+  },
+  {
+    "id": "partner-ares-aphrodite-homer-odyssey",
+    "from": "ares",
+    "to": "aphrodite",
+    "kind": "partner",
+    "source": "homer-odyssey",
+    "ref": "8.266–366",
+    "note": "The adultery exposed by Hephaestus’ net."
+  },
+  {
+    "id": "partner-ares-aphrodite-hesiod-theogony",
+    "from": "ares",
+    "to": "aphrodite",
+    "kind": "partner",
+    "source": "hesiod-theogony",
+    "ref": "933–937",
+    "note": "Hesiod: Aphrodite bears Ares Fear, Terror and Harmonia."
+  },
+  {
+    "id": "conflict-hephaestus-ares-homer-odyssey",
+    "from": "hephaestus",
+    "to": "ares",
+    "kind": "conflict",
+    "source": "homer-odyssey",
+    "ref": "8.266–366"
+  },
+  {
+    "id": "partner-hades-persephone-hh-demeter",
+    "from": "hades",
+    "to": "persephone",
+    "kind": "partner",
+    "source": "hh-demeter",
+    "ref": "1–39"
+  },
+  {
+    "id": "conflict-demeter-hades-hh-demeter",
+    "from": "demeter",
+    "to": "hades",
+    "kind": "conflict",
+    "source": "hh-demeter",
+    "ref": "305–413",
+    "note": "Demeter withholds the harvest until Persephone is returned."
+  },
+  {
+    "id": "conflict-athena-poseidon-apollodorus",
+    "from": "athena",
+    "to": "poseidon",
+    "kind": "conflict",
+    "source": "apollodorus",
+    "ref": "3.14.1",
+    "note": "Their contest for Athens."
+  },
+  {
+    "id": "conflict-athena-ares-homer-iliad",
+    "from": "athena",
+    "to": "ares",
+    "kind": "conflict",
+    "source": "homer-iliad",
+    "ref": "21.391–414"
+  },
+  {
+    "id": "conflict-hera-heracles-homer-iliad",
+    "from": "hera",
+    "to": "heracles",
+    "kind": "conflict",
+    "source": "homer-iliad",
+    "ref": "19.95–133",
+    "note": "Hera delays his birth so Eurystheus rules."
+  },
+  {
+    "id": "alliance-athena-heracles-homer-iliad",
+    "from": "athena",
+    "to": "heracles",
+    "kind": "alliance",
+    "source": "homer-iliad",
+    "ref": "8.362–369"
+  },
+  {
+    "id": "conflict-hermes-apollo-hh-hermes",
+    "from": "hermes",
+    "to": "apollo",
+    "kind": "conflict",
+    "source": "hh-hermes",
+    "ref": "68–396",
+    "note": "The theft of Apollo’s cattle."
+  },
+  {
+    "id": "alliance-hermes-apollo-hh-hermes",
+    "from": "hermes",
+    "to": "apollo",
+    "kind": "alliance",
+    "source": "hh-hermes",
+    "ref": "418–512",
+    "note": "Reconciled by the gift of the lyre."
+  },
+  {
+    "id": "conflict-apollo-achilles-homer-iliad",
+    "from": "apollo",
+    "to": "achilles",
+    "kind": "conflict",
+    "source": "homer-iliad",
+    "ref": "22.7–20; 22.359–360"
+  },
+  {
+    "id": "partner-peleus-thetis-homer-iliad",
+    "from": "peleus",
+    "to": "thetis",
+    "kind": "partner",
+    "source": "homer-iliad",
+    "ref": "18.432–434"
+  },
+  {
+    "id": "parent-peleus-achilles-homer-iliad",
+    "from": "peleus",
+    "to": "achilles",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "1.1; 18.84–87"
+  },
+  {
+    "id": "parent-thetis-achilles-homer-iliad",
+    "from": "thetis",
+    "to": "achilles",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "1.348–359"
+  },
+  {
+    "id": "parent-priam-paris-homer-iliad",
+    "from": "priam",
+    "to": "paris",
+    "kind": "parent",
+    "source": "homer-iliad",
+    "ref": "3.15–75; 6.280–285"
+  },
+  {
+    "id": "partner-paris-helen-homer-iliad",
+    "from": "paris",
+    "to": "helen",
+    "kind": "partner",
+    "source": "homer-iliad",
+    "ref": "3.441–448"
+  },
+  {
+    "id": "alliance-aphrodite-paris-homer-iliad",
+    "from": "aphrodite",
+    "to": "paris",
+    "kind": "alliance",
+    "source": "homer-iliad",
+    "ref": "3.373–382",
+    "note": "Aphrodite snatches Paris from his duel with Menelaus."
+  },
+  {
+    "id": "conflict-achilles-agamemnon-homer-iliad",
+    "from": "achilles",
+    "to": "agamemnon",
+    "kind": "conflict",
+    "source": "homer-iliad",
+    "ref": "1.101–303"
+  },
+  {
+    "id": "alliance-hermes-priam-homer-iliad",
+    "from": "hermes",
+    "to": "priam",
+    "kind": "alliance",
+    "source": "homer-iliad",
+    "ref": "24.334–467",
+    "note": "Hermes guides Priam to Achilles’ hut."
+  },
+  {
+    "id": "alliance-hera-jason-homer-odyssey",
+    "from": "hera",
+    "to": "jason",
+    "kind": "alliance",
+    "source": "homer-odyssey",
+    "ref": "12.72",
+    "note": "The Argo passes the Clashing Rocks \"because Jason was dear to Hera\"."
+  },
+  {
+    "id": "alliance-peleus-jason-apollonius",
+    "from": "peleus",
+    "to": "jason",
+    "kind": "alliance",
+    "source": "apollonius",
+    "ref": "1.94",
+    "note": "Peleus sails among the Argonauts."
+  },
+  {
+    "id": "partner-odysseus-penelope-homer-odyssey",
+    "from": "odysseus",
+    "to": "penelope",
+    "kind": "partner",
+    "source": "homer-odyssey",
+    "ref": "23.173–230"
+  },
+  {
+    "id": "partner-odysseus-calypso-homer-odyssey",
+    "from": "odysseus",
+    "to": "calypso",
+    "kind": "partner",
+    "source": "homer-odyssey",
+    "ref": "5.151–227"
+  },
+  {
+    "id": "partner-odysseus-circe-homer-odyssey",
+    "from": "odysseus",
+    "to": "circe",
+    "kind": "partner",
+    "source": "homer-odyssey",
+    "ref": "10.333–347"
+  },
+  {
+    "id": "alliance-athena-odysseus-homer-odyssey",
+    "from": "athena",
+    "to": "odysseus",
+    "kind": "alliance",
+    "source": "homer-odyssey",
+    "ref": "1.44–95; 13.287–440"
+  },
+  {
+    "id": "alliance-hermes-odysseus-homer-odyssey",
+    "from": "hermes",
+    "to": "odysseus",
+    "kind": "alliance",
+    "source": "homer-odyssey",
+    "ref": "10.275–308",
+    "note": "Hermes gives Odysseus the herb moly."
+  },
+  {
+    "id": "conflict-poseidon-odysseus-homer-odyssey",
+    "from": "poseidon",
+    "to": "odysseus",
+    "kind": "conflict",
+    "source": "homer-odyssey",
+    "ref": "1.68–75"
+  },
+  {
+    "id": "conflict-odysseus-polyphemus-homer-odyssey",
+    "from": "odysseus",
+    "to": "polyphemus",
+    "kind": "conflict",
+    "source": "homer-odyssey",
+    "ref": "9.105–566"
+  },
+  {
+    "id": "parent-poseidon-polyphemus-homer-odyssey",
+    "from": "poseidon",
+    "to": "polyphemus",
+    "kind": "parent",
+    "source": "homer-odyssey",
+    "ref": "1.68–73"
+  },
+  {
+    "id": "alliance-odysseus-agamemnon-homer-iliad",
+    "from": "odysseus",
+    "to": "agamemnon",
+    "kind": "alliance",
+    "source": "homer-iliad",
+    "ref": "9.169–181",
+    "note": "Odysseus serves on Agamemnon’s embassy to Achilles."
+  }
+]

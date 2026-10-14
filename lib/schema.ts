@@ -377,7 +377,7 @@ export function integrityErrors(d: Dataset): string[] {
   }
 
   for (const s of d.learning) {
-    if (s.focus && !(entityIds.has(s.focus) || stageIds.has(s.focus) || locationIds.has(s.focus) || mythicEventIds.has(s.focus) || histIds.has(s.focus)))
+    if (s.focus && !(entityIds.has(s.focus) || ids(d.attestations).has(s.focus) || stageIds.has(s.focus) || locationIds.has(s.focus) || mythicEventIds.has(s.focus) || histIds.has(s.focus)))
       errors.push(`learning ${s.id}: unknown focus "${s.focus}"`);
   }
 

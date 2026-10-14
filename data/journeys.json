@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": "odysseus-return", "name": "The return of Odysseus", "hero": "odysseus", "mythicEvent": "return-of-odysseus", "source": "homer-odyssey",
+    "legs": [
+      { "from": "troy", "to": "ismarus", "certainty": "traditionally_identified", "label": "Troy → the Cicones at Ismarus", "ref": "Od. 9.39–61",
+        "note": "A real Thracian people; the raid costs six men from each ship." },
+      { "from": "ismarus", "to": "cape-malea", "certainty": "verified", "label": "Ismarus → Cape Malea", "ref": "Od. 9.62–81",
+        "note": "The last securely known point. From here a north wind drives the fleet into unknown seas for nine days." },
+      { "from": "cape-malea", "to": "lotophagi", "certainty": "debated", "label": "Malea → the Lotus-Eaters", "ref": "Od. 9.82–104",
+        "note": "Ancient writers placed them in North Africa (Djerba); the poem gives no geography." },
+      { "from": "lotophagi", "to": "cyclopes-land", "certainty": "debated", "label": "Lotus-Eaters → land of the Cyclopes", "ref": "Od. 9.105–566",
+        "note": "Sicily near Etna is the classic identification (Thucydides reports it as tradition)." },
+      { "from": "cyclopes-land", "to": "aeolia", "certainty": "debated", "label": "Cyclopes → Aeolus' island", "ref": "Od. 10.1–76",
+        "note": "Named the Aeolian Islands in antiquity. In the poem the released winds blow them almost to Ithaca and back again." },
+      { "from": "aeolia", "to": "laestrygonia", "certainty": "debated", "label": "Aeolia → the Laestrygonians", "ref": "Od. 10.80–132",
+        "note": "Competing identifications (Sicily, Formiae, Bonifacio). Eleven of twelve ships are lost." },
+      { "from": "laestrygonia", "to": "aeaea", "certainty": "mythical", "label": "Laestrygonians → Circe's Aeaea", "ref": "Od. 10.133–574",
+        "note": "The poem locates Aeaea in the east, by the house of Dawn; ancient Italians pointed to Monte Circeo. Shown on the symbolic map." },
+      { "from": "aeaea", "to": "underworld", "certainty": "mythical", "label": "Aeaea → the edge of Ocean and the dead", "ref": "Od. 11",
+        "note": "Odysseus sails to the streams of Ocean to consult Tiresias. Later writers linked the scene with Lake Avernus or the Acheron — those are receptions, not the poem's geography." },
+      { "from": "underworld", "to": "aeaea", "certainty": "mythical", "label": "Return to Aeaea", "ref": "Od. 12.1–15",
+        "note": "They return to Circe to bury Elpenor and receive directions." },
+      { "from": "aeaea", "to": "sirens", "certainty": "debated", "label": "Aeaea → the Sirens", "ref": "Od. 12.39–54, 12.165–200",
+        "note": "Strabo knew islets off Sorrento as the Sirenussae." },
+      { "from": "sirens", "to": "scylla-charybdis", "certainty": "traditionally_identified", "label": "Sirens → Scylla and Charybdis", "ref": "Od. 12.73–259",
+        "note": "The Strait of Messina, identified since Thucydides — the firmest identification of the wanderings." },
+      { "from": "scylla-charybdis", "to": "thrinacia", "certainty": "debated", "label": "→ Thrinacia, the Sun's cattle", "ref": "Od. 12.260–419",
+        "note": "Equated with Sicily (Trinacria). The crew eat the cattle and Zeus destroys the ship." },
+      { "from": "thrinacia", "to": "ogygia", "certainty": "mythical", "label": "Shipwreck → Calypso's Ogygia", "ref": "Od. 12.420–450; 5",
+        "note": "Odysseus drifts nine days, back past Charybdis, to Ogygia, 'the navel of the sea'. He stays seven years." },
+      { "from": "ogygia", "to": "scheria", "certainty": "traditionally_identified", "label": "Ogygia → Scheria of the Phaeacians", "ref": "Od. 5.262–493",
+        "note": "Seventeen days on a raft, then Poseidon's storm. Scheria was identified with Corfu in antiquity." },
+      { "from": "scheria", "to": "ithaca", "certainty": "traditionally_identified", "label": "Scheria → home to Ithaca", "ref": "Od. 13.70–125",
+        "note": "Carried home asleep by a Phaeacian ship. Modern Ithaki is the traditional island; Kefalonia's Paliki peninsula is a modern alternative." }
+    ]
+  }
+]

@@ -1,1 +1,170 @@
-[]
+[
+  {
+    "id": "att-zeus-pylos", "frame": "attestation", "kind": "first_attestation",
+    "mythicRef": "zeus", "historicalRef": "linear-b-pylos",
+    "label": "Zeus named on Pylos tablets",
+    "note": "'di-we' (to Zeus) appears among recipients of offerings on PY Tn 316. This is the name of a god receiving cult, not evidence for the myths of Cronus or the Titanomachy.",
+    "sources": ["ventris-chadwick", "chadwick-1976"]
+  },
+  {
+    "id": "att-hera-pylos", "frame": "attestation", "kind": "first_attestation",
+    "mythicRef": "hera", "historicalRef": "linear-b-pylos",
+    "label": "Hera named beside Zeus at Pylos",
+    "note": "'e-ra' receives a gold vessel next to Zeus on PY Tn 316. Whether she was already Zeus' consort is not stated.",
+    "sources": ["ventris-chadwick"]
+  },
+  {
+    "id": "att-poseidon-pylos", "frame": "attestation", "kind": "first_attestation",
+    "mythicRef": "poseidon", "historicalRef": "linear-b-pylos",
+    "label": "Poseidon prominent at Pylos",
+    "note": "'po-se-da-o' is among the most frequently named deities in the Pylos archive, suggesting he mattered more there than his later Homeric role implies.",
+    "sources": ["ventris-chadwick", "chadwick-1976"]
+  },
+  {
+    "id": "att-hermes-pylos", "frame": "attestation", "kind": "first_attestation",
+    "mythicRef": "hermes", "historicalRef": "linear-b-pylos",
+    "label": "Hermes on Pylos Tn 316",
+    "note": "'e-ma-a2' is read as Hermes. His roles as messenger and trickster are only attested much later, in Homer and the Hymn.",
+    "sources": ["ventris-chadwick"]
+  },
+  {
+    "id": "att-dionysus-pylos", "frame": "attestation", "kind": "first_attestation",
+    "mythicRef": "dionysus", "historicalRef": "linear-b-pylos",
+    "label": "Dionysus' name in Linear B",
+    "note": "'di-wo-nu-so-jo' (of Dionysus) on Pylos tablets overturned the old view that Dionysus was a late foreign arrival. Nothing in the tablets connects him to wine or Semele.",
+    "sources": ["ventris-chadwick", "burkert"]
+  },
+  {
+    "id": "att-athena-knossos", "frame": "attestation", "kind": "first_attestation",
+    "mythicRef": "athena", "historicalRef": "linear-b-knossos",
+    "label": "'Mistress of Atana' at Knossos",
+    "note": "KN V 52 names 'a-ta-na-po-ti-ni-ja'. Most scholars connect it with Athena, but it may name a place rather than a goddess. Treat as probable, not certain.",
+    "sources": ["ventris-chadwick"]
+  },
+  {
+    "id": "att-theogony-origins", "frame": "attestation", "kind": "literary_codification",
+    "mythicRef": "primordial-origins", "historicalRef": "hesiod-theogony-composed",
+    "label": "Cosmic origins first written down",
+    "note": "Hesiod's Theogony is the earliest surviving text to tell how Chaos, Gaia and the first powers came to be. The cosmogony is recorded here — it does not 'happen' here.",
+    "sources": ["west-theogony"]
+  },
+  {
+    "id": "att-theogony-succession", "frame": "attestation", "kind": "literary_codification",
+    "mythicRef": "castration-of-uranus", "historicalRef": "hesiod-theogony-composed",
+    "label": "The succession myth in Hesiod",
+    "note": "The overthrow of Uranus by Cronus is first recorded in the Theogony. Close Hurrian-Hittite parallels show that the story pattern existed in the Near East long before Hesiod.",
+    "sources": ["west-theogony", "burkert"]
+  },
+  {
+    "id": "att-titanomachy-hesiod", "frame": "attestation", "kind": "literary_codification",
+    "mythicRef": "titanomachy", "historicalRef": "hesiod-theogony-composed",
+    "label": "The Titanomachy in Hesiod",
+    "note": "The earliest full narrative of the war of the Titans. A lost epic called the Titanomachy also existed, but only fragments survive.",
+    "sources": ["west-theogony"]
+  },
+  {
+    "id": "att-trojan-war-homer", "frame": "attestation", "kind": "literary_codification",
+    "mythicRef": "trojan-war-myth", "historicalRef": "homeric-epics",
+    "label": "The Trojan War in the Iliad",
+    "note": "The Iliad is the earliest surviving telling of the war. Its world mixes details from several centuries, so it cannot be read as a report from any single date.",
+    "sources": ["janko-1982", "latacz-2004"]
+  },
+  {
+    "id": "att-trojan-war-hisarlik", "frame": "attestation", "kind": "cult_evidence",
+    "mythicRef": "trojan-war-myth", "historicalRef": "troy-destruction-layers",
+    "label": "The hinge: Troy myth and Hisarlik's ruins",
+    "note": "This bridge marks the deliberate hinge of MYTHOS. Hisarlik had a large Late Bronze Age city that was destroyed, and Greeks later treated the site as Troy. The archaeology is real; the war of the Iliad is myth. The link records a place where tradition and evidence meet, not proof that the story happened.",
+    "sources": ["korfmann-2004", "latacz-2004", "cline-1177"]
+  },
+  {
+    "id": "att-odyssey-homer", "frame": "attestation", "kind": "literary_codification",
+    "mythicRef": "return-of-odysseus", "historicalRef": "homeric-epics",
+    "label": "Odysseus' return in the Odyssey",
+    "note": "The Odyssey is the first and main record of the wanderings. Every later map of the voyage is an interpretation of this text.",
+    "sources": ["janko-1982"]
+  },
+  {
+    "id": "att-persephone-hymn", "frame": "attestation", "kind": "literary_codification",
+    "mythicRef": "abduction-of-persephone", "historicalRef": "hymn-to-demeter",
+    "label": "Persephone's abduction in the Hymn to Demeter",
+    "note": "Hesiod mentions the abduction in one line; the Homeric Hymn gives the full story and ties it to Eleusis.",
+    "sources": ["janko-1982"]
+  },
+  {
+    "id": "att-demeter-eleusis", "frame": "attestation", "kind": "cult_evidence",
+    "mythicRef": "demeter", "historicalRef": "eleusis-telesterion",
+    "label": "Demeter's Mysteries built in stone",
+    "note": "The Telesterion is physical evidence of the Mysteries. What initiates experienced remained secret, and the myth's relation to the rite is debated.",
+    "sources": ["mylonas-1961"]
+  },
+  {
+    "id": "att-apollo-delphi", "frame": "attestation", "kind": "cult_evidence",
+    "mythicRef": "apollo-at-pytho", "historicalRef": "delphi-sanctuary",
+    "label": "Apollo's oracle, in myth and in the ground",
+    "note": "The myth of Apollo killing the serpent at Pytho is recorded in the Hymn to Apollo; the sanctuary's growth is visible archaeologically. They are related but separate kinds of evidence.",
+    "sources": ["morgan-1990"]
+  },
+  {
+    "id": "att-apollo-hymn", "frame": "attestation", "kind": "literary_codification",
+    "mythicRef": "birth-of-apollo-artemis", "historicalRef": "hymn-to-apollo",
+    "label": "Birth on Delos in the Hymn to Apollo",
+    "note": "The Hymn to Apollo is the earliest full account of Leto's labour on Delos.",
+    "sources": ["janko-1982"]
+  },
+  {
+    "id": "att-zeus-olympia", "frame": "attestation", "kind": "cult_evidence",
+    "mythicRef": "zeus", "historicalRef": "olympia-early-cult",
+    "label": "Offerings at Olympia",
+    "note": "Early votives at Olympia mark the beginnings of the sanctuary later dedicated to Zeus. The earliest finds do not name the god.",
+    "sources": ["morgan-1990"]
+  },
+  {
+    "id": "att-athena-parthenon", "frame": "attestation", "kind": "cult_evidence",
+    "mythicRef": "birth-of-athena", "historicalRef": "parthenon",
+    "label": "Athena's birth on the Parthenon pediment",
+    "note": "The east pediment showed Athena's birth from Zeus' head: a myth already told by Hesiod, displayed in civic cult art.",
+    "sources": ["pausanias", "parker-1996"]
+  },
+  {
+    "id": "att-olympians-herodotus", "frame": "attestation", "kind": "reception",
+    "mythicRef": "olympian-age", "historicalRef": "herodotus-histories",
+    "label": "Herodotus: poets made the pantheon",
+    "note": "Herodotus credits Homer and Hesiod with fixing the gods' genealogies and names — an ancient view that the Olympian order was codified by poets.",
+    "sources": ["herodotus"]
+  },
+  {
+    "id": "att-zeus-ammon", "frame": "attestation", "kind": "syncretism",
+    "mythicRef": "zeus", "historicalRef": "alexander-siwa",
+    "label": "Zeus Ammon: an identification, not an identity",
+    "note": "Greeks called the Egyptian god Amun 'Zeus Ammon'. This is interpretation by worshippers — two distinct gods with distinct cults were linked, not shown to be the same.",
+    "sources": ["arrian", "burkert"]
+  },
+  {
+    "id": "att-zeus-capitoline", "frame": "attestation", "kind": "syncretism",
+    "mythicRef": "zeus", "historicalRef": "capitoline-temple",
+    "label": "Jupiter on the Capitol (interpretatio)",
+    "note": "Roman Jupiter shares an Indo-European name origin with Zeus and was equated with him by later writers. The Capitoline cult is Roman; MYTHOS shows the link as interpretatio, not identity.",
+    "sources": ["beard-north-price"]
+  },
+  {
+    "id": "att-twelve-rome", "frame": "attestation", "kind": "syncretism",
+    "mythicRef": "olympian-age", "historicalRef": "lectisternium-217",
+    "label": "Rome pairs twelve gods on the Greek model",
+    "note": "The lectisternium of twelve gods imitates the Greek Twelve, pairing Roman gods with Greek counterparts. This is a Roman choice of equivalences, not evidence the gods were originally the same.",
+    "sources": ["livy", "beard-north-price"]
+  },
+  {
+    "id": "att-genealogy-apollodorus", "frame": "attestation", "kind": "reception",
+    "mythicRef": "primordial-generations", "historicalRef": "apollodorus-bibliotheca",
+    "label": "Genealogies systematised in the Bibliotheca",
+    "note": "The Bibliotheca turns many competing accounts into one reference sequence — useful, but a late compilation, not an original source.",
+    "sources": ["gantz-1993"]
+  },
+  {
+    "id": "att-olympians-theodosius", "frame": "attestation", "kind": "reception",
+    "mythicRef": "olympian-age", "historicalRef": "theodosian-edicts",
+    "label": "End of public cult, survival of myth",
+    "note": "The edicts end the legal public worship of the Olympians. The myths survive as literature and art: the gods leave the temples but not the stories.",
+    "sources": ["codex-theodosianus"]
+  }
+]

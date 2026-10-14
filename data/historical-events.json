@@ -1,1 +1,180 @@
-[]
+[
+  {
+    "id": "knossos-neopalatial", "frame": "historical", "name": "Neopalatial Knossos at its height", "period": "minoan-palatial",
+    "dateRange": { "start": 1700, "end": 1450, "era": "BCE" }, "approximate": true, "confidence": "high", "evidenceType": "archaeological",
+    "summary": "The rebuilt palace at Knossos is the largest Minoan centre, with frescoes, storerooms and shrines. Its religion — goddess figures, bull-leaping, peak sanctuaries — is visible in images but cannot be read.",
+    "uncertainty": "Minoan Linear A is undeciphered, so Minoan god names are unknown. Links to later Greek myth (Minos, the Labyrinth) are interpretations, not attestations.",
+    "sources": ["evans-pom", "dickinson-1994"]
+  },
+  {
+    "id": "linear-b-knossos", "frame": "historical", "name": "Linear B archive at Knossos", "period": "mycenaean",
+    "dateRange": { "start": 1400, "end": 1350, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "epigraphic",
+    "summary": "Clay tablets in Linear B — an early form of Greek — record offerings to deities, including 'a-ta-na-po-ti-ni-ja' (Mistress of Atana) and 'e-ri-nu' (Erinys).",
+    "uncertainty": "The date of the destruction that baked the Knossos tablets is disputed; some scholars place it considerably later. The reading of 'Atana' as Athena is probable but not certain.",
+    "sources": ["ventris-chadwick", "chadwick-1976"], "sourceRefs": { "ventris-chadwick": "KN V 52" }
+  },
+  {
+    "id": "mycenae-citadel", "frame": "historical", "name": "Mycenae's Lion Gate and citadel walls", "period": "mycenaean",
+    "dateRange": { "start": 1300, "end": 1200, "era": "BCE" }, "approximate": true, "confidence": "high", "evidenceType": "archaeological",
+    "summary": "The fortified citadel of Mycenae, with its Cyclopean walls and Lion Gate, is the archetypal Mycenaean palace centre — the place later poets made Agamemnon's capital.",
+    "uncertainty": "No text from the site names a king Agamemnon. The association is a later poetic one.",
+    "sources": ["dickinson-1994"]
+  },
+  {
+    "id": "linear-b-pylos", "frame": "historical", "name": "Linear B tablets at Pylos name the gods", "period": "mycenaean",
+    "dateRange": { "start": 1200, "end": 1180, "era": "BCE" }, "approximate": true, "confidence": "high", "evidenceType": "epigraphic",
+    "summary": "Tablets baked in the fire that destroyed the Palace of Nestor record offerings to Zeus (di-we), Hera (e-ra), Hermes (e-ma-a2), Poseidon (po-se-da-o) and Dionysus (di-wo-nu-so-jo), among others.",
+    "uncertainty": "The tablets give names and offerings, not myths. That these gods had the same stories or roles as in Homer cannot be assumed.",
+    "sources": ["ventris-chadwick", "chadwick-1976"], "sourceRefs": { "ventris-chadwick": "PY Tn 316; PY Xa 102" }
+  },
+  {
+    "id": "troy-destruction-layers", "frame": "historical", "name": "Destruction layers at Hisarlik (Troy VI–VIIa)", "period": "mycenaean",
+    "dateRange": { "start": 1300, "end": 1180, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "archaeological",
+    "summary": "The Bronze Age city at Hisarlik in north-west Anatolia was damaged (Troy VIh) and later destroyed by fire with signs of conflict (Troy VIIa). Hittite texts mention a city called Wilusa, widely identified with (W)ilios.",
+    "uncertainty": "Archaeology shows a destroyed Late Bronze Age city. It does not show who destroyed it, or that the Iliad's war happened. Earthquake, raiding and wider collapse are all proposed causes.",
+    "sources": ["korfmann-2004", "latacz-2004", "cline-1177"]
+  },
+  {
+    "id": "bronze-age-collapse", "frame": "historical", "name": "Collapse of the Mycenaean palaces", "period": "collapse-early-iron",
+    "dateRange": { "start": 1200, "end": 1100, "era": "BCE" }, "approximate": true, "confidence": "high", "evidenceType": "archaeological",
+    "summary": "Across the eastern Mediterranean, palace systems fall. In Greece Linear B writing disappears and will not be replaced for several centuries.",
+    "uncertainty": "Causes are debated: drought, earthquakes, systems failure, migration and raiding (the 'Sea Peoples') probably combined.",
+    "sources": ["cline-1177", "dickinson-1994"]
+  },
+  {
+    "id": "lefkandi-heroon", "frame": "historical", "name": "The Lefkandi 'heroon' burial", "period": "collapse-early-iron",
+    "dateRange": { "start": 960, "end": 940, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "archaeological",
+    "summary": "On Euboea, a man and a woman are buried with horses and rich imports beneath a monumental apsidal building, showing elite wealth and Near Eastern contact in the supposed 'Dark Age'.",
+    "uncertainty": "Whether the building was a hero-shrine, a house or a funerary monument is debated.",
+    "sources": ["popham-1982"]
+  },
+  {
+    "id": "olympia-early-cult", "frame": "historical", "name": "Earliest offerings at Olympia", "period": "collapse-early-iron",
+    "dateRange": { "start": 1000, "end": 900, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "archaeological",
+    "summary": "Bronze and terracotta figurines, many of animals, begin to accumulate in the Altis at Olympia, the start of a sanctuary that would become Zeus' greatest.",
+    "uncertainty": "Continuity of cult from the Bronze Age is not established; the earliest offerings cannot be tied to Zeus by inscription.",
+    "sources": ["morgan-1990"]
+  },
+  {
+    "id": "greek-alphabet", "frame": "historical", "name": "Greeks adopt the alphabet", "period": "archaic",
+    "dateRange": { "start": 800, "end": 750, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "epigraphic",
+    "summary": "Greeks adapt the Phoenician script, adding vowels. The earliest inscriptions follow soon after — making it possible, eventually, to write down the oral epics.",
+    "uncertainty": "The exact date and place of adoption are debated; some argue for an earlier transfer.",
+    "sources": ["powell-1991"]
+  },
+  {
+    "id": "first-olympiad", "frame": "historical", "name": "Traditional date of the first Olympic Games", "period": "archaic",
+    "dateRange": { "start": 776, "end": 776, "era": "BCE" }, "approximate": false, "confidence": "low", "evidenceType": "literary",
+    "summary": "Later Greek chronographers counted the Olympiads from this year, when Koroibos of Elis was said to have won the footrace.",
+    "uncertainty": "The date comes from a victor list compiled centuries later (attributed to Hippias of Elis). Archaeology suggests organised games began somewhat later.",
+    "sources": ["pausanias", "morgan-1990"], "sourceRefs": { "pausanias": "5.8.6" }
+  },
+  {
+    "id": "delphi-sanctuary", "frame": "historical", "name": "Apollo's sanctuary at Delphi takes shape", "period": "archaic",
+    "dateRange": { "start": 800, "end": 700, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "archaeological",
+    "summary": "Votive offerings increase sharply at Delphi, and the oracle becomes consulted across the Greek world, notably for founding colonies.",
+    "uncertainty": "Claims of a Bronze Age oracle of Earth or Themis come from later myth and drama, not from archaeological evidence of continuity.",
+    "sources": ["morgan-1990", "pausanias"], "sourceRefs": { "pausanias": "10.5.5–10.5.13" }
+  },
+  {
+    "id": "homeric-epics", "frame": "historical", "name": "Composition of the Iliad and Odyssey", "period": "archaic",
+    "dateRange": { "start": 750, "end": 650, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "literary",
+    "summary": "The two epics reach something like their surviving form, the product of a long oral tradition. They are the oldest surviving Greek literature.",
+    "uncertainty": "Dating Homer is contested: proposals range from earlier to considerably later, and a fixed written text may come later still (e.g. the Athenian 'Peisistratean recension').",
+    "sources": ["janko-1982", "latacz-2004"]
+  },
+  {
+    "id": "hesiod-theogony-composed", "frame": "historical", "name": "Hesiod composes the Theogony", "period": "archaic",
+    "dateRange": { "start": 730, "end": 680, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "literary",
+    "summary": "A Boeotian poet sets out the generations of the gods from Chaos to Zeus, the earliest surviving systematic account of Greek theogony.",
+    "uncertainty": "Relative dating against Homer is debated; West placed Hesiod's Theogony before the Homeric epics. The ending of the poem was probably extended by later hands.",
+    "sources": ["west-theogony", "janko-1982"]
+  },
+  {
+    "id": "hymn-to-apollo", "frame": "historical", "name": "Homeric Hymn to Apollo", "period": "archaic",
+    "dateRange": { "start": 650, "end": 520, "era": "BCE" }, "approximate": true, "confidence": "low", "evidenceType": "literary",
+    "summary": "A hymn in epic style narrates Apollo's birth on Delos and his foundation of the oracle at Pytho.",
+    "uncertainty": "The hymn may join a Delian and a Pythian poem of different dates; one ancient tradition links its performance to Polycrates' festival on Delos.",
+    "sources": ["janko-1982"]
+  },
+  {
+    "id": "hymn-to-demeter", "frame": "historical", "name": "Homeric Hymn to Demeter", "period": "archaic",
+    "dateRange": { "start": 650, "end": 550, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "literary",
+    "summary": "The fullest early account of Persephone's abduction and the founding of Demeter's Mysteries at Eleusis.",
+    "uncertainty": "Linguistic dating places it in the Archaic period, but the range is wide.",
+    "sources": ["janko-1982"]
+  },
+  {
+    "id": "eleusis-telesterion", "frame": "historical", "name": "Archaic Telesterion at Eleusis", "period": "archaic",
+    "dateRange": { "start": 600, "end": 500, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "archaeological",
+    "summary": "Successive initiation halls are built for Demeter's Mysteries, enlarged under the Peisistratids — material evidence of the cult the Hymn describes.",
+    "uncertainty": "Earlier phases, including a possible Mycenaean building under the hall, are of debated religious function.",
+    "sources": ["mylonas-1961"]
+  },
+  {
+    "id": "capitoline-temple", "frame": "historical", "name": "Temple of Jupiter Optimus Maximus on the Capitol", "period": "roman",
+    "dateRange": { "start": 509, "end": 509, "era": "BCE" }, "approximate": false, "confidence": "medium", "evidenceType": "literary",
+    "summary": "Roman tradition dates the dedication of the great temple of the Capitoline triad — Jupiter, Juno and Minerva — to the first year of the Republic.",
+    "uncertainty": "The date is Roman tradition (Livy); the temple's massive foundations survive, but the precise year is not independently confirmed.",
+    "sources": ["livy", "beard-north-price"], "sourceRefs": { "livy": "2.8.6–8" }
+  },
+  {
+    "id": "parthenon", "frame": "historical", "name": "The Parthenon is built", "period": "classical",
+    "dateRange": { "start": 447, "end": 432, "era": "BCE" }, "approximate": false, "confidence": "high", "evidenceType": "archaeological",
+    "summary": "Athens builds a marble temple for Athena Parthenos; its sculptures show her birth and her contest with Poseidon on the pediments.",
+    "uncertainty": "Building dates are secured by surviving inscribed building accounts; interpretations of the frieze remain debated.",
+    "sources": ["parker-1996", "pausanias"], "sourceRefs": { "pausanias": "1.24.5" }
+  },
+  {
+    "id": "herodotus-histories", "frame": "historical", "name": "Herodotus on who 'made' the gods' genealogies", "period": "classical",
+    "dateRange": { "start": 440, "end": 425, "era": "BCE" }, "approximate": true, "confidence": "high", "evidenceType": "literary",
+    "summary": "Herodotus writes that Homer and Hesiod gave the Greeks the gods' genealogies, names, honours and forms — an ancient recognition that poets shaped the pantheon.",
+    "sources": ["herodotus"], "sourceRefs": { "herodotus": "2.53" }
+  },
+  {
+    "id": "alexander-siwa", "frame": "historical", "name": "Alexander consults Zeus-Ammon at Siwa", "period": "hellenistic",
+    "dateRange": { "start": 331, "end": 331, "era": "BCE" }, "approximate": false, "confidence": "high", "evidenceType": "literary",
+    "summary": "Alexander travels to the Egyptian oracle of Amun, whom Greeks called Zeus Ammon, an emblem of the Greek-Egyptian religious blending of the age that followed.",
+    "uncertainty": "What the oracle told Alexander was later embellished; our main accounts were written centuries afterwards from earlier sources.",
+    "sources": ["arrian"], "sourceRefs": { "arrian": "3.3–3.4" }
+  },
+  {
+    "id": "serapis-cult", "frame": "historical", "name": "Cult of Sarapis in Ptolemaic Alexandria", "period": "hellenistic",
+    "dateRange": { "start": 305, "end": 250, "era": "BCE" }, "approximate": true, "confidence": "medium", "evidenceType": "archaeological",
+    "summary": "The early Ptolemies promote Sarapis, a god combining Egyptian Osiris-Apis with features of Zeus, Hades and Asclepius, with a great Serapeum at Alexandria.",
+    "uncertainty": "How deliberately the cult was 'designed' by the Ptolemies is debated.",
+    "sources": ["fraser-1972"]
+  },
+  {
+    "id": "lectisternium-217", "frame": "historical", "name": "Rome's lectisternium of twelve gods", "period": "roman",
+    "dateRange": { "start": 217, "end": 217, "era": "BCE" }, "approximate": false, "confidence": "high", "evidenceType": "literary",
+    "summary": "During the war with Hannibal, Rome sets out couches for twelve gods in six pairs — Jupiter with Juno, Neptune with Minerva, and so on — a set modelled on the Greek Twelve.",
+    "sources": ["livy", "beard-north-price"], "sourceRefs": { "livy": "22.10.9" }
+  },
+  {
+    "id": "ovid-metamorphoses", "frame": "historical", "name": "Ovid's Metamorphoses", "period": "roman",
+    "dateRange": { "start": 2, "end": 8, "era": "CE" }, "approximate": true, "confidence": "high", "evidenceType": "literary",
+    "summary": "A Latin epic of transformations retells hundreds of Greek myths under Roman names, shaping how later Europe knew them.",
+    "sources": ["ovid-met"]
+  },
+  {
+    "id": "apollodorus-bibliotheca", "frame": "historical", "name": "The Bibliotheca of 'Apollodorus'", "period": "roman",
+    "dateRange": { "start": 50, "end": 200, "era": "CE" }, "approximate": true, "confidence": "low", "evidenceType": "literary",
+    "summary": "A prose handbook systematically summarises Greek myth from the gods' origins to the heroes' returns, drawing on many lost earlier works.",
+    "uncertainty": "Wrongly attributed to Apollodorus of Athens; the real author and date are unknown.",
+    "sources": ["apollodorus", "gantz-1993"]
+  },
+  {
+    "id": "pausanias-description", "frame": "historical", "name": "Pausanias tours the sanctuaries", "period": "roman",
+    "dateRange": { "start": 155, "end": 180, "era": "CE" }, "approximate": true, "confidence": "high", "evidenceType": "literary",
+    "summary": "A Greek traveller describes the sanctuaries, cults and local myths of Greece under Roman rule — invaluable for Olympia, Delphi and Eleusis.",
+    "sources": ["pausanias"]
+  },
+  {
+    "id": "theodosian-edicts", "frame": "historical", "name": "Theodosian edicts against sacrifice", "period": "late-antique",
+    "dateRange": { "start": 391, "end": 392, "era": "CE" }, "approximate": false, "confidence": "high", "evidenceType": "literary",
+    "summary": "Imperial laws forbid sacrifice and visits to temples. Public worship of the Olympian gods loses legal standing, though myth lives on in literature and education.",
+    "uncertainty": "Enforcement varied widely by region; the laws did not end all traditional worship at once.",
+    "sources": ["codex-theodosianus"], "sourceRefs": { "codex-theodosianus": "16.10.10–12" }
+  }
+]

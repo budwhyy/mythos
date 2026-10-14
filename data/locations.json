@@ -1,1 +1,374 @@
-[]
+[
+  {
+    "id": "olympus", "ancientName": "Mount Olympus", "greek": "Ὄλυμπος", "modernName": "Mount Olympus (Mytikas)", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 40.0856, "lng": 22.3586 },
+    "periods": ["archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "Home of the gods in Homer and Hesiod; Zeus wages the Titanomachy from here.",
+    "modernNote": "Greece's highest mountain (2,918 m). Offerings to Zeus have been found at a sanctuary on one of its lower peaks.",
+    "linkedEntities": ["zeus", "hera", "athena", "apollo", "hephaestus"], "linkedEvents": ["titanomachy"],
+    "sources": ["hesiod-theogony", "homer-iliad"],
+    "confidenceNote": "The mountain is certain. In poetry 'Olympus' can also mean the sky-home of the gods rather than the physical peak."
+  },
+  {
+    "id": "othrys", "ancientName": "Mount Othrys", "greek": "Ὄθρυς", "modernName": "Mount Othrys", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 39.04, "lng": 22.62 },
+    "periods": [],
+    "ancientNote": "The Titans' stronghold in the Titanomachy, facing Olympus across the plain of Thessaly.",
+    "modernNote": "A mountain range in central Greece south of the Thessalian plain.",
+    "linkedEntities": ["cronus", "iapetus", "hyperion"], "linkedEvents": ["titanomachy"],
+    "sources": ["hesiod-theogony"],
+    "confidenceNote": "The mountain is real; its role is purely mythic, with no known cult of the Titans there."
+  },
+  {
+    "id": "delphi", "ancientName": "Delphi (Pytho)", "greek": "Δελφοί", "modernName": "Delfoi", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 38.4824, "lng": 22.501 },
+    "periods": ["archaic", "classical", "hellenistic", "roman", "late-antique"],
+    "ancientNote": "Seat of Apollo's oracle, the 'navel' of the earth, where Apollo slew the serpent.",
+    "modernNote": "Major archaeological site and UNESCO World Heritage Site on the slopes of Parnassus.",
+    "linkedEntities": ["apollo", "themis", "phoebe"], "linkedEvents": ["apollo-at-pytho", "delphi-sanctuary"],
+    "sources": ["hh-apollo", "pausanias", "morgan-1990"]
+  },
+  {
+    "id": "delos", "ancientName": "Delos", "greek": "Δῆλος", "modernName": "Delos", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.3961, "lng": 25.2685 },
+    "periods": ["archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "The small island that alone accepted Leto, birthplace of Apollo.",
+    "modernNote": "Uninhabited island and archaeological site in the Cyclades.",
+    "linkedEntities": ["leto", "apollo", "artemis"], "linkedEvents": ["birth-of-apollo-artemis", "hymn-to-apollo"],
+    "sources": ["hh-apollo"]
+  },
+  {
+    "id": "knossos", "ancientName": "Knossos", "greek": "Κνωσός", "modernName": "Knossos, near Heraklion", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 35.298, "lng": 25.1632 },
+    "periods": ["minoan-palatial", "mycenaean"],
+    "ancientNote": "City of King Minos, Daedalus and the Labyrinth in later myth; Homer mentions Daedalus' dancing floor there.",
+    "modernNote": "Bronze Age palace excavated and partly reconstructed by Arthur Evans.",
+    "linkedEntities": ["athena", "zeus"], "linkedEvents": ["knossos-neopalatial", "linear-b-knossos"],
+    "sources": ["homer-iliad", "evans-pom"],
+    "confidenceNote": "The site is certain. Equating its architecture with the mythical Labyrinth is a modern suggestion, not evidence."
+  },
+  {
+    "id": "dikte-cave", "ancientName": "Cave of Zeus' birth (Lyktos / Dikte)", "modernName": "Psychro (Diktaean) Cave", "country": "Greece",
+    "classification": "traditionally_identified", "coords": { "lat": 35.162, "lng": 25.445 },
+    "alternatives": [{ "label": "Idaean Cave, Mount Ida", "coords": { "lat": 35.21, "lng": 24.83 }, "source": "apollodorus" }],
+    "periods": ["minoan-palatial", "archaic", "classical"],
+    "ancientNote": "Hesiod places Zeus' hiding near Lyktos; other sources name Mount Dikte or Mount Ida.",
+    "modernNote": "A cave with rich votive deposits on the Lasithi plateau; the Idaean Cave is also a major cult cave.",
+    "linkedEntities": ["zeus", "rhea"], "linkedEvents": ["birth-of-zeus"],
+    "sources": ["hesiod-theogony", "apollodorus"],
+    "confidenceNote": "Both caves were cult sites; which one 'is' the birthplace depends on which ancient source you follow."
+  },
+  {
+    "id": "mycenae", "ancientName": "Mycenae", "greek": "Μυκῆναι", "modernName": "Mykines", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.7308, "lng": 22.7561 },
+    "periods": ["mycenaean", "archaic", "classical"],
+    "ancientNote": "Agamemnon's 'well-built' city, 'rich in gold', in Homer.",
+    "modernNote": "Bronze Age citadel with the Lion Gate and shaft graves.",
+    "linkedEntities": ["agamemnon"], "linkedEvents": ["mycenae-citadel", "return-of-agamemnon"],
+    "sources": ["homer-iliad", "dickinson-1994"]
+  },
+  {
+    "id": "troy", "ancientName": "Troy / Ilios", "greek": "Ἴλιος", "modernName": "Hisarlık", "country": "Türkiye",
+    "classification": "verified", "coords": { "lat": 39.9575, "lng": 26.2389 },
+    "periods": ["mycenaean", "archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "Priam's city, besieged for ten years by the Greeks.",
+    "modernNote": "A multi-layered mound excavated since Schliemann; classical Greek Ilion stood here, and the Bronze Age levels are identified with Wilusa of Hittite texts.",
+    "linkedEntities": ["priam", "paris", "helen", "achilles", "agamemnon", "odysseus"], "linkedEvents": ["trojan-war-myth", "fall-of-troy", "troy-destruction-layers"],
+    "sources": ["homer-iliad", "korfmann-2004", "latacz-2004"],
+    "confidenceNote": "That Hisarlik is the place Greeks called Ilion is secure. That a war like the Iliad's was fought there is not established."
+  },
+  {
+    "id": "athens", "ancientName": "Athens", "greek": "Ἀθῆναι", "modernName": "Athens (Acropolis)", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.9715, "lng": 23.7257 },
+    "periods": ["mycenaean", "archaic", "classical", "hellenistic", "roman", "late-antique"],
+    "ancientNote": "Athena's city, won in a contest with Poseidon.",
+    "modernNote": "Capital of Greece; the Acropolis holds the Parthenon and Erechtheion.",
+    "linkedEntities": ["athena", "poseidon"], "linkedEvents": ["parthenon", "birth-of-athena"],
+    "sources": ["apollodorus", "pausanias", "parker-1996"]
+  },
+  {
+    "id": "sparta", "ancientName": "Sparta (Lacedaemon)", "greek": "Σπάρτη", "modernName": "Sparti", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.0819, "lng": 22.4237 },
+    "periods": ["archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "Kingdom of Menelaus and Helen.",
+    "modernNote": "Modern town above the ancient site. The Bronze Age centre may have been nearby, at the Menelaion or Agios Vasileios.",
+    "linkedEntities": ["helen"], "linkedEvents": ["judgement-of-paris"],
+    "sources": ["homer-iliad", "homer-odyssey"],
+    "confidenceNote": "Classical Sparta is certain; the location of a Bronze Age 'Sparta of Menelaus' is debated."
+  },
+  {
+    "id": "thebes", "ancientName": "Thebes", "greek": "Θῆβαι", "modernName": "Thiva", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 38.3219, "lng": 23.319 },
+    "periods": ["mycenaean", "archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "City of Cadmus, Semele and Oedipus; birthplace of Dionysus and Heracles.",
+    "modernNote": "Modern town over a Mycenaean palace that yielded Linear B tablets.",
+    "linkedEntities": ["semele", "dionysus", "heracles", "alcmene"], "linkedEvents": ["birth-of-dionysus"],
+    "sources": ["hesiod-theogony", "euripides-bacchae"]
+  },
+  {
+    "id": "argos", "ancientName": "Argos", "greek": "Ἄργος", "modernName": "Argos", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.6316, "lng": 22.7194 },
+    "periods": ["mycenaean", "archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "One of Hera's three favourite cities in the Iliad; her great sanctuary, the Heraion, lay nearby.",
+    "modernNote": "One of the oldest continuously inhabited towns in Greece.",
+    "linkedEntities": ["hera"], "linkedEvents": [],
+    "sources": ["homer-iliad", "pausanias"]
+  },
+  {
+    "id": "corinth", "ancientName": "Corinth", "greek": "Κόρινθος", "modernName": "Archaia Korinthos", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.9057, "lng": 22.8788 },
+    "periods": ["archaic", "classical", "hellenistic", "roman", "late-antique"],
+    "ancientNote": "Wealthy city on the Isthmus; Poseidon's Isthmian games were held nearby. In myth, Jason and Medea lived here after the voyage.",
+    "modernNote": "Archaeological site with the Archaic temple of Apollo.",
+    "linkedEntities": ["poseidon", "jason"], "linkedEvents": [],
+    "sources": ["pausanias", "apollodorus"]
+  },
+  {
+    "id": "olympia", "ancientName": "Olympia", "greek": "Ὀλυμπία", "modernName": "Archaia Olympia", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.6384, "lng": 21.63 },
+    "periods": ["collapse-early-iron", "archaic", "classical", "hellenistic", "roman", "late-antique"],
+    "ancientNote": "Sanctuary of Olympian Zeus and site of the Olympic Games.",
+    "modernNote": "Archaeological site with the temples of Zeus and Hera.",
+    "linkedEntities": ["zeus", "hera", "heracles"], "linkedEvents": ["olympia-early-cult", "first-olympiad"],
+    "sources": ["pindar-olympian", "pausanias", "morgan-1990"]
+  },
+  {
+    "id": "dodona", "ancientName": "Dodona", "greek": "Δωδώνη", "modernName": "Dodoni", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 39.5465, "lng": 20.7875 },
+    "periods": ["archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "Oracle of Zeus where priests interpreted the rustling of a sacred oak; Achilles prays to 'Zeus of Dodona'. Dione was worshipped beside him.",
+    "modernNote": "Archaeological site in Epirus; thousands of lead question-tablets survive.",
+    "linkedEntities": ["zeus", "dione", "achilles"], "linkedEvents": [],
+    "sources": ["homer-iliad", "herodotus"]
+  },
+  {
+    "id": "eleusis", "ancientName": "Eleusis", "greek": "Ἐλευσίς", "modernName": "Elefsina", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 38.0412, "lng": 23.5384 },
+    "periods": ["mycenaean", "archaic", "classical", "hellenistic", "roman", "late-antique"],
+    "ancientNote": "Where grieving Demeter rested and founded her Mysteries.",
+    "modernNote": "Industrial town west of Athens around the sanctuary and Telesterion.",
+    "linkedEntities": ["demeter", "persephone"], "linkedEvents": ["abduction-of-persephone", "eleusis-telesterion"],
+    "sources": ["hh-demeter", "mylonas-1961"]
+  },
+  {
+    "id": "pylos", "ancientName": "Pylos", "greek": "Πύλος", "modernName": "Palace of Nestor, Ano Englianos", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 37.0277, "lng": 21.695 },
+    "periods": ["mycenaean"],
+    "ancientNote": "Kingdom of old Nestor, visited by Telemachus in Odyssey 3.",
+    "modernNote": "The best-preserved Mycenaean palace, whose fire baked over a thousand Linear B tablets.",
+    "linkedEntities": ["zeus", "hera", "poseidon", "hermes", "dionysus"], "linkedEvents": ["linear-b-pylos"],
+    "sources": ["homer-odyssey", "ventris-chadwick"],
+    "confidenceNote": "The Bronze Age palace is certain; equating it with Homer's 'sandy Pylos' is widely accepted but rests on tradition and location."
+  },
+  {
+    "id": "ithaca", "ancientName": "Ithaca", "greek": "Ἰθάκη", "modernName": "Ithaki", "country": "Greece",
+    "classification": "traditionally_identified", "coords": { "lat": 38.3667, "lng": 20.7167 },
+    "alternatives": [{ "label": "Paliki peninsula, Kefalonia (modern proposal)", "coords": { "lat": 38.2, "lng": 20.38 }, "source": "bittlestone-2005" }],
+    "periods": ["mycenaean", "archaic", "classical"],
+    "ancientNote": "Odysseus' rocky island home, described as lying 'furthest towards the dusk'.",
+    "modernNote": "An Ionian island that has borne the name since antiquity.",
+    "linkedEntities": ["odysseus", "penelope", "athena"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "bittlestone-2005"],
+    "confidenceNote": "Homer's description (Od. 9.21–27) fits modern Ithaki imperfectly, which has prompted alternatives."
+  },
+  {
+    "id": "colchis", "ancientName": "Colchis (Aia)", "greek": "Κολχίς", "modernName": "Western Georgia (Rioni / Phasis mouth)", "country": "Georgia",
+    "classification": "debated", "coords": { "lat": 42.15, "lng": 41.67 },
+    "periods": ["archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "Land of King Aeetes and the Golden Fleece at the eastern edge of the world.",
+    "modernNote": "Historical Colchis is a real region of western Georgia; its link with the myth's 'Aia' is a Greek identification.",
+    "linkedEntities": ["jason"], "linkedEvents": ["voyage-of-argo"],
+    "sources": ["apollonius", "herodotus", "strabo"],
+    "confidenceNote": "Earliest versions of the myth may have placed Aia in an unlocated far east; the Colchis identification is attested later."
+  },
+  {
+    "id": "avernus", "ancientName": "Lake Avernus", "greek": "Ἄορνος", "modernName": "Lago d'Averno", "country": "Italy",
+    "classification": "traditionally_identified", "coords": { "lat": 40.8389, "lng": 14.0781 },
+    "periods": ["hellenistic", "roman"],
+    "ancientNote": "A crater lake near Cumae believed to be an entrance to the underworld; Aeneas descends here, and some placed Odysseus' consultation of the dead here.",
+    "modernNote": "A volcanic crater lake in the Campi Flegrei, west of Naples.",
+    "linkedEntities": ["odysseus", "hades"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["virgil-aeneid", "strabo"],
+    "confidenceNote": "Identified as an underworld entrance by ancient writers. The Odyssey's own underworld lies at the edge of Ocean and is not terrestrial."
+  },
+  {
+    "id": "underworld", "ancientName": "The Underworld (House of Hades)", "greek": "Ἅιδου δόμος", "modernName": "— (no terrestrial location)",
+    "classification": "mythical", "symbolic": { "x": 50, "y": 84 },
+    "periods": [],
+    "ancientNote": "The realm of the dead beneath the earth; in the Odyssey it is reached by sailing to the edge of Ocean.",
+    "modernNote": "Various real caves and lakes (Avernus, Taenarum, the Acheron) were later treated as entrances.",
+    "linkedEntities": ["hades", "persephone", "odysseus"], "linkedEvents": ["abduction-of-persephone", "return-of-odysseus"],
+    "sources": ["homer-odyssey", "hesiod-theogony"]
+  },
+  {
+    "id": "tartarus-place", "ancientName": "Tartarus", "greek": "Τάρταρος", "modernName": "— (no terrestrial location)",
+    "classification": "mythical", "symbolic": { "x": 50, "y": 96 },
+    "periods": [],
+    "ancientNote": "The pit as far below Hades as earth is below the sky, where the Titans are imprisoned.",
+    "modernNote": "A purely cosmological place.",
+    "linkedEntities": ["tartarus", "cronus", "hekatoncheires"], "linkedEvents": ["titans-imprisoned"],
+    "sources": ["hesiod-theogony"]
+  },
+  {
+    "id": "hesperides", "ancientName": "Garden of the Hesperides", "greek": "Ἑσπερίδες", "modernName": "— (no terrestrial location)",
+    "classification": "mythical", "symbolic": { "x": 7, "y": 48 },
+    "alternatives": [{ "label": "Euesperides (Benghazi, Libya) — an ancient identification", "coords": { "lat": 32.12, "lng": 20.07 }, "source": "strabo" }],
+    "periods": [],
+    "ancientNote": "Garden of the golden apples at the far western edge of the world, near Atlas, beyond Ocean.",
+    "modernNote": "Ancient geographers attached the name to places in Libya and the far west, but the garden itself is mythical.",
+    "linkedEntities": ["atlas", "heracles", "nyx"], "linkedEvents": ["labours-of-heracles"],
+    "sources": ["hesiod-theogony", "strabo"]
+  },
+  {
+    "id": "ogygia", "ancientName": "Ogygia", "greek": "Ὠγυγίη", "modernName": "— (no terrestrial location)",
+    "classification": "mythical", "symbolic": { "x": 24, "y": 58 },
+    "periods": [],
+    "ancientNote": "Calypso's island, 'the navel of the sea', far from gods and men.",
+    "modernNote": "Many identifications (Gozo, Malta and others) have been proposed; none rests on ancient evidence strong enough to map.",
+    "linkedEntities": ["calypso", "odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey"]
+  },
+  {
+    "id": "aeaea", "ancientName": "Aeaea", "greek": "Αἰαίη", "modernName": "— (no terrestrial location)",
+    "classification": "mythical", "symbolic": { "x": 86, "y": 42 },
+    "alternatives": [{ "label": "Monte Circeo (Italy) — an ancient identification", "coords": { "lat": 41.23, "lng": 13.06 }, "source": "strabo" }],
+    "periods": [],
+    "ancientNote": "Circe's island; the Odyssey places it where 'Dawn has her house and dancing floors' — in the east.",
+    "modernNote": "Ancient Italians identified it with the promontory of Circeii, despite the poem's eastern setting.",
+    "linkedEntities": ["circe", "odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "strabo"]
+  },
+  {
+    "id": "ismarus", "ancientName": "Ismarus (land of the Cicones)", "greek": "Ἴσμαρος", "modernName": "Near Maroneia, Thrace", "country": "Greece",
+    "classification": "traditionally_identified", "coords": { "lat": 40.88, "lng": 25.51 },
+    "periods": ["archaic", "classical"],
+    "ancientNote": "The Thracian city Odysseus sacks first after leaving Troy.",
+    "modernNote": "The Cicones were a known Thracian people; Ismarus is placed near later Maroneia.",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "herodotus"]
+  },
+  {
+    "id": "cape-malea", "ancientName": "Cape Malea", "greek": "Μαλέα", "modernName": "Cape Maleas", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 36.44, "lng": 23.2 },
+    "periods": [],
+    "ancientNote": "Where a north wind drives Odysseus off course — the point where the voyage leaves the known world.",
+    "modernNote": "South-eastern tip of the Peloponnese, notorious for storms.",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey"]
+  },
+  {
+    "id": "lotophagi", "ancientName": "Land of the Lotus-Eaters", "greek": "Λωτοφάγοι", "modernName": "Djerba (proposed)", "country": "Tunisia",
+    "classification": "debated", "coords": { "lat": 33.8, "lng": 10.88 },
+    "periods": [],
+    "ancientNote": "People whose lotus fruit makes travellers forget their homecoming.",
+    "modernNote": "Herodotus places Lotus-Eaters on the Libyan coast; later writers named the island of Meninx (Djerba).",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "herodotus", "strabo"],
+    "confidenceNote": "The poem gives nine days' storm from Malea and no fixed place; the North African identification is an ancient interpretation."
+  },
+  {
+    "id": "cyclopes-land", "ancientName": "Land of the Cyclopes", "greek": "Κυκλώπων γαῖα", "modernName": "Eastern Sicily near Etna (proposed)", "country": "Italy",
+    "classification": "debated", "coords": { "lat": 37.75, "lng": 15.0 },
+    "periods": [],
+    "ancientNote": "Where Polyphemus traps Odysseus in his cave.",
+    "modernNote": "Thucydides reports the tradition that the Cyclopes were the oldest inhabitants of Sicily.",
+    "linkedEntities": ["polyphemus", "odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "thucydides"],
+    "confidenceNote": "Thucydides himself says he cannot say where they came from: a tradition, not a location."
+  },
+  {
+    "id": "aeolia", "ancientName": "Aeolia, island of Aeolus", "greek": "Αἰολίη", "modernName": "Aeolian Islands (proposed)", "country": "Italy",
+    "classification": "debated", "coords": { "lat": 38.47, "lng": 14.95 },
+    "periods": [],
+    "ancientNote": "A floating island with bronze walls where Aeolus gives Odysseus a bag of winds.",
+    "modernNote": "The Lipari islands were named the Aeolian Islands in antiquity after this episode.",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "strabo"],
+    "confidenceNote": "A 'floating' island is hard to pin to any coast; the identification follows ancient naming."
+  },
+  {
+    "id": "laestrygonia", "ancientName": "Telepylus of the Laestrygonians", "greek": "Λαιστρυγονίη", "modernName": "Leontini area, Sicily (proposed)", "country": "Italy",
+    "classification": "debated", "coords": { "lat": 37.28, "lng": 15.0 },
+    "periods": [],
+    "ancientNote": "Cannibal giants who destroy all but one of Odysseus' ships in a narrow harbour.",
+    "modernNote": "Thucydides pairs them with the Cyclopes as early Sicilian peoples; other ancient and modern writers proposed Formiae or Bonifacio.",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "thucydides"],
+    "confidenceNote": "Several mutually exclusive identifications exist."
+  },
+  {
+    "id": "sirens", "ancientName": "Island of the Sirens", "greek": "Σειρῆνες", "modernName": "Li Galli islands, Amalfi coast (proposed)", "country": "Italy",
+    "classification": "debated", "coords": { "lat": 40.58, "lng": 14.43 },
+    "periods": [],
+    "ancientNote": "Singers whose song lures sailors to death; Odysseus hears it bound to the mast.",
+    "modernNote": "Strabo knew the islets off the Sorrento peninsula as the Sirenussae.",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "strabo"]
+  },
+  {
+    "id": "scylla-charybdis", "ancientName": "Scylla and Charybdis", "greek": "Σκύλλα καὶ Χάρυβδις", "modernName": "Strait of Messina", "country": "Italy",
+    "classification": "traditionally_identified", "coords": { "lat": 38.25, "lng": 15.63 },
+    "periods": [],
+    "ancientNote": "A six-headed monster in a cliff opposite a whirlpool that swallows the sea three times a day.",
+    "modernNote": "The narrow strait between Sicily and Calabria, with real strong currents.",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "thucydides"],
+    "confidenceNote": "Identified with the strait since at least Thucydides; the strongest of the wanderings' identifications."
+  },
+  {
+    "id": "thrinacia", "ancientName": "Thrinacia, island of the Sun's cattle", "greek": "Θρινακίη", "modernName": "Sicily (Trinacria) (proposed)", "country": "Italy",
+    "classification": "debated", "coords": { "lat": 37.5, "lng": 14.2 },
+    "periods": [],
+    "ancientNote": "Where Odysseus' starving crew kill the cattle of Helios and are destroyed by Zeus.",
+    "modernNote": "Ancient writers equated Thrinacia with Trinacria, an old name for Sicily. No specific site.",
+    "linkedEntities": ["odysseus", "zeus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "thucydides"],
+    "confidenceNote": "The marker sits in central Sicily to stand for the whole island, not a specific spot."
+  },
+  {
+    "id": "scheria", "ancientName": "Scheria, land of the Phaeacians", "greek": "Σχερίη", "modernName": "Corfu (Kerkyra)", "country": "Greece",
+    "classification": "traditionally_identified", "coords": { "lat": 39.62, "lng": 19.92 },
+    "periods": ["archaic", "classical"],
+    "ancientNote": "The idealised island of King Alcinous, where Odysseus tells his story and is carried home by a magic ship.",
+    "modernNote": "Corcyreans claimed the Phaeacians as their predecessors, as Thucydides reports.",
+    "linkedEntities": ["odysseus"], "linkedEvents": ["return-of-odysseus"],
+    "sources": ["homer-odyssey", "thucydides"],
+    "confidenceNote": "A local ancient claim; the Phaeacians' near-magical society makes any identification partly symbolic."
+  },
+  {
+    "id": "lefkandi", "ancientName": "Lefkandi (ancient name unknown)", "modernName": "Lefkandi, Euboea", "country": "Greece",
+    "classification": "verified", "coords": { "lat": 38.41, "lng": 23.68 },
+    "periods": ["collapse-early-iron"],
+    "ancientNote": "No known myth; included as historical evidence for the age between palaces and poems.",
+    "modernNote": "Excavated settlement and cemetery with the monumental 'heroon' building.",
+    "linkedEntities": [], "linkedEvents": ["lefkandi-heroon"],
+    "sources": ["popham-1982"]
+  },
+  {
+    "id": "siwa", "ancientName": "Oracle of Ammon (Siwa)", "modernName": "Siwa Oasis", "country": "Egypt",
+    "classification": "verified", "coords": { "lat": 29.2, "lng": 25.52 },
+    "periods": ["archaic", "classical", "hellenistic", "roman"],
+    "ancientNote": "Oracle of the god Greeks called Zeus Ammon, visited by Alexander.",
+    "modernNote": "Desert oasis in western Egypt with remains of the Temple of the Oracle.",
+    "linkedEntities": ["zeus"], "linkedEvents": ["alexander-siwa"],
+    "sources": ["arrian", "herodotus"]
+  },
+  {
+    "id": "alexandria", "ancientName": "Alexandria", "greek": "Ἀλεξάνδρεια", "modernName": "Alexandria", "country": "Egypt",
+    "classification": "verified", "coords": { "lat": 31.18, "lng": 29.9 },
+    "periods": ["hellenistic", "roman", "late-antique"],
+    "ancientNote": "Ptolemaic capital, home of the Serapeum and the Library.",
+    "modernNote": "Egypt's second city; the Serapeum site survives in part.",
+    "linkedEntities": ["zeus", "hades"], "linkedEvents": ["serapis-cult"],
+    "sources": ["fraser-1972"]
+  },
+  {
+    "id": "rome-capitol", "ancientName": "Rome — the Capitol", "modernName": "Campidoglio, Rome", "country": "Italy",
+    "classification": "verified", "coords": { "lat": 41.893, "lng": 12.483 },
+    "periods": ["roman", "late-antique"],
+    "ancientNote": "Site of the temple of Jupiter, Juno and Minerva — Roman gods later equated with Zeus, Hera and Athena.",
+    "modernNote": "The Capitoline Hill, with remains of the temple's foundations.",
+    "linkedEntities": ["zeus", "hera", "athena"], "linkedEvents": ["capitoline-temple", "lectisternium-217"],
+    "sources": ["livy", "beard-north-price"]
+  }
+]

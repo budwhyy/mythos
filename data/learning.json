@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "id": "two-clocks", "title": "Two clocks", "mode": "timeline", "focus": "primordial-origins",
+    "body": "Greek myths have an order — first Chaos, then Earth, then the Titans, then Zeus — but no dates. History has dates but not myths. MYTHOS keeps them on two separate tracks: the glowing mythic sequence above, and a dated historical axis below.",
+    "takeaway": "Myth tells you 'before' and 'after'. History tells you 'when'."
+  },
+  {
+    "id": "first-beings", "title": "In the beginning: Chaos", "mode": "character", "focus": "chaos",
+    "body": "Hesiod's Theogony begins with Chaos — not disorder, but a gaping void. Read Chaos' panel, then switch the reading level to see how scholars discuss the word.",
+    "takeaway": "Ancient words can mean something different from their modern English descendants."
+  },
+  {
+    "id": "succession", "title": "The succession of kings", "mode": "timeline", "focus": "castration-of-uranus",
+    "body": "Uranus is overthrown by his son Cronus; Cronus is overthrown by his son Zeus. Follow the sequence through the Age of Titans and the Titanomachy.",
+    "takeaway": "The Theogony is a story about how Zeus' rule came to be — and why it lasts."
+  },
+  {
+    "id": "family", "title": "One big, quarrelsome family", "mode": "tree", "focus": "zeus",
+    "body": "Open the family tree and find Zeus. Gold lines are parent links, pink are partners, red are conflicts. Use 'Isolate branch' to see just his family.",
+    "takeaway": "Most Greek gods are related, and family conflict drives many myths."
+  },
+  {
+    "id": "two-aphrodites", "title": "When the sources disagree", "mode": "tree", "focus": "aphrodite",
+    "body": "Hesiod says Aphrodite was born from the sea-foam around Uranus; Homer says she is the daughter of Zeus and Dione. Toggle the sources on and off to watch her parents change.",
+    "takeaway": "There is no single 'correct' Greek mythology — only accounts from different authors."
+  },
+  {
+    "id": "attestation", "title": "First written down", "mode": "timeline", "focus": "zeus",
+    "body": "Click a dashed bridge line. Zeus's name appears on clay tablets from the palace at Pylos, long before Homer. That tells us when people worshipped a god called Zeus — not when the myths 'happened'.",
+    "takeaway": "An attestation is when a tradition is first recorded, not when its story took place."
+  },
+  {
+    "id": "troy", "title": "Troy: where myth meets archaeology", "mode": "map", "focus": "troy",
+    "body": "Hisarlik in Türkiye was a real Bronze Age city that burned. Greeks called it Ilion. But archaeology cannot confirm Achilles, Helen or a ten-year siege. Troy appears on both tracks, treated differently on each.",
+    "takeaway": "A real place does not make a story historical."
+  },
+  {
+    "id": "odyssey-map", "title": "Mapping a voyage that isn't on the map", "mode": "map", "focus": "ithaca",
+    "body": "Play Odysseus' return. Each leg is coloured by how certain its location is. After Cape Malea the poem leaves the known world — some stops have only proposed sites, and some exist only on the symbolic map.",
+    "takeaway": "Uncertainty is part of the evidence. MYTHOS shows it instead of hiding it."
+  }
+]

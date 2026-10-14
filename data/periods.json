@@ -1,1 +1,10 @@
-[]
+[
+  { "id": "minoan-palatial", "name": "Minoan palatial", "startYear": -1950, "endYear": -1450, "description": "Palace societies on Crete (Knossos, Phaistos, Malia) using Linear A, an undeciphered script. Their religion is known from images and objects, not readable texts." },
+  { "id": "mycenaean", "name": "Mycenaean", "startYear": -1600, "endYear": -1100, "description": "Late Bronze Age mainland palaces (Mycenae, Pylos, Thebes) write an early form of Greek in Linear B. The tablets name several later Greek gods." },
+  { "id": "collapse-early-iron", "name": "Collapse & Early Iron Age", "startYear": -1200, "endYear": -750, "description": "Palaces are destroyed, writing disappears for centuries, and population falls. Sometimes called a 'Dark Age', though sites like Lefkandi show wealth and contacts." },
+  { "id": "archaic", "name": "Archaic", "startYear": -750, "endYear": -480, "description": "The alphabet, the city-state, Panhellenic sanctuaries, and the first surviving Greek poetry: Homer and Hesiod fix the myths in writing." },
+  { "id": "classical", "name": "Classical", "startYear": -480, "endYear": -323, "description": "From the Persian Wars to Alexander's death: Athenian drama, the Parthenon, and the first prose historians." },
+  { "id": "hellenistic", "name": "Hellenistic", "startYear": -323, "endYear": -31, "description": "Alexander's successor kingdoms spread Greek culture from Egypt to Afghanistan; Greek and local gods are combined in new cults." },
+  { "id": "roman", "name": "Roman", "startYear": -509, "endYear": 330, "description": "Rome develops alongside the Greek world, then rules it. Romans equate their gods with Greek ones (interpretatio) and retell Greek myth in Latin. Overlaps the Greek periods on purpose." },
+  { "id": "late-antique", "name": "Late Antique transformation", "startYear": 330, "endYear": 600, "description": "Christianity becomes the imperial religion; public sacrifice is banned and temples close or are converted, while myth survives in literature, art and education." }
+]
