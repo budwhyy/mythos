@@ -13,11 +13,13 @@ export default function MythicSequence2D() {
 
   useEffect(() => {
     if (!stageFocus) return;
-    listRef.current?.querySelector(`[data-stage="${stageFocus}"]`)?.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+    const list = listRef.current;
+    const item = list?.querySelector<HTMLElement>(`[data-stage="${stageFocus}"]`);
+    if (list && item) list.scrollTo({ left: item.offsetLeft - list.clientWidth / 2 + item.clientWidth / 2, behavior: 'smooth' });
   }, [stageFocus]);
 
   return (
-    <ol ref={listRef} className="flex h-full snap-x gap-3 overflow-x-auto p-4" aria-label="Mythic sequence, in order">
+    <ol ref={listRef} className="relative flex h-full snap-x gap-3 overflow-x-auto p-4" aria-label="Mythic sequence, in order">
       {stagesOrdered.map((s, i) => {
         const focused = stageFocus === s.id;
         const events = data.mythicEvents.filter((m) => m.stage === s.id);

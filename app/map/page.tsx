@@ -1,3 +1,7 @@
+import MapView from '@/components/map/MapView';
+
+export const metadata = { title: 'Map — MYTHOS' };
+
 export default function Page() {
-  return <h1 className="p-8 font-display text-4xl text-gold">map</h1>;
+  return <MapView />;
 }
