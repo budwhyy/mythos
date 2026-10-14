@@ -12,7 +12,7 @@ export default defineConfig({
   },
   projects: [
     { name: 'chromium', testIgnore: /mobile/, use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 900 } } },
-    { name: 'mobile', testMatch: /mobile/, use: { ...devices['Pixel 5'] } },
+    { name: 'mobile', testMatch: /mobile|labels/, use: { ...devices['Pixel 5'] } },
   ],
   webServer: {
     command: 'npx serve out -l 4173 --no-clipboard',

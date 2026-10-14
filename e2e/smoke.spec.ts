@@ -108,4 +108,15 @@ test.describe('MYTHOS smoke', () => {
     await page.getByRole('button', { name: 'History & bookmarks' }).click();
     await expect(page.getByRole('dialog', { name: 'History and bookmarks' })).toContainText('Persephone');
   });
+
+  test('saved bookmarks survive a direct visit to a page', async ({ page }) => {
+    await page.addInitScript(() =>
+      localStorage.setItem('mythos-v1', JSON.stringify({ state: { bookmarks: [{ kind: 'entity', id: 'hermes' }], readingLevel: 'scholarly', introSeen: true }, version: 0 })),
+    );
+    await page.goto('/timeline/');
+    await page.getByRole('button', { name: 'Olympian Age', exact: true }).first().click(); // a page write before/after hydration
+    await page.getByRole('button', { name: 'History & bookmarks' }).click();
+    await expect(page.getByRole('dialog', { name: 'History and bookmarks' })).toContainText('Hermes');
+    await expect(page.locator('#reading-level')).toHaveValue('scholarly');
+  });
 });

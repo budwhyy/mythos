@@ -56,11 +56,30 @@ function CameraRig({ focusIndex, reduced, distance }: { focusIndex: number; redu
   return null;
 }
 
-/** Projects label anchors to screen space every frame and moves the matching DOM nodes. */
+type Placed = { el: HTMLElement; x: number; y: number; w: number; h: number; priority: number; opacity: string };
+
+const GAP = 2;
+/** Offsets to try, in order: in place, then below/above by 1–3 label heights, then beside, then diagonal. */
+const CANDIDATES: [number, number][] = [
+  [0, 0], [0, 1], [0, -1], [0, 2], [0, -2], [1, 0], [-1, 0], [1, 1], [-1, 1], [1, -1], [-1, -1], [0, 3], [0, -3], [1, 2], [-1, 2],
+  [1, -2], [-1, -2], [2, 0], [-2, 0], [0, 4], [0, -4], [2, 1], [-2, 1], [2, -1], [-2, -1], [1, 3], [-1, 3],
+];
+
+/**
+ * Projects label anchors to screen space every frame and moves the matching DOM nodes.
+ * Star labels of the focused stage then go through a collision pass: sorted top-to-bottom,
+ * event labels take precedence over figure labels, and an overlapping label is nudged
+ * to the first free slot in a ring of candidate offsets. Figures take precedence over events and the
+ * focused stage's title block is treated as an obstacle. A label with no free slot is hidden.
+ */
 function LabelProjector({ refs, focusIndex }: { refs: MutableRefObject<Map<string, HTMLElement>>; focusIndex: number }) {
   const { camera, size } = useThree();
   const v = useMemo(() => new THREE.Vector3(), []);
+  const stars = useMemo<Placed[]>(() => [], []);
+  const obstacles = useMemo<Placed[]>(() => [], []);
   useFrame(() => {
+    stars.length = 0;
+    obstacles.length = 0;
     for (const l of LABELS) {
       const el = refs.current.get(l.key);
       if (!el) continue;
@@ -68,8 +87,47 @@ function LabelProjector({ refs, focusIndex }: { refs: MutableRefObject<Map<strin
       const visible = v.z < 1 && Math.abs(v.x) < 1.2 && Math.abs(v.y) < 1.2;
       const isStage = l.key.startsWith('stage:');
       const show = visible && (isStage ? Math.abs(l.stageIndex - focusIndex) <= 1 : l.stageIndex === focusIndex);
-      el.style.opacity = show ? (isStage && l.stageIndex !== focusIndex ? '0.55' : '1') : '0';
-      el.style.transform = `translate(-50%, -50%) translate(${((v.x + 1) / 2) * size.width}px, ${((1 - v.y) / 2) * size.height}px)`;
+      const x = ((v.x + 1) / 2) * size.width;
+      const y = ((1 - v.y) / 2) * size.height;
+      if (!show) {
+        el.style.opacity = '0';
+        el.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+        continue;
+      }
+      if (isStage) {
+        el.style.opacity = l.stageIndex !== focusIndex ? '0.55' : '1';
+        el.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+        if (l.stageIndex === focusIndex) obstacles.push({ el, x, y, w: el.offsetWidth, h: el.offsetHeight, priority: -1, opacity: '1' });
+        continue;
+      }
+      stars.push({ el, x, y, w: el.offsetWidth, h: el.offsetHeight || 16, priority: el.dataset.kind === 'entity' ? 0 : 1, opacity: '1' });
+    }
+
+    // Collision pass over the focused stage's star labels: each label tries a ring of
+    // candidate offsets around its anchor and takes the first slot free of already-placed labels.
+    stars.sort((a, b) => a.priority - b.priority || a.y - b.y);
+    const placed: Placed[] = [...obstacles];
+    const free = (x: number, y: number, s: Placed) =>
+      placed.every((p) => Math.abs(x - p.x) >= (s.w + p.w) / 2 + GAP || Math.abs(y - p.y) >= (s.h + p.h) / 2 + GAP);
+    for (const s of stars) {
+      const ax = s.x;
+      const ay = s.y;
+      let ok = false;
+      for (const [dx, dy] of CANDIDATES) {
+        const x = ax + dx * (s.w / 2 + 6);
+        const y = ay + dy * (s.h + GAP);
+        if (x - s.w / 2 < 0 || x + s.w / 2 > size.width) continue;
+        if (free(x, y, s)) {
+          s.x = x;
+          s.y = y;
+          ok = true;
+          break;
+        }
+      }
+      if (ok) placed.push(s);
+      else s.opacity = '0';
+      s.el.style.opacity = s.opacity;
+      s.el.style.transform = `translate(-50%, -50%) translate(${s.x}px, ${s.y}px)`;
     }
   });
   return null;
@@ -199,8 +257,9 @@ export default function MythicSequence3D({ reduced }: { reduced: boolean }) {
             <span
               key={s.id}
               ref={setRef(`star:${s.id}`)}
+              data-kind={s.kind}
               className={`absolute left-0 top-0 whitespace-nowrap rounded px-1 text-[11px] transition-opacity duration-500 sm:text-xs ${
-                s.kind === 'mythicEvent' ? 'italic text-marble' : 'text-gold'
+                s.kind === 'mythicEvent' ? 'max-w-[9rem] truncate italic text-marble sm:max-w-none' : 'text-gold'
               } ${selection?.id === s.id ? 'bg-gold/30' : ''}`}
               style={{ opacity: 0, textShadow: '0 0 4px #000', marginTop: 14 }}
             >

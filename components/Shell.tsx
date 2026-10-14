@@ -26,10 +26,6 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
 
-  useEffect(() => {
-    useStore.persist.rehydrate();
-  }, []);
-
   // Close transient UI on navigation.
   useEffect(() => {
     setMenuOpen(false);

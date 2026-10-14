@@ -61,7 +61,8 @@ The first deploy stacked the desktop header (266 px, sticky), a two-line "Where 
 - The 3D camera pulls back on narrow screens so a whole constellation fits; the map shows the current journey leg as an overlay.
 - Touch targets are at least 40 px on coarse pointers; safe-area insets are respected.
 - Verification: a `mobile` Playwright project (Pixel 5) with six smoke tests; Lighthouse mobile accessibility 100 and best practices 100 on Timeline, Tree, Map, Character and Learning. No horizontal overflow at 375 px.
-- Known rough edge: in stages with many events (Olympian Age) the 3D event labels can overlap at phone width. A label-collision pass is future work.
+- 3D labels no longer overlap. Each frame, the label projector runs a collision pass: figure names take precedence, each label tries a ring of candidate offsets around its star and takes the first free slot, the stage title block is an obstacle, and a label with no free slot is hidden rather than stacked. On phones, event labels truncate with an ellipsis; in the densest stage (Olympian Age) all ten figure names show and about seven of nine event labels are hidden — their stars stay tappable. A Playwright test asserts zero overlapping labels in both projects.
+- Fixed a data-loss bug found on the way: the persisted store was rehydrated in Shell's effect, but page effects run first and wrote default state over saved bookmarks and reading level on a direct visit to a page. Hydration now happens in a sibling mounted before Shell; a test covers it.
 - Netlify's "Built with Netlify" badge was disabled through the API (`built_with_badge_enabled: false`); it had overlapped the bottom tab bar.
 
 ## Data-model gaps
