@@ -122,7 +122,7 @@ export const HistoricalPeriodSchema = z
   .strict()
   .refine((p) => p.startYear < p.endYear, { message: 'period must start before it ends' });
 
-export const AttestationKindSchema = z.enum(['first_attestation', 'cult_evidence', 'literary_codification', 'syncretism', 'reception']);
+export const AttestationKindSchema = z.enum(['first_attestation', 'cult_evidence', 'literary_codification', 'archaeological_context', 'syncretism', 'reception']);
 
 export const AttestationSchema = z
   .object({

@@ -204,6 +204,8 @@ export function AttestationDetail({ id }: { id: string }) {
               ? 'evidenced in worship'
               : a.kind === 'literary_codification'
                 ? 'written down in a surviving text'
+                : a.kind === 'archaeological_context'
+                  ? 'associated with a real archaeological site'
                 : a.kind === 'syncretism'
                   ? 'linked to another culture’s god'
                   : 'taken up and reinterpreted'}{' '}

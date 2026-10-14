@@ -100,28 +100,36 @@ export function attestationsFor(mythicId: string): Attestation[] {
   return direct.sort(earliest);
 }
 
-/** Kinds that record a tradition. Syncretism and reception are later reinterpretations, never a "first attestation". */
+/**
+ * Kinds that record a tradition. Archaeological context (a site a story is associated with),
+ * syncretism and reception are never a "first attestation".
+ */
 const RECORDING_KINDS = new Set(['first_attestation', 'literary_codification', 'cult_evidence']);
 
 /**
- * The best "first attested" bridge for a mythic ref, earliest historical evidence first.
- * Looks at direct attestations, then (for figures) the events they take part in, then (for stages)
- * everything that belongs to the stage. Only recording kinds count; reception is a fallback.
+ * The best "first attested" bridge for a mythic ref, chosen in tiers:
+ * 1. direct recordings of the ref itself, 2. recordings of events a figure takes part in,
+ * 3. (for stages) recordings of anything in the stage, 4. the figure's stage, 5. any bridge at all.
+ * Within a tier the earliest historical evidence wins.
  */
 export function firstAttestation(mythicId: string): { attestation: Attestation; via: string } | null {
-  const candidates: Attestation[] = [...attestationsFor(mythicId)];
+  const recording = (xs: Attestation[]) => xs.filter((a) => RECORDING_KINDS.has(a.kind)).sort(earliest);
+  const direct = attestationsFor(mythicId);
+  const tiers: Attestation[][] = [recording(direct)];
   if (entitiesById.has(mythicId)) {
     const evIds = new Set(data.mythicEvents.filter((m) => m.participants.includes(mythicId)).map((m) => m.id));
-    candidates.push(...data.attestations.filter((a) => evIds.has(a.mythicRef)));
+    tiers.push(recording(data.attestations.filter((a) => evIds.has(a.mythicRef))));
   }
   if (stagesById.has(mythicId)) {
-    candidates.push(...data.attestations.filter((a) => a.mythicRef !== mythicId && stageOfMythicRef(a.mythicRef)?.id === mythicId));
+    tiers.push(recording(data.attestations.filter((a) => a.mythicRef !== mythicId && stageOfMythicRef(a.mythicRef)?.id === mythicId)));
   }
-  const recording = candidates.filter((a) => RECORDING_KINDS.has(a.kind)).sort(earliest);
-  const pick = recording[0] ?? candidates.sort(earliest)[0];
-  if (pick) return { attestation: pick, via: pick.mythicRef };
+  for (const t of tiers) if (t.length) return { attestation: t[0], via: t[0].mythicRef };
   const stage = stageOfMythicRef(mythicId);
-  if (stage && stage.id !== mythicId) return firstAttestation(stage.id);
+  if (stage && stage.id !== mythicId) {
+    const viaStage = firstAttestation(stage.id);
+    if (viaStage) return viaStage;
+  }
+  if (direct.length) return { attestation: direct[0], via: mythicId };
   return null;
 }
 
@@ -148,6 +156,7 @@ export const attestationKindLabel: Record<string, string> = {
   first_attestation: 'First attestation',
   cult_evidence: 'Cult evidence',
   literary_codification: 'Literary codification',
+  archaeological_context: 'Archaeological context',
   syncretism: 'Syncretism / identification',
   reception: 'Later reception',
 };
