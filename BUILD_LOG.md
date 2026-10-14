@@ -1,0 +1,87 @@
+# MYTHOS — Build Log (prototype v0.1)
+
+Built 2026-10-14 by Claude Code from the MYTHOS build brief.
+
+## Deployment record
+
+| Item | Value |
+|---|---|
+| Live URL | _LIVE_URL_ |
+| Netlify site ID | _SITE_ID_ |
+| Netlify site name | _SITE_NAME_ |
+| Repository | https://github.com/budwhyy/mythos (public, default branch `main`) |
+| Continuous deployment | _CD_STATUS_ |
+
+## Verification at hand-off
+
+- `npm run build`: data validation passes, and the static export builds all 9 routes.
+- `npm test`: 35 Vitest tests pass. They cover the schema, the two-clock rules, data minimums, the graph, geo, and first-attestation logic.
+- `npm run test:e2e`: 11 Playwright smoke tests pass (at least one per mode), run against `out/` in Chromium with reduced motion.
+- Lighthouse 12 (Playwright Chromium, simulated mobile):
+  - **Accessibility: 100 on all 8 pages** (target ≥ 90).
+  - **Best practices: 96 before the favicon was added.** The only failure was the 404 for `/favicon.ico`, which is now fixed.
+  - **Performance: 32–71**, varying a lot between identical runs on the build machine. Lighthouse throttles to a 4× slower CPU over slow 4G. Most of the blocking time is Next/React start-up plus three.js parsing on the 3D pages. 3D bundles are code-split and load only on pages that use them.
+  - The "60 fps on midrange laptops" target was not measured with a profiler. The 3D scenes are small: about 100 meshes in the mythic sequence, and 62 nodes in the graph with labels cached as sprites.
+
+## Decisions and assumptions
+
+1. **Static export works**, so `output: 'export'` is used with no Netlify Next runtime. No feature needs SSR.
+2. **TypeScript is pinned to 5.9.** npm resolved TypeScript 7, which Next 15's tooling does not support.
+3. **Zod 3** (not 4), because the API is stable and well known. **Tailwind v4** via `@tailwindcss/postcss`.
+4. **The globe uses MapLibre's globe projection, not R3F.** It is the same real-tile map as the flat view, so it shows the same classified places. R3F is used for the mythic sequence. (The brief listed R3F for "mythic sequence and globe".)
+5. **Tiles are OpenFreeMap's `dark` style** (free, no key). If it fails to load, the map falls back to `demotiles.maplibre.org`. No API keys are committed.
+6. **drei `<Html>` was replaced by a projected DOM label layer** in the 3D sequence. Under React 19, drei's per-label React roots produced "synchronously unmount a root" errors and DOM `removeChild` crashes. The replacement uses one DOM layer, positioned each frame from `useFrame`.
+7. **Stricter than the brief on dates.** Mythic records may not contain absolute dates even in prose: "c. 700 BCE" in a god's summary fails the build. Dates appear only on historical records, and in bridges where they are labelled as the historical side.
+8. **Production skips runtime Zod.** The build validates first, and a unit test guarantees the raw JSON needs no Zod defaults, so the browser does not re-parse the dataset. Dev and tests still validate on load.
+9. **"First attested" is chosen in tiers:**
+   - a figure's own record;
+   - then records of events the figure takes part in;
+   - then the stage;
+   - only `first_attestation`, `literary_codification` and `cult_evidence` qualify.
+
+   Syncretism, reception and archaeological context never count. The `archaeological_context` kind was added for the Troy/Hisarlik hinge.
+10. **Generations** in the Family Tree are genealogical depth over the parent edges currently visible. Figures whose parents aren't in the dataset (e.g. Peleus, Priam, Circe) get a generation from their mythic stage. The tree loads generations 0–4 by default ("lazy-load branches"); deeper ones are added on Expand.
+11. **One relationship was removed.** I removed my own draft edge "Chaos sibling of Gaia": Hesiod has both simply come to be, not as siblings. As a result, Chaos's line (Nyx, Erebus, Aether, Hemera) is not connected to Gaia's line. The path tracer explains this instead of inventing a link.
+12. **Map placement rules:**
+    - a `mythical` place gets a pin only when it has a sourced ancient identification, drawn as a hollow "proposed" ring (Aeaea → Monte Circeo, Hesperides → Euesperides);
+    - otherwise it appears only on the symbolic cosmos map;
+    - `debated` places are pinned at their leading proposal, with a confidence note;
+    - Thrinacia's marker stands for Sicily as a whole.
+13. **The era selector applies only to the Ancient Historical layer**, filtering by `Location.periods`. Mythical places have their own toggle.
+14. **Periods overlap on purpose** (e.g. the Roman period, 509 BCE–330 CE, runs parallel to the Greek periods). Period boundaries are conventions.
+
+## Data-model gaps
+
+- **No `nymph` or `deity` entity type.** The brief's enum is followed, so:
+  - Maia is typed `mortal`;
+  - Thetis, Calypso and Circe are typed `creature`;
+  - Metis, Dione, Leto, Prometheus and Atlas are typed `titan` (Titan generation, not the canonical twelve);
+  - Hades and Hestia are typed `olympian` as children of Cronus, although Hades does not live on Olympus.
+
+  Each panel's text says so where it matters. **Recommendation:** add `nymph` and `deity` types.
+- `Entity.type` includes `place`, but places are modelled as `Location` records, so no entity uses `place`.
+- **Relationships are generated** from `scripts/build-relationships.mjs` into `data/relationships.json`. Edit the script, not the JSON.
+- **Mixed-era dates.** Historical `dateRange` uses one `era` per record, so a range spanning BCE/CE would need two records. None currently does.
+
+## Content: references to check
+
+Citations were written from the compiler's knowledge of the texts, not checked against editions during this build. Line numbers for Hesiod follow West's numbering, and Homer is cited by book.line. **A classicist should verify these before public launch**, especially:
+
+- Simonides fr. 575 PMG (Eros as child of Aphrodite and Ares);
+- Diodorus 4.4.1 (the Orphic Dionysus, son of Persephone);
+- Strabo 5.3.6 (Circeii as Aeaea) and the Euesperides identification of the Hesperides;
+- Stesichorus' Palinode cited as fr. 192 PMG;
+- the Proclus *Cypria* summary references (cited by episode, not section number);
+- Statius, *Achilleid* line references for the heel;
+- the Linear B tablet references (KN V 52, PY Tn 316, PY Xa 102). The readings themselves are well established; the tablet numbers should be confirmed;
+- historical date ranges are conventional scholarly ranges and are flagged as approximate. Several are explicitly contested in the UI (Homer, the Knossos tablets, the first Olympiad).
+
+## Not built in v0.1 (by design)
+
+- **Civilization comparison and Story Mode** are navigable stubs that say "coming soon", with no placeholder content.
+- There are no shareable deep-link URLs for selections. State is held in Zustand, with bookmarks and history in localStorage.
+- There is no automated frame-rate test.
+
+## Blockers encountered
+
+_BLOCKERS_

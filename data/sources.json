@@ -1,49 +1,308 @@
 [
-  { "id": "hesiod-theogony", "author": "Hesiod", "work": "Theogony", "kind": "ancient" },
-  { "id": "hesiod-works", "author": "Hesiod", "work": "Works and Days", "kind": "ancient" },
-  { "id": "homer-iliad", "author": "Homer", "work": "Iliad", "kind": "ancient" },
-  { "id": "homer-odyssey", "author": "Homer", "work": "Odyssey", "kind": "ancient" },
-  { "id": "hh-demeter", "author": "Homeric Hymns", "work": "Hymn 2, To Demeter", "kind": "ancient" },
-  { "id": "hh-apollo", "author": "Homeric Hymns", "work": "Hymn 3, To Apollo", "kind": "ancient" },
-  { "id": "hh-hermes", "author": "Homeric Hymns", "work": "Hymn 4, To Hermes", "kind": "ancient" },
-  { "id": "hh-aphrodite", "author": "Homeric Hymns", "work": "Hymn 5, To Aphrodite", "kind": "ancient" },
-  { "id": "hh-hestia", "author": "Homeric Hymns", "work": "Hymn 29, To Hestia", "kind": "ancient" },
-  { "id": "hh-dionysus", "author": "Homeric Hymns", "work": "Hymn 7, To Dionysus", "kind": "ancient" },
-  { "id": "apollodorus", "author": "Apollodorus (attrib.)", "work": "Bibliotheca", "kind": "ancient" },
-  { "id": "apollodorus-epitome", "author": "Apollodorus (attrib.)", "work": "Bibliotheca, Epitome", "kind": "ancient" },
-  { "id": "proclus-cypria", "author": "Proclus", "work": "Chrestomathy (summary of the Cypria)", "kind": "ancient" },
-  { "id": "aeschylus-pv", "author": "Aeschylus (attrib.)", "work": "Prometheus Bound", "kind": "ancient" },
-  { "id": "euripides-bacchae", "author": "Euripides", "work": "Bacchae", "kind": "ancient" },
-  { "id": "apollonius", "author": "Apollonius of Rhodes", "work": "Argonautica", "kind": "ancient" },
-  { "id": "pindar-olympian", "author": "Pindar", "work": "Olympian Odes", "kind": "ancient" },
-  { "id": "simonides-575", "author": "Simonides", "work": "fragment 575 PMG", "kind": "ancient" },
-  { "id": "diodorus", "author": "Diodorus Siculus", "work": "Library of History", "kind": "ancient" },
-  { "id": "herodotus", "author": "Herodotus", "work": "Histories", "kind": "ancient" },
-  { "id": "thucydides", "author": "Thucydides", "work": "History of the Peloponnesian War", "kind": "ancient" },
-  { "id": "strabo", "author": "Strabo", "work": "Geography", "kind": "ancient" },
-  { "id": "pausanias", "author": "Pausanias", "work": "Description of Greece", "kind": "ancient" },
-  { "id": "arrian", "author": "Arrian", "work": "Anabasis of Alexander", "kind": "ancient" },
-  { "id": "livy", "author": "Livy", "work": "Ab Urbe Condita", "kind": "ancient" },
-  { "id": "virgil-aeneid", "author": "Virgil", "work": "Aeneid", "kind": "ancient" },
-  { "id": "ovid-met", "author": "Ovid", "work": "Metamorphoses", "kind": "ancient" },
-  { "id": "codex-theodosianus", "author": "Codex Theodosianus", "work": "Book 16, title 10 (on pagans)", "kind": "ancient" },
-  { "id": "ventris-chadwick", "author": "M. Ventris & J. Chadwick", "work": "Documents in Mycenaean Greek (2nd ed., 1973)", "kind": "modern" },
-  { "id": "chadwick-1976", "author": "J. Chadwick", "work": "The Mycenaean World (1976)", "kind": "modern" },
-  { "id": "burkert", "author": "W. Burkert", "work": "Greek Religion (1985)", "kind": "modern" },
-  { "id": "west-theogony", "author": "M. L. West", "work": "Hesiod: Theogony, edited with commentary (1966)", "kind": "modern" },
-  { "id": "janko-1982", "author": "R. Janko", "work": "Homer, Hesiod and the Hymns (1982)", "kind": "modern" },
-  { "id": "dickinson-1994", "author": "O. Dickinson", "work": "The Aegean Bronze Age (1994)", "kind": "modern" },
-  { "id": "cline-1177", "author": "E. H. Cline", "work": "1177 B.C.: The Year Civilization Collapsed (2014)", "kind": "modern" },
-  { "id": "latacz-2004", "author": "J. Latacz", "work": "Troy and Homer (2004)", "kind": "modern" },
-  { "id": "korfmann-2004", "author": "M. Korfmann", "work": "'Was there a Trojan War?', Archaeology 57.3 (2004)", "kind": "modern" },
-  { "id": "popham-1982", "author": "M. Popham, E. Touloupa & L. H. Sackett", "work": "'The Hero of Lefkandi', Antiquity 56 (1982)", "kind": "modern" },
-  { "id": "powell-1991", "author": "B. B. Powell", "work": "Homer and the Origin of the Greek Alphabet (1991)", "kind": "modern" },
-  { "id": "morgan-1990", "author": "C. Morgan", "work": "Athletes and Oracles (1990)", "kind": "modern" },
-  { "id": "mylonas-1961", "author": "G. Mylonas", "work": "Eleusis and the Eleusinian Mysteries (1961)", "kind": "modern" },
-  { "id": "fraser-1972", "author": "P. M. Fraser", "work": "Ptolemaic Alexandria (1972)", "kind": "modern" },
-  { "id": "beard-north-price", "author": "M. Beard, J. North & S. Price", "work": "Religions of Rome (1998)", "kind": "modern" },
-  { "id": "bittlestone-2005", "author": "R. Bittlestone, J. Diggle & J. Underhill", "work": "Odysseus Unbound (2005)", "kind": "modern" },
-  { "id": "evans-pom", "author": "A. Evans", "work": "The Palace of Minos at Knossos (1921–35)", "kind": "modern" },
-  { "id": "parker-1996", "author": "R. Parker", "work": "Athenian Religion: A History (1996)", "kind": "modern" },
-  { "id": "gantz-1993", "author": "T. Gantz", "work": "Early Greek Myth (1993)", "kind": "modern" }
+  {
+    "id": "hesiod-theogony",
+    "author": "Hesiod",
+    "work": "Theogony",
+    "kind": "ancient"
+  },
+  {
+    "id": "hesiod-works",
+    "author": "Hesiod",
+    "work": "Works and Days",
+    "kind": "ancient"
+  },
+  {
+    "id": "homer-iliad",
+    "author": "Homer",
+    "work": "Iliad",
+    "kind": "ancient"
+  },
+  {
+    "id": "homer-odyssey",
+    "author": "Homer",
+    "work": "Odyssey",
+    "kind": "ancient"
+  },
+  {
+    "id": "hh-demeter",
+    "author": "Homeric Hymns",
+    "work": "Hymn 2, To Demeter",
+    "kind": "ancient"
+  },
+  {
+    "id": "hh-apollo",
+    "author": "Homeric Hymns",
+    "work": "Hymn 3, To Apollo",
+    "kind": "ancient"
+  },
+  {
+    "id": "hh-hermes",
+    "author": "Homeric Hymns",
+    "work": "Hymn 4, To Hermes",
+    "kind": "ancient"
+  },
+  {
+    "id": "hh-aphrodite",
+    "author": "Homeric Hymns",
+    "work": "Hymn 5, To Aphrodite",
+    "kind": "ancient"
+  },
+  {
+    "id": "hh-hestia",
+    "author": "Homeric Hymns",
+    "work": "Hymn 29, To Hestia",
+    "kind": "ancient"
+  },
+  {
+    "id": "hh-dionysus",
+    "author": "Homeric Hymns",
+    "work": "Hymn 7, To Dionysus",
+    "kind": "ancient"
+  },
+  {
+    "id": "apollodorus",
+    "author": "Apollodorus (attrib.)",
+    "work": "Bibliotheca",
+    "kind": "ancient"
+  },
+  {
+    "id": "apollodorus-epitome",
+    "author": "Apollodorus (attrib.)",
+    "work": "Bibliotheca, Epitome",
+    "kind": "ancient"
+  },
+  {
+    "id": "proclus-cypria",
+    "author": "Proclus",
+    "work": "Chrestomathy (summary of the Cypria)",
+    "kind": "ancient"
+  },
+  {
+    "id": "aeschylus-pv",
+    "author": "Aeschylus (attrib.)",
+    "work": "Prometheus Bound",
+    "kind": "ancient"
+  },
+  {
+    "id": "euripides-bacchae",
+    "author": "Euripides",
+    "work": "Bacchae",
+    "kind": "ancient"
+  },
+  {
+    "id": "apollonius",
+    "author": "Apollonius of Rhodes",
+    "work": "Argonautica",
+    "kind": "ancient"
+  },
+  {
+    "id": "pindar-olympian",
+    "author": "Pindar",
+    "work": "Olympian Odes",
+    "kind": "ancient"
+  },
+  {
+    "id": "simonides-575",
+    "author": "Simonides",
+    "work": "fragment 575 PMG",
+    "kind": "ancient"
+  },
+  {
+    "id": "diodorus",
+    "author": "Diodorus Siculus",
+    "work": "Library of History",
+    "kind": "ancient"
+  },
+  {
+    "id": "herodotus",
+    "author": "Herodotus",
+    "work": "Histories",
+    "kind": "ancient"
+  },
+  {
+    "id": "thucydides",
+    "author": "Thucydides",
+    "work": "History of the Peloponnesian War",
+    "kind": "ancient"
+  },
+  {
+    "id": "strabo",
+    "author": "Strabo",
+    "work": "Geography",
+    "kind": "ancient"
+  },
+  {
+    "id": "pausanias",
+    "author": "Pausanias",
+    "work": "Description of Greece",
+    "kind": "ancient"
+  },
+  {
+    "id": "arrian",
+    "author": "Arrian",
+    "work": "Anabasis of Alexander",
+    "kind": "ancient"
+  },
+  {
+    "id": "livy",
+    "author": "Livy",
+    "work": "Ab Urbe Condita",
+    "kind": "ancient"
+  },
+  {
+    "id": "virgil-aeneid",
+    "author": "Virgil",
+    "work": "Aeneid",
+    "kind": "ancient"
+  },
+  {
+    "id": "ovid-met",
+    "author": "Ovid",
+    "work": "Metamorphoses",
+    "kind": "ancient"
+  },
+  {
+    "id": "codex-theodosianus",
+    "author": "Codex Theodosianus",
+    "work": "Book 16, title 10 (on pagans)",
+    "kind": "ancient"
+  },
+  {
+    "id": "ventris-chadwick",
+    "author": "M. Ventris & J. Chadwick",
+    "work": "Documents in Mycenaean Greek (2nd ed., 1973)",
+    "kind": "modern"
+  },
+  {
+    "id": "chadwick-1976",
+    "author": "J. Chadwick",
+    "work": "The Mycenaean World (1976)",
+    "kind": "modern"
+  },
+  {
+    "id": "burkert",
+    "author": "W. Burkert",
+    "work": "Greek Religion (1985)",
+    "kind": "modern"
+  },
+  {
+    "id": "west-theogony",
+    "author": "M. L. West",
+    "work": "Hesiod: Theogony, edited with commentary (1966)",
+    "kind": "modern"
+  },
+  {
+    "id": "janko-1982",
+    "author": "R. Janko",
+    "work": "Homer, Hesiod and the Hymns (1982)",
+    "kind": "modern"
+  },
+  {
+    "id": "dickinson-1994",
+    "author": "O. Dickinson",
+    "work": "The Aegean Bronze Age (1994)",
+    "kind": "modern"
+  },
+  {
+    "id": "cline-1177",
+    "author": "E. H. Cline",
+    "work": "1177 B.C.: The Year Civilization Collapsed (2014)",
+    "kind": "modern"
+  },
+  {
+    "id": "latacz-2004",
+    "author": "J. Latacz",
+    "work": "Troy and Homer (2004)",
+    "kind": "modern"
+  },
+  {
+    "id": "korfmann-2004",
+    "author": "M. Korfmann",
+    "work": "'Was there a Trojan War?', Archaeology 57.3 (2004)",
+    "kind": "modern"
+  },
+  {
+    "id": "popham-1982",
+    "author": "M. Popham, E. Touloupa & L. H. Sackett",
+    "work": "'The Hero of Lefkandi', Antiquity 56 (1982)",
+    "kind": "modern"
+  },
+  {
+    "id": "powell-1991",
+    "author": "B. B. Powell",
+    "work": "Homer and the Origin of the Greek Alphabet (1991)",
+    "kind": "modern"
+  },
+  {
+    "id": "morgan-1990",
+    "author": "C. Morgan",
+    "work": "Athletes and Oracles (1990)",
+    "kind": "modern"
+  },
+  {
+    "id": "mylonas-1961",
+    "author": "G. Mylonas",
+    "work": "Eleusis and the Eleusinian Mysteries (1961)",
+    "kind": "modern"
+  },
+  {
+    "id": "fraser-1972",
+    "author": "P. M. Fraser",
+    "work": "Ptolemaic Alexandria (1972)",
+    "kind": "modern"
+  },
+  {
+    "id": "beard-north-price",
+    "author": "M. Beard, J. North & S. Price",
+    "work": "Religions of Rome (1998)",
+    "kind": "modern"
+  },
+  {
+    "id": "bittlestone-2005",
+    "author": "R. Bittlestone, J. Diggle & J. Underhill",
+    "work": "Odysseus Unbound (2005)",
+    "kind": "modern"
+  },
+  {
+    "id": "evans-pom",
+    "author": "A. Evans",
+    "work": "The Palace of Minos at Knossos (1921–35)",
+    "kind": "modern"
+  },
+  {
+    "id": "parker-1996",
+    "author": "R. Parker",
+    "work": "Athenian Religion: A History (1996)",
+    "kind": "modern"
+  },
+  {
+    "id": "gantz-1993",
+    "author": "T. Gantz",
+    "work": "Early Greek Myth (1993)",
+    "kind": "modern"
+  },
+  {
+    "id": "aeschylus-eumenides",
+    "author": "Aeschylus",
+    "work": "Eumenides",
+    "kind": "ancient"
+  },
+  {
+    "id": "pindar-isthmian",
+    "author": "Pindar",
+    "work": "Isthmian Odes",
+    "kind": "ancient"
+  },
+  {
+    "id": "statius-achilleid",
+    "author": "Statius",
+    "work": "Achilleid",
+    "kind": "ancient"
+  },
+  {
+    "id": "stesichorus-palinode",
+    "author": "Stesichorus",
+    "work": "Palinode (fr. 192 PMG, quoted in Plato, Phaedrus 243a)",
+    "kind": "ancient"
+  }
 ]
