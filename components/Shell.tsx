@@ -116,7 +116,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         <main id="main" className="min-w-0 flex-1" tabIndex={-1}>
           {children}
         </main>
-        {selection ? <DetailPanel /> : null}
+        {selection && !(selection.kind === 'entity' && pathname.startsWith('/character')) ? <DetailPanel /> : null}
       </div>
       <LibraryDrawer open={libraryOpen} onClose={() => setLibraryOpen(false)} />
     </div>

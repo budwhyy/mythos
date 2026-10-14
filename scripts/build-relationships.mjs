@@ -25,7 +25,6 @@ const rows = [
   ['partner', 'gaia', 'tartarus', H, '821–822'],
   ['parent', 'gaia', 'typhon', H, '821–822'],
   ['parent', 'tartarus', 'typhon', H, '821–822'],
-  ['sibling', 'chaos', 'gaia', H, '116–117', 'Both "come to be" first, with no parents.'],
   // Titans, Cyclopes, Hundred-Handers
   ...titans.flatMap((t) => [
     ['parent', 'gaia', t, H, '133–138'],

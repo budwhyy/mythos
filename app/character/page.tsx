@@ -1,3 +1,7 @@
+import CharacterView from '@/components/CharacterView';
+
+export const metadata = { title: 'Characters — MYTHOS' };
+
 export default function Page() {
-  return <h1 className="p-8 font-display text-4xl text-gold">character</h1>;
+  return <CharacterView />;
 }

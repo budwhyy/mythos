@@ -106,15 +106,6 @@
     "ref": "821–822"
   },
   {
-    "id": "sibling-chaos-gaia-hesiod-theogony",
-    "from": "chaos",
-    "to": "gaia",
-    "kind": "sibling",
-    "source": "hesiod-theogony",
-    "ref": "116–117",
-    "note": "Both \"come to be\" first, with no parents."
-  },
-  {
     "id": "parent-gaia-oceanus-hesiod-theogony",
     "from": "gaia",
     "to": "oceanus",

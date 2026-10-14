@@ -1,3 +1,7 @@
+import FamilyTreeView from '@/components/tree/FamilyTreeView';
+
+export const metadata = { title: 'Family Tree — MYTHOS' };
+
 export default function Page() {
-  return <h1 className="p-8 font-display text-4xl text-gold">tree</h1>;
+  return <FamilyTreeView />;
 }

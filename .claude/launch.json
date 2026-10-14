@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "mythos-dev", "runtimeExecutable": "npx", "runtimeArgs": ["next", "dev", "-p", "3123"], "port": 3123 }
+    { "name": "mythos-dev", "runtimeExecutable": "npx", "runtimeArgs": ["next", "dev", "-p", "3123"], "port": 3123 },
+    { "name": "mythos-static", "runtimeExecutable": "npx", "runtimeArgs": ["serve", "out", "-l", "3124", "--no-clipboard"], "port": 3124 }
   ]
 }
