@@ -4,8 +4,8 @@
 
 > *Before the gods, before Olympus, before time had a story — there was Chaos.*
 
-- **Live site:** _LIVE_URL_
-- **Netlify site ID:** _SITE_ID_
+- **Live site:** https://mythos-atlas-898.netlify.app
+- **Netlify site ID:** `c904cdb2-6b1d-47d2-aa11-409f30836d35`
 - **Repository:** https://github.com/budwhyy/mythos
 
 MYTHOS is a static Next.js app with a cinematic 3D mythic sequence, a dated historical track, a 3D genealogy of 62 figures, a classified map with Odysseus' voyage, and a guided learning path. Every claim in the data is tied to an ancient text or a piece of modern scholarship.

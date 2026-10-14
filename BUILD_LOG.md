@@ -6,11 +6,11 @@ Built 2026-10-14 by Claude Code from the MYTHOS build brief.
 
 | Item | Value |
 |---|---|
-| Live URL | _LIVE_URL_ |
-| Netlify site ID | _SITE_ID_ |
-| Netlify site name | _SITE_NAME_ |
+| Live URL | https://mythos-atlas-898.netlify.app |
+| Netlify site ID | `c904cdb2-6b1d-47d2-aa11-409f30836d35` |
+| Netlify site name | `mythos-atlas-898` (`mythos-atlas` was already taken; Netlify assigned the nearest available name) |
 | Repository | https://github.com/budwhyy/mythos (public, default branch `main`) |
-| Continuous deployment | _CD_STATUS_ |
+| Continuous deployment | Enabled for `main` using Netlify's manual Git setup: a read-only deploy key on the repo, repo build settings on the site, and a GitHub webhook to `api.netlify.com/hooks/github`. The Netlify GitHub App was not installed, because that step needs browser interaction. Build command on Netlify: `npm test && npm run build`. |
 
 ## Verification at hand-off
 
@@ -84,4 +84,6 @@ Citations were written from the compiler's knowledge of the texts, not checked a
 
 ## Blockers encountered
 
-_BLOCKERS_
+- `netlify login` needed one browser authorization by the account owner. It was granted during the build.
+- The site name `mythos-atlas` was unavailable, so `mythos-atlas-898` is used.
+- No other blockers.
