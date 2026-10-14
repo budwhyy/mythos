@@ -67,6 +67,7 @@ export const useStore = create<State>()(
     }),
     {
       name: 'mythos-v1',
+      skipHydration: true, // rehydrated in Shell after mount to avoid SSR mismatches
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({
         bookmarks: s.bookmarks,

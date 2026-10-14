@@ -1,3 +1,11 @@
+import OpeningSequence from '@/components/OpeningSequence';
+import TimelineView from '@/components/timeline/TimelineView';
+
 export default function Home() {
-  return <h1 className="p-8 font-display text-4xl text-gold">MYTHOS</h1>;
+  return (
+    <>
+      <OpeningSequence />
+      <TimelineView />
+    </>
+  );
 }

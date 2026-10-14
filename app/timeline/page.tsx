@@ -1,3 +1,7 @@
+import TimelineView from '@/components/timeline/TimelineView';
+
+export const metadata = { title: 'Timeline — MYTHOS' };
+
 export default function Page() {
-  return <h1 className="p-8 font-display text-4xl text-gold">timeline</h1>;
+  return <TimelineView />;
 }

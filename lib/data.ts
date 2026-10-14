@@ -98,23 +98,28 @@ export function attestationsFor(mythicId: string): Attestation[] {
   return direct.sort(earliest);
 }
 
+/** Kinds that record a tradition. Syncretism and reception are later reinterpretations, never a "first attestation". */
+const RECORDING_KINDS = new Set(['first_attestation', 'literary_codification', 'cult_evidence']);
+
 /**
- * The best "first attested" bridge for a mythic ref: a direct attestation if one exists,
- * otherwise one for a mythic event it takes part in, otherwise one for its stage.
+ * The best "first attested" bridge for a mythic ref, earliest historical evidence first.
+ * Looks at direct attestations, then (for figures) the events they take part in, then (for stages)
+ * everything that belongs to the stage. Only recording kinds count; reception is a fallback.
  */
 export function firstAttestation(mythicId: string): { attestation: Attestation; via: string } | null {
-  const direct = attestationsFor(mythicId);
-  if (direct.length) return { attestation: direct[0], via: mythicId };
+  const candidates: Attestation[] = [...attestationsFor(mythicId)];
   if (entitiesById.has(mythicId)) {
-    const evIds = data.mythicEvents.filter((m) => m.participants.includes(mythicId)).map((m) => m.id);
-    const viaEvents = data.attestations.filter((a) => evIds.includes(a.mythicRef)).sort(earliest);
-    if (viaEvents.length) return { attestation: viaEvents[0], via: viaEvents[0].mythicRef };
+    const evIds = new Set(data.mythicEvents.filter((m) => m.participants.includes(mythicId)).map((m) => m.id));
+    candidates.push(...data.attestations.filter((a) => evIds.has(a.mythicRef)));
   }
+  if (stagesById.has(mythicId)) {
+    candidates.push(...data.attestations.filter((a) => a.mythicRef !== mythicId && stageOfMythicRef(a.mythicRef)?.id === mythicId));
+  }
+  const recording = candidates.filter((a) => RECORDING_KINDS.has(a.kind)).sort(earliest);
+  const pick = recording[0] ?? candidates.sort(earliest)[0];
+  if (pick) return { attestation: pick, via: pick.mythicRef };
   const stage = stageOfMythicRef(mythicId);
-  if (stage && stage.id !== mythicId) {
-    const viaStage = attestationsFor(stage.id);
-    if (viaStage.length) return { attestation: viaStage[0], via: stage.id };
-  }
+  if (stage && stage.id !== mythicId) return firstAttestation(stage.id);
   return null;
 }
 

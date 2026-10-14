@@ -32,6 +32,10 @@ export default function Shell({ children }: { children: React.ReactNode }) {
   const [libraryOpen, setLibraryOpen] = useState(false);
 
   useEffect(() => {
+    useStore.persist.rehydrate();
+  }, []);
+
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const t = e.target as HTMLElement;
       const typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable);
