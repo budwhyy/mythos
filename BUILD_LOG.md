@@ -72,6 +72,12 @@ The first deploy stacked the desktop header (266 px, sticky), a two-line "Where 
 - Schema: `ImageSchema` with `objectDate`; the `image` subtree is exempt from the mythic-date scan (evidence about the object), covered by a unit test.
 - Not done: images for places and stages, and credit lines from Commons are sometimes terse ("Own work"); the link back is always present.
 
+## Deploy blocked (2026-10-16)
+
+The images commit (`ff6e5ca`) is on GitHub but **not live**: Netlify skipped the Git build with "account credit usage exceeded", and a CLI upload (`netlify deploy --prod --dir=out`) was refused with 403 Forbidden. The free plan's monthly allowance is used up (the earlier deploys and builds during the mobile pass consumed it). Nothing in the repo is wrong.
+
+To resume once the account has credit again (monthly reset or a plan change in the Netlify dashboard → Team → Billing): push any commit to `main`, or run `npm run build && npx netlify deploy --prod --dir=out` from this folder (the site is linked via `.netlify/state.json`).
+
 ## Data-model gaps
 
 - **No `nymph` or `deity` entity type.** The brief's enum is followed, so:
