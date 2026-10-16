@@ -17,6 +17,7 @@ import {
 import { edgeColor } from '@/lib/tokens';
 import type { RelationshipKind } from '@/lib/schema';
 import { ContentTag } from './ContentTag';
+import Portrait from './Portrait';
 
 const LEVELS = ['beginner', 'intermediate', 'scholarly'] as const;
 
@@ -80,6 +81,8 @@ export default function CharacterPanel({ id, headingLevel = 2 }: { id: string; h
           </p>
         ) : null}
       </header>
+
+      <Portrait entity={e} />
 
       <section aria-label="Summary">
         <div role="tablist" aria-label="Reading level" className="mb-2 flex gap-1">

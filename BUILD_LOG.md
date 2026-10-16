@@ -65,6 +65,13 @@ The first deploy stacked the desktop header (266 px, sticky), a two-line "Where 
 - Fixed a data-loss bug found on the way: the persisted store was rehydrated in Shell's effect, but page effects run first and wrote default state over saved bookmarks and reading level on a direct visit to a page. Hydration now happens in a sibling mounted before Shell; a test covers it.
 - Netlify's "Built with Netlify" badge was disabled through the API (`built_with_badge_enabled: false`); it had overlapped the bottom tab bar.
 
+## Images pass (2026-10-16)
+
+- 45 figure portraits from the Met Open Access API (CC0; search is on `v1.1`, objects still on `v1`, and bursts are rate-limited) and Wikimedia Commons categories (ancient-art categories first; the bare `Category:<Name>` is full of moons, butterflies and excavators and is used only through manual review). Every candidate was reviewed on contact sheets before being bundled.
+- Portraits replace the dots in both the 3D graph (circular canvas-texture sprites with a type-coloured ring) and the 2D canvas, head the character panel and detail sheet with full credit, and thumbnail the character list. The 3D layout became layered 2.5D (generation fixes y, shallow deterministic z) because free-z clouds stack faces in projection.
+- Schema: `ImageSchema` with `objectDate`; the `image` subtree is exempt from the mythic-date scan (evidence about the object), covered by a unit test.
+- Not done: images for places and stages, and credit lines from Commons are sometimes terse ("Own work"); the link back is always present.
+
 ## Data-model gaps
 
 - **No `nymph` or `deity` entity type.** The brief's enum is followed, so:

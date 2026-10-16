@@ -35,6 +35,27 @@ export const MythicStageSchema = z
   })
   .strict();
 
+/** A bundled picture of a real artefact or place, with the credit it must carry. */
+export const ImageSchema = z
+  .object({
+    src: z.string().regex(/^\/img\/[a-z0-9/_-]+\.(jpg|webp|png)$/, 'images are bundled under /img'),
+    thumb: z.string().regex(/^\/img\/[a-z0-9/_-]+\.(jpg|webp|png)$/).optional(),
+    alt: z.string().min(1),
+    title: z.string().min(1),
+    /** When the artefact itself was made — a fact about the object (evidence frame), never about the myth. */
+    objectDate: z.string().optional(),
+    credit: z.string().min(1),
+    artist: z.string().optional(),
+    licence: z.string().min(1),
+    licenceUrl: z.string().url().optional(),
+    url: z.string().url(),
+    source: z.enum(['met', 'commons']),
+    /** Position of the subject for thumbnail cropping, 0..100 (default centre). */
+    focus: z.object({ x: z.number().min(0).max(100), y: z.number().min(0).max(100) }).strict().optional(),
+  })
+  .strict();
+export type EntityImage = z.infer<typeof ImageSchema>;
+
 export const EntityTypeSchema = z.enum(['primordial', 'titan', 'olympian', 'hero', 'mortal', 'creature', 'place']);
 
 export const EntitySchema = z
@@ -51,6 +72,7 @@ export const EntitySchema = z
     mythicStage: z.string(), // ordinal stage id only
     sources: z.array(z.string()).min(1, 'every entity needs at least one source'),
     sourceRefs: z.record(z.string(), z.string()).optional(), // sourceId -> line/section reference
+    image: ImageSchema.optional(),
   })
   .strict();
 
@@ -240,6 +262,8 @@ function scanForDates(value: unknown, path: string, issues: string[]) {
   if (Array.isArray(value)) value.forEach((v, i) => scanForDates(v, `${path}[${i}]`, issues));
   else if (value && typeof value === 'object') {
     for (const [k, v] of Object.entries(value)) {
+      // A bundled artefact photo is evidence: its object date and museum credit describe the thing, not the myth.
+      if (k === 'image') continue;
       if (DATE_KEYS.test(k)) issues.push(`${path}.${k}: mythic records may not carry date fields`);
       scanForDates(v, `${path}.${k}`, issues);
     }

@@ -5,6 +5,7 @@ import ForceGraph3D, { type ForceGraphMethods } from 'react-force-graph-3d';
 import * as THREE from 'three';
 import { edgeColor, tokens } from '@/lib/tokens';
 import { type GLink, type GNode, type GraphProps } from './types';
+import { portraitTexture } from './portraitTexture';
 
 const typeColor: Record<string, string> = {
   primordial: tokens.color.mythic,
@@ -36,7 +37,7 @@ function labelSprite(text: string, color: string): THREE.Sprite {
   const tex = new THREE.CanvasTexture(canvas);
   tex.colorSpace = THREE.SRGBColorSpace;
   const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthWrite: false, transparent: true }));
-  sprite.scale.set(w / 9, 64 / 9, 1);
+  sprite.scale.set(w / 11, 64 / 11, 1);
   spriteCache.set(key, sprite);
   return sprite.clone();
 }
@@ -61,7 +62,9 @@ export default function Graph3D({ nodes, links, selectedId, highlightNodes, high
   const graphData = useMemo(() => {
     const ns = nodes.map((n) => {
       const prev = cache.current.get(n.id);
-      const next = Object.assign(prev ?? {}, n, { fy: -n.gen * 42 + 100 }) as GNode;
+      // Layered 2.5D: generation fixes y, a shallow deterministic z gives depth without stacking portraits in projection.
+      const z = ((n.id.split('').reduce((a, c) => a + c.charCodeAt(0), 0) % 7) - 3) * 9;
+      const next = Object.assign(prev ?? {}, n, { fy: -n.gen * 58 + 150, fz: z }) as GNode;
       cache.current.set(n.id, next);
       return next;
     });
@@ -69,13 +72,23 @@ export default function Graph3D({ nodes, links, selectedId, highlightNodes, high
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sig]);
 
-  const fitted = useRef(false);
+  // Refit on every engine stop for a few seconds after the data changes (the force reheat below settles in stages).
+  const fitUntil = useRef(0);
   useEffect(() => {
-    fitted.current = false;
+    fitUntil.current = Date.now() + 8000;
   }, [graphData]);
   useEffect(() => {
     if (fitSignal) fg.current?.zoomToFit(reduced ? 0 : 800, 40);
   }, [fitSignal, reduced]);
+
+  // Portrait discs need more room than dots: longer links, stronger repulsion.
+  useEffect(() => {
+    const g = fg.current;
+    if (!g) return;
+    g.d3Force('link')?.distance(40);
+    g.d3Force('charge')?.strength(-140);
+    g.d3ReheatSimulation();
+  }, [graphData]);
 
   useEffect(() => {
     if (!selectedId || !fg.current) return;
@@ -110,11 +123,25 @@ export default function Graph3D({ nodes, links, selectedId, highlightNodes, high
         nodeColor={(n) => (dim(n.id) ? '#2a2d40' : n.id === selectedId ? tokens.color.marble : typeColor[n.type] ?? tokens.color.mist)}
         nodeOpacity={0.95}
         nodeLabel={(n) => `${n.name}${n.conflicted ? ' — sources disagree on parentage' : ''}`}
-        nodeThreeObjectExtend
+        nodeThreeObjectExtend={(n: GNode) => !n.img}
         nodeThreeObject={(n: GNode) => {
-          const s = labelSprite(n.conflicted ? `${n.name} ⚑` : n.name, dim(n.id) ? '#4a4d60' : n.id === selectedId ? tokens.color.gold : tokens.color.marble);
-          s.position.set(0, 8, 0);
-          return s;
+          const dimmed = dim(n.id);
+          const label = labelSprite(n.conflicted ? `${n.name} ⚑` : n.name, dimmed ? '#4a4d60' : n.id === selectedId ? tokens.color.gold : tokens.color.marble);
+          if (!n.img) {
+            label.position.set(0, 8, 0);
+            return label;
+          }
+          // Portrait disc replaces the ball; the name sits beneath it.
+          const group = new THREE.Group();
+          const size = n.id === selectedId ? 18 : n.type === 'primordial' || n.type === 'olympian' ? 15 : 12;
+          const disc = new THREE.Sprite(
+            new THREE.SpriteMaterial({ map: portraitTexture(n.img, n.id === selectedId ? tokens.color.marble : typeColor[n.type] ?? tokens.color.gold), transparent: true, opacity: dimmed ? 0.25 : 1, depthWrite: false }),
+          );
+          disc.scale.set(size, size, 1);
+          group.add(disc);
+          label.position.set(0, -(size / 2 + 4), 0);
+          group.add(label);
+          return group;
         }}
         linkColor={(l) => (linkDim(l) ? '#1c1f30' : edgeColor(l.kind))}
         linkOpacity={0.7}
@@ -129,9 +156,7 @@ export default function Graph3D({ nodes, links, selectedId, highlightNodes, high
         linkLabel={(l) => `${l.kind} · ${l.src}`}
         onNodeClick={(n) => onNodeClick(n.id)}
         onEngineStop={() => {
-          if (fitted.current) return;
-          fitted.current = true;
-          fg.current?.zoomToFit(reduced ? 0 : 800, 40);
+          if (Date.now() < fitUntil.current) fg.current?.zoomToFit(reduced ? 0 : 800, 40);
         }}
         enableNodeDrag={false}
       />

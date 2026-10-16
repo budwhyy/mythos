@@ -89,6 +89,17 @@ The core types follow the build brief exactly. These extensions were added:
 
 ---
 
+## Images
+
+Figures are illustrated with photographs of **real artefacts that depict them** — vase paintings, marble heads, reliefs — never invented likenesses. 45 of 62 figures have one; the rest (Tartarus, Aether, the obscure Titans, the Hundred-Handers, Calypso and a few others) have no usable ancient depiction and show a marble medallion with their Greek initial instead.
+
+- Sources: the Met Open Access collection (CC0) and Wikimedia Commons (public domain, CC0 or CC BY/BY-SA, attribution shown in the panel).
+- Each `Entity.image` records the object title, its own date (`objectDate`), the museum credit, photographer where required, licence and a link back.
+- **Two-clock rule:** an artefact's date is a fact about the object, so the `image` subtree is exempt from the mythic-date check. Mythic prose still may not carry dates; a test pins this.
+- Bundled under `public/img/figures/` as a 1000px hero and a 320px square thumb (used as the node in the family tree).
+
+To change or add a picture: run `node scripts/images/probe.mjs` (collects candidates), `node scripts/images/sheets.mjs` (renders contact sheets for review), set the choice in `data/images/picks.json`, then `node scripts/images/build.mjs`.
+
 ## Adding content
 
 1. **Add a source** to `data/sources.json` if needed (`kind: "ancient"` or `"modern"`).

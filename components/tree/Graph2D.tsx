@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import ForceGraph2D, { type ForceGraphMethods } from 'react-force-graph-2d';
 import { edgeColor, tokens } from '@/lib/tokens';
 import type { GLink, GNode, GraphProps } from './types';
+import { portraitImage } from './portraitTexture';
 
 const DASH: Record<string, number[] | null> = { parent: null, partner: [6, 3], sibling: [1, 3], conflict: [8, 3, 2, 3], alliance: [3, 3] };
 
@@ -36,7 +37,7 @@ export default function Graph2D({ nodes, links, selectedId, highlightNodes, high
   const graphData = useMemo(() => {
     const ns = nodes.map((n) => {
       const prev = cache.current.get(n.id);
-      const next = Object.assign(prev ?? {}, n, { fy: n.gen * 70 }) as GNode;
+      const next = Object.assign(prev ?? {}, n, { fy: n.gen * 95 }) as GNode;
       cache.current.set(n.id, next);
       return next;
     });
@@ -44,13 +45,22 @@ export default function Graph2D({ nodes, links, selectedId, highlightNodes, high
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sig]);
 
-  const fitted = useRef(false);
+  // Refit on every engine stop for a few seconds after the data changes (the force reheat below settles in stages).
+  const fitUntil = useRef(0);
   useEffect(() => {
-    fitted.current = false;
+    fitUntil.current = Date.now() + 8000;
   }, [graphData]);
   useEffect(() => {
     if (fitSignal) fg.current?.zoomToFit(reduced ? 0 : 600, 30);
   }, [fitSignal, reduced]);
+
+  useEffect(() => {
+    const g = fg.current;
+    if (!g) return;
+    g.d3Force('link')?.distance(70);
+    g.d3Force('charge')?.strength(-260);
+    g.d3ReheatSimulation();
+  }, [graphData]);
 
   useEffect(() => {
     if (!selectedId || !fg.current) return;
@@ -81,12 +91,26 @@ export default function Graph2D({ nodes, links, selectedId, highlightNodes, high
         linkLabel={(l) => `${l.kind} · ${l.src}`}
         nodeLabel={(n) => n.name}
         nodeCanvasObject={(n, ctx, scale) => {
-          const r = n.id === selectedId ? 7 : 4.5;
+          const img = n.img ? portraitImage(n.img) : null;
+          const r = img ? (n.id === selectedId ? 13 : 9) : n.id === selectedId ? 7 : 4.5;
           ctx.beginPath();
           ctx.arc(n.x!, n.y!, r, 0, 2 * Math.PI);
           ctx.fillStyle = dim(n.id) ? '#2a2d40' : typeColor[n.type] ?? tokens.color.mist;
           ctx.fill();
-          if (n.id === selectedId) {
+          if (img && img.complete && img.naturalWidth) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(n.x!, n.y!, r - 1, 0, 2 * Math.PI);
+            ctx.clip();
+            ctx.globalAlpha = dim(n.id) ? 0.25 : 1;
+            ctx.drawImage(img, n.x! - r, n.y! - r, r * 2, r * 2);
+            ctx.restore();
+            ctx.beginPath();
+            ctx.arc(n.x!, n.y!, r, 0, 2 * Math.PI);
+            ctx.lineWidth = 1.5 / scale;
+            ctx.strokeStyle = n.id === selectedId ? tokens.color.marble : typeColor[n.type] ?? tokens.color.gold;
+            ctx.stroke();
+          } else if (n.id === selectedId) {
             ctx.lineWidth = 2 / scale;
             ctx.strokeStyle = tokens.color.marble;
             ctx.stroke();
@@ -101,14 +125,12 @@ export default function Graph2D({ nodes, links, selectedId, highlightNodes, high
         nodePointerAreaPaint={(n, color, ctx) => {
           ctx.fillStyle = color;
           ctx.beginPath();
-          ctx.arc(n.x!, n.y!, 8, 0, 2 * Math.PI);
+          ctx.arc(n.x!, n.y!, n.img ? 13 : 8, 0, 2 * Math.PI);
           ctx.fill();
         }}
         onNodeClick={(n) => onNodeClick(n.id)}
         onEngineStop={() => {
-          if (fitted.current) return;
-          fitted.current = true;
-          fg.current?.zoomToFit(reduced ? 0 : 600, 30);
+          if (Date.now() < fitUntil.current) fg.current?.zoomToFit(reduced ? 0 : 600, 30);
         }}
         enableNodeDrag={false}
       />

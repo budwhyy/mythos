@@ -57,7 +57,7 @@ export default function FamilyTreeView() {
     const curv = curvatures(edges);
     const nodes: GNode[] = [...visible].map((id) => {
       const e = entitiesById.get(id)!;
-      return { id, name: e.name, type: e.type, gen: gens.get(id) ?? 0, conflicted: CONFLICTED.includes(id) };
+      return { id, name: e.name, type: e.type, gen: gens.get(id) ?? 0, conflicted: CONFLICTED.includes(id), img: e.image?.thumb ?? e.image?.src };
     });
     const links: GLink[] = edges
       .filter((r) => visible.has(r.from) && visible.has(r.to))

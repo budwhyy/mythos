@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { data } from '@/lib/data';
 import { useStore } from '@/lib/store';
 import CharacterPanel from './CharacterPanel';
+import Portrait from './Portrait';
 
 const GROUPS = [
   ['primordial', 'Primordials'],
@@ -64,8 +65,9 @@ export default function CharacterView() {
                       type="button"
                       aria-current={id === e.id ? 'true' : undefined}
                       onClick={() => select({ kind: 'entity', id: e.id })}
-                      className={`w-full rounded px-2 py-0.5 text-left text-sm ${id === e.id ? 'bg-gold/20 text-gold' : 'hover:bg-cosmos-3'}`}
+                      className={`flex w-full items-center gap-2 rounded px-2 py-0.5 text-left text-sm ${id === e.id ? 'bg-gold/20 text-gold' : 'hover:bg-cosmos-3'}`}
                     >
+                      <Portrait entity={e} size="list" />
                       {e.name}
                     </button>
                   </li>

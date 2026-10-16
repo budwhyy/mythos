@@ -26,6 +26,18 @@
       "hesiod-theogony": "116–123",
       "ovid-met": "1.5–9",
       "west-theogony": "on 116"
+    },
+    "image": {
+      "src": "/img/figures/chaos.jpg",
+      "thumb": "/img/figures/chaos-thumb.jpg",
+      "alt": "Chaos: Hilma af Klint, 1906-07, Primordial Chaos - No 16",
+      "title": "Hilma af Klint, 1906-07, Primordial Chaos - No 16",
+      "objectDate": "between 1906 and 1907date QS:P571,+1906-00-00T00:00:00Z/8,P1319,+1906-00-00T00:00:00Z/9,P1326,+1907-00-00T00:00:00Z/9",
+      "credit": "[1]",
+      "artist": "Hilma af Klint",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Hilma_af_Klint,_1906-07,_Primordial_Chaos_-_No_16.jpg",
+      "source": "commons"
     }
   },
   {
@@ -54,6 +66,17 @@
     "sourceRefs": {
       "hesiod-theogony": "117, 126–138, 159–172, 469–496",
       "apollodorus": "1.1.1–1.1.4"
+    },
+    "image": {
+      "src": "/img/figures/gaia.jpg",
+      "thumb": "/img/figures/gaia-thumb.jpg",
+      "alt": "Gaia: Apollo Tityos Staatliche Antikensammlungen 2689",
+      "title": "Apollo Tityos Staatliche Antikensammlungen 2689",
+      "credit": "User:Bibi Saint-Pol, own work, 2007-02-10",
+      "artist": "Penthesilea Painter",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Apollo_Tityos_Staatliche_Antikensammlungen_2689.jpg",
+      "source": "commons"
     }
   },
   {
@@ -103,6 +126,17 @@
     "sourceRefs": {
       "hesiod-theogony": "120–122",
       "simonides-575": "575"
+    },
+    "image": {
+      "src": "/img/figures/eros.jpg",
+      "thumb": "/img/figures/eros-thumb.jpg",
+      "alt": "Eros: Seated Eros",
+      "title": "Seated Eros",
+      "objectDate": "3rd century BCE",
+      "credit": "The Metropolitan Museum of Art, The Cesnola Collection, Purchased by subscription, 1874–76",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/241150",
+      "source": "met"
     }
   },
   {
@@ -152,6 +186,18 @@
     "sourceRefs": {
       "hesiod-theogony": "123–125, 211–232",
       "homer-iliad": "14.258–261"
+    },
+    "image": {
+      "src": "/img/figures/nyx.jpg",
+      "thumb": "/img/figures/nyx-thumb.jpg",
+      "alt": "Nyx: BnF MS Gr139 folio 419 verso - detail - Nyx",
+      "title": "BnF MS Gr139 folio 419 verso - detail - Nyx",
+      "objectDate": "9 March 2015 (online on Gallica)",
+      "credit": "Illustrated painted parchment Greek manuscript psalter (the \"Paris Psalter\", c. 940–960 AD) in the Bibliothèque nationale de France. (BnF MS grec 139) folio 419v. [1]",
+      "artist": "Bibliothèque nationale de France",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:BnF_MS_Gr139_folio_419_verso_-_detail_-_Nyx.jpg",
+      "source": "commons"
     }
   },
   {
@@ -197,6 +243,19 @@
     ],
     "sourceRefs": {
       "hesiod-theogony": "124–125, 748–757"
+    },
+    "image": {
+      "src": "/img/figures/hemera.jpg",
+      "thumb": "/img/figures/hemera-thumb.jpg",
+      "alt": "Hemera: Aphrodisias Museum Hemera or Day 4627",
+      "title": "Aphrodisias Museum Hemera or Day 4627",
+      "objectDate": "2011-03-16 14:13:56",
+      "credit": "Own work",
+      "artist": "Dosseman",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Aphrodisias_Museum_Hemera_or_Day_4627.jpg",
+      "source": "commons"
     }
   },
   {
@@ -225,6 +284,19 @@
     "sourceRefs": {
       "hesiod-theogony": "126–128, 154–210",
       "apollodorus": "1.1.1–1.1.4"
+    },
+    "image": {
+      "src": "/img/figures/uranus.jpg",
+      "thumb": "/img/figures/uranus-thumb.jpg",
+      "alt": "Uranus: MC - Jahreszeitenaltar 1",
+      "title": "MC - Jahreszeitenaltar 1",
+      "objectDate": "2011-06-03",
+      "credit": "Own work",
+      "artist": "Wolfgang Sauber",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:MC_-_Jahreszeitenaltar_1.jpg",
+      "source": "commons"
     }
   },
   {
@@ -273,6 +345,19 @@
     "sourceRefs": {
       "hesiod-theogony": "133, 337–370",
       "homer-iliad": "14.201, 14.246, 14.302"
+    },
+    "image": {
+      "src": "/img/figures/oceanus.jpg",
+      "thumb": "/img/figures/oceanus-thumb.jpg",
+      "alt": "Oceanus: Head of Oceanus, found at Hadrian's Villa, Vatican Museums (12014574136)",
+      "title": "Head of Oceanus, found at Hadrian's Villa, Vatican Museums (12014574136)",
+      "objectDate": "2013-02-12 12:56",
+      "credit": "Head of Oceanus, found at Hadrian's Villa, Vatican Museums",
+      "artist": "Carole Raddato from FRANKFURT, Germany",
+      "licence": "CC BY-SA 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Head_of_Oceanus,_found_at_Hadrian%27s_Villa,_Vatican_Museums_(12014574136).jpg",
+      "source": "commons"
     }
   },
   {
@@ -415,6 +500,19 @@
     "sourceRefs": {
       "hesiod-theogony": "135, 453–491",
       "apollodorus": "1.1.5–1.1.7"
+    },
+    "image": {
+      "src": "/img/figures/rhea.jpg",
+      "thumb": "/img/figures/rhea-thumb.jpg",
+      "alt": "Rhea: Base with reliefs of the birth of Zeus (Rome Mus Cap 1944) 02",
+      "title": "Base with reliefs of the birth of Zeus (Rome Mus Cap 1944) 02",
+      "objectDate": "2011-06-04",
+      "credit": "Own work",
+      "artist": "Mark Landon",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Base_with_reliefs_of_the_birth_of_Zeus_(Rome_Mus_Cap_1944)_02.jpg",
+      "source": "commons"
     }
   },
   {
@@ -469,6 +567,19 @@
     ],
     "sourceRefs": {
       "hesiod-theogony": "53–62, 135, 915–917"
+    },
+    "image": {
+      "src": "/img/figures/mnemosyne.jpg",
+      "thumb": "/img/figures/mnemosyne-thumb.jpg",
+      "alt": "Mnemosyne: Jupiter at left in the form of a shepherd accompanied by Mnemosyne, set within an elaborate cartouche, from the 'Loves, Rages and Jealousies of Juno'",
+      "title": "Jupiter at left in the form of a shepherd accompanied by Mnemosyne, set within an elaborate cartouche, from the 'Loves, Rages and Jealousies of Juno'",
+      "objectDate": "1531–76",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "artist": "Giulio Bonasone",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Jupiter_at_left_in_the_form_of_a_shepherd_accompanied_by_Mnemosyne,_set_within_an_elaborate_cartouche,_from_the_%27Loves,_Rages_and_Jealousies_of_Juno%27_MET_DP812649.jpg",
+      "source": "commons"
     }
   },
   {
@@ -520,6 +631,19 @@
     "sourceRefs": {
       "hesiod-theogony": "136, 337–370",
       "homer-iliad": "14.200–204, 14.302"
+    },
+    "image": {
+      "src": "/img/figures/tethys.jpg",
+      "thumb": "/img/figures/tethys-thumb.jpg",
+      "alt": "Tethys: Tethys reclining in a giant shell chariot pulled by two sea creatures",
+      "title": "Tethys reclining in a giant shell chariot pulled by two sea creatures",
+      "objectDate": "1588–90",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "artist": "Hendrik Goltzius",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Tethys_reclining_in_a_giant_shell_chariot_pulled_by_two_sea_creatures_MET_DP821115.jpg",
+      "source": "commons"
     }
   },
   {
@@ -548,6 +672,19 @@
     "sourceRefs": {
       "hesiod-theogony": "137–138, 154–210, 453–506",
       "apollodorus": "1.1.4–1.2.1"
+    },
+    "image": {
+      "src": "/img/figures/cronus.jpg",
+      "thumb": "/img/figures/cronus-thumb.jpg",
+      "alt": "Cronus: Base with reliefs of the birth of Zeus (Rome Mus Cap 1944) 02",
+      "title": "Base with reliefs of the birth of Zeus (Rome Mus Cap 1944) 02",
+      "objectDate": "2011-06-04",
+      "credit": "Own work",
+      "artist": "Mark Landon",
+      "licence": "CC BY 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Base_with_reliefs_of_the_birth_of_Zeus_(Rome_Mus_Cap_1944)_02.jpg",
+      "source": "commons"
     }
   },
   {
@@ -635,6 +772,16 @@
     "sourceRefs": {
       "hesiod-theogony": "454",
       "hh-aphrodite": "21–32"
+    },
+    "image": {
+      "src": "/img/figures/hestia.jpg",
+      "thumb": "/img/figures/hestia-thumb.jpg",
+      "alt": "Hestia: Hestia tapestry",
+      "title": "Hestia tapestry",
+      "credit": "Wikimedia Commons",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Hestia_tapestry.jpg",
+      "source": "commons"
     }
   },
   {
@@ -665,6 +812,17 @@
     "sourceRefs": {
       "hesiod-theogony": "454, 912–914",
       "hh-demeter": "1–495"
+    },
+    "image": {
+      "src": "/img/figures/demeter.jpg",
+      "thumb": "/img/figures/demeter-thumb.jpg",
+      "alt": "Demeter: Ten marble fragments of the Great Eleusinian Relief",
+      "title": "Ten marble fragments of the Great Eleusinian Relief",
+      "objectDate": "ca. 27 BCE–14 CE",
+      "credit": "The Metropolitan Museum of Art, Rogers Fund, 1914",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/248899",
+      "source": "met"
     }
   },
   {
@@ -696,6 +854,18 @@
     "sourceRefs": {
       "hesiod-theogony": "454, 921–929",
       "homer-iliad": "4.50–54"
+    },
+    "image": {
+      "src": "/img/figures/hera.jpg",
+      "thumb": "/img/figures/hera-thumb.jpg",
+      "alt": "Hera: Hera suckling Herakles BM VaseF107",
+      "title": "Hera suckling Herakles BM VaseF107",
+      "credit": "Jastrow (2007)",
+      "artist": "Suckling Painter (eponymous vase)",
+      "licence": "CC BY 2.5",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+      "url": "https://commons.wikimedia.org/wiki/File:Hera_suckling_Herakles_BM_VaseF107.jpg",
+      "source": "commons"
     }
   },
   {
@@ -726,6 +896,19 @@
       "hesiod-theogony": "455–456",
       "homer-iliad": "15.187–193",
       "hh-demeter": "1–39"
+    },
+    "image": {
+      "src": "/img/figures/hades.jpg",
+      "thumb": "/img/figures/hades-thumb.jpg",
+      "alt": "Hades: Allard Pierson Museum Hades and Persephone 7768",
+      "title": "Allard Pierson Museum Hades and Persephone 7768",
+      "objectDate": "2020-02-11 17:39:23",
+      "credit": "Own work",
+      "artist": "Dosseman",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Allard_Pierson_Museum_Hades_and_Persephone_7768.jpg",
+      "source": "commons"
     }
   },
   {
@@ -758,6 +941,18 @@
       "hesiod-theogony": "456",
       "homer-iliad": "15.187–193",
       "homer-odyssey": "1.68–75"
+    },
+    "image": {
+      "src": "/img/figures/poseidon.jpg",
+      "thumb": "/img/figures/poseidon-thumb.jpg",
+      "alt": "Poseidon: Athena Poseidon Cdm Paris DeRidder222",
+      "title": "Athena Poseidon Cdm Paris DeRidder222",
+      "objectDate": "circa 540 BC",
+      "credit": "http://www.minervaclassics.com/quotat.htm (Illustration from a lithograph by Kaeppelin et Cie., ca. 1840.)",
+      "artist": "Amasis, signed (potter); Amasis Painter",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Athena_Poseidon_Cdm_Paris_DeRidder222.jpg",
+      "source": "commons"
     }
   },
   {
@@ -794,6 +989,19 @@
       "hesiod-theogony": "457–506, 617–735, 820–900",
       "homer-iliad": "15.187–193",
       "apollodorus": "1.1.6–1.2.1"
+    },
+    "image": {
+      "src": "/img/figures/zeus.jpg",
+      "thumb": "/img/figures/zeus-thumb.jpg",
+      "alt": "Zeus: Amphore avec décor de Zeus brandissant le foudre et l'aigle - Musée du Louvre AGER NIII 2527 ; G 204",
+      "title": "Amphore avec décor de Zeus brandissant le foudre et l'aigle - Musée du Louvre AGER NIII 2527 ; G 204",
+      "objectDate": "2024-01-12",
+      "credit": "Shonagon",
+      "artist": "Shonagon",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Amphore_avec_d%C3%A9cor_de_Zeus_brandissant_le_foudre_et_l%27aigle_-_Mus%C3%A9e_du_Louvre_AGER_NIII_2527_;_G_204.jpg",
+      "source": "commons"
     }
   },
   {
@@ -822,6 +1030,19 @@
     "sourceRefs": {
       "hesiod-theogony": "358, 886–900",
       "apollodorus": "1.2.1, 1.3.6"
+    },
+    "image": {
+      "src": "/img/figures/metis.jpg",
+      "thumb": "/img/figures/metis-thumb.jpg",
+      "alt": "Metis: Winged goddess Louvre F32",
+      "title": "Winged goddess Louvre F32",
+      "objectDate": "between 550 and 525 BC",
+      "credit": "User:Jastrow, own work, 2008-03-07",
+      "artist": "Attributed to Group E",
+      "licence": "CC BY 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Winged_goddess_Louvre_F32.jpg",
+      "source": "commons"
     }
   },
   {
@@ -871,6 +1092,19 @@
     "sourceRefs": {
       "hesiod-theogony": "404–408, 918–920",
       "hh-apollo": "25–126"
+    },
+    "image": {
+      "src": "/img/figures/leto.jpg",
+      "thumb": "/img/figures/leto-thumb.jpg",
+      "alt": "Leto: Terracotta amphora (jar)",
+      "title": "Terracotta amphora (jar)",
+      "objectDate": "circa 510 B.C.",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art. See the Image and Data Resources Open Access Policy",
+      "artist": "Antimenes Painter",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Terracotta_amphora_(jar)_MET_DP115351.jpg",
+      "source": "commons"
     }
   },
   {
@@ -901,6 +1135,17 @@
       "hesiod-theogony": "510–616",
       "hesiod-works": "42–105",
       "aeschylus-pv": "199–241"
+    },
+    "image": {
+      "src": "/img/figures/prometheus.jpg",
+      "thumb": "/img/figures/prometheus-thumb.jpg",
+      "alt": "Prometheus: Herakles Prometheus Louvre MNE1309",
+      "title": "Herakles Prometheus Louvre MNE1309",
+      "credit": "User:Bibi Saint-Pol, own work, 2007-05-09",
+      "artist": "Unknown artistUnknown artist",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Herakles_Prometheus_Louvre_MNE1309.jpg",
+      "source": "commons"
     }
   },
   {
@@ -929,6 +1174,16 @@
       "hesiod-theogony": "509, 517–520, 938",
       "homer-odyssey": "1.52–54",
       "herodotus": "4.184"
+    },
+    "image": {
+      "src": "/img/figures/atlas.jpg",
+      "thumb": "/img/figures/atlas-thumb.jpg",
+      "alt": "Atlas: Plaque with figure of Atlas",
+      "title": "Plaque with figure of Atlas",
+      "credit": "The Metropolitan Museum of Art, The Cesnola Collection, Purchased by subscription, 1874–76",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/242722",
+      "source": "met"
     }
   },
   {
@@ -955,6 +1210,17 @@
     "sourceRefs": {
       "hesiod-theogony": "938–939",
       "hh-hermes": "1–19"
+    },
+    "image": {
+      "src": "/img/figures/maia.jpg",
+      "thumb": "/img/figures/maia-thumb.jpg",
+      "alt": "Maia: Hermes Maia Staatliche Antikensammlungen 2304",
+      "title": "Hermes Maia Staatliche Antikensammlungen 2304",
+      "credit": "User:Bibi Saint-Pol, own work, 2007-02-10",
+      "artist": "Nikoxenos Painter",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Hermes_Maia_Staatliche_Antikensammlungen_2304.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1016,6 +1282,17 @@
       "hesiod-theogony": "886–900, 924–926",
       "homer-iliad": "5.875–880",
       "apollodorus": "1.3.6, 3.14.1"
+    },
+    "image": {
+      "src": "/img/figures/athena.jpg",
+      "thumb": "/img/figures/athena-thumb.jpg",
+      "alt": "Athena: Lekythos",
+      "title": "Lekythos",
+      "objectDate": "ca. 480 BCE",
+      "credit": "The Metropolitan Museum of Art, Fletcher Fund, 1925",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/251803",
+      "source": "met"
     }
   },
   {
@@ -1051,6 +1328,17 @@
       "hesiod-theogony": "918–920",
       "hh-apollo": "1–178, 282–374",
       "homer-iliad": "1.43–52"
+    },
+    "image": {
+      "src": "/img/figures/apollo.jpg",
+      "thumb": "/img/figures/apollo-thumb.jpg",
+      "alt": "Apollo: Marble head of Apollo",
+      "title": "Marble head of Apollo",
+      "objectDate": "ca. 27 BCE–68 CE",
+      "credit": "The Metropolitan Museum of Art, Gift of Jacques and Joyce de la Begassiere, 1959",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/255057",
+      "source": "met"
     }
   },
   {
@@ -1082,6 +1370,17 @@
     "sourceRefs": {
       "hesiod-theogony": "918–920",
       "homer-iliad": "21.470–496"
+    },
+    "image": {
+      "src": "/img/figures/artemis.jpg",
+      "thumb": "/img/figures/artemis-thumb.jpg",
+      "alt": "Artemis: Bronze bust of Artemis",
+      "title": "Bronze bust of Artemis",
+      "objectDate": "1st half of the 1st century CE",
+      "credit": "The Metropolitan Museum of Art, Gift of Rupert L. Joseph, 1949",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/254618",
+      "source": "met"
     }
   },
   {
@@ -1112,6 +1411,19 @@
       "hesiod-theogony": "921–923",
       "homer-iliad": "5.855–898",
       "homer-odyssey": "8.266–366"
+    },
+    "image": {
+      "src": "/img/figures/ares.jpg",
+      "thumb": "/img/figures/ares-thumb.jpg",
+      "alt": "Ares: Red figure Ares",
+      "title": "Red figure Ares",
+      "objectDate": "2008-12-05",
+      "credit": "Own work",
+      "artist": "Snowman se",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Red_figure_Ares.JPG",
+      "source": "commons"
     }
   },
   {
@@ -1145,6 +1457,17 @@
       "homer-iliad": "1.571–600, 18.368–617",
       "homer-odyssey": "8.266–366",
       "apollodorus": "1.3.5"
+    },
+    "image": {
+      "src": "/img/figures/hephaestus.jpg",
+      "thumb": "/img/figures/hephaestus-thumb.jpg",
+      "alt": "Hephaestus: Hephaistos Thetis at Kylix by the Foundry Painter Antikensammlung Berlin F2294",
+      "title": "Hephaistos Thetis at Kylix by the Foundry Painter Antikensammlung Berlin F2294",
+      "credit": "User:Bibi Saint-Pol, own work",
+      "artist": "Foundry Painter (name vase)",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Hephaistos_Thetis_at_Kylix_by_the_Foundry_Painter_Antikensammlung_Berlin_F2294.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1179,6 +1502,18 @@
       "hesiod-theogony": "188–206",
       "homer-iliad": "5.311–430",
       "homer-odyssey": "8.266–366"
+    },
+    "image": {
+      "src": "/img/figures/aphrodite.jpg",
+      "thumb": "/img/figures/aphrodite-thumb.jpg",
+      "alt": "Aphrodite: Aphrodite portée par deux amours ailés (Louvre, K 95)",
+      "title": "Aphrodite portée par deux amours ailés (Louvre, K 95)",
+      "objectDate": "2025-03-27",
+      "credit": "Self-photographed",
+      "artist": "Tangopaso",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Aphrodite_port%C3%A9e_par_deux_amours_ail%C3%A9s_(Louvre,_K_95).jpg",
+      "source": "commons"
     }
   },
   {
@@ -1213,6 +1548,17 @@
       "hesiod-theogony": "938–939",
       "hh-hermes": "1–580",
       "homer-odyssey": "24.1–14"
+    },
+    "image": {
+      "src": "/img/figures/hermes.jpg",
+      "thumb": "/img/figures/hermes-thumb.jpg",
+      "alt": "Hermes: Artemis Apollo Hermes Louvre G515",
+      "title": "Artemis Apollo Hermes Louvre G515",
+      "credit": "Jastrow (2006)",
+      "artist": "Bendis Painter, Group of the Long Overfalls",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Artemis_Apollo_Hermes_Louvre_G515.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1248,6 +1594,17 @@
       "hesiod-theogony": "940–942",
       "euripides-bacchae": "1–63",
       "diodorus": "4.4.1"
+    },
+    "image": {
+      "src": "/img/figures/dionysus.jpg",
+      "thumb": "/img/figures/dionysus-thumb.jpg",
+      "alt": "Dionysus: Marble disk with a herm of Dionysus in relief",
+      "title": "Marble disk with a herm of Dionysus in relief",
+      "objectDate": "3rd quarter of 1st century CE",
+      "credit": "The Metropolitan Museum of Art, Fletcher Fund, 1926",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/252494",
+      "source": "met"
     }
   },
   {
@@ -1277,6 +1634,17 @@
     "sourceRefs": {
       "hesiod-theogony": "912–914",
       "hh-demeter": "1–39, 360–413"
+    },
+    "image": {
+      "src": "/img/figures/persephone.jpg",
+      "thumb": "/img/figures/persephone-thumb.jpg",
+      "alt": "Persephone: Terracotta bell-krater (bowl for mixing wine and water)",
+      "title": "Terracotta bell-krater (bowl for mixing wine and water)",
+      "objectDate": "ca. 440 BCE",
+      "credit": "The Metropolitan Museum of Art, Fletcher Fund, 1928",
+      "licence": "CC0",
+      "url": "https://www.metmuseum.org/art/collection/search/252973",
+      "source": "met"
     }
   },
   {
@@ -1303,6 +1671,18 @@
     "sourceRefs": {
       "hesiod-theogony": "820–880",
       "apollodorus": "1.6.3"
+    },
+    "image": {
+      "src": "/img/figures/typhon.jpg",
+      "thumb": "/img/figures/typhon-thumb.jpg",
+      "alt": "Typhon: Zeus Typhon Staatliche Antikensammlungen 596",
+      "title": "Zeus Typhon Staatliche Antikensammlungen 596",
+      "objectDate": "9 February 2007",
+      "credit": "Own work",
+      "artist": "User:Bibi Saint-Pol",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Zeus_Typhon_Staatliche_Antikensammlungen_596.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1335,6 +1715,19 @@
       "hesiod-theogony": "526–531, 943–944, 950–955",
       "homer-iliad": "19.95–133",
       "apollodorus": "2.4.8–2.7.7"
+    },
+    "image": {
+      "src": "/img/figures/heracles.jpg",
+      "thumb": "/img/figures/heracles-thumb.jpg",
+      "alt": "Heracles: Antikensammlung Berlin 417",
+      "title": "Antikensammlung Berlin 417",
+      "objectDate": "2009-06-04 13:51:47",
+      "credit": "Self-photographed",
+      "artist": "Marcus Cyron",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Antikensammlung_Berlin_417.JPG",
+      "source": "commons"
     }
   },
   {
@@ -1386,6 +1779,18 @@
     "sourceRefs": {
       "homer-odyssey": "12.69–72",
       "apollodorus": "1.9.16–1.9.28"
+    },
+    "image": {
+      "src": "/img/figures/jason.jpg",
+      "thumb": "/img/figures/jason-thumb.jpg",
+      "alt": "Jason: Jason Pelias Louvre K127",
+      "title": "Jason Pelias Louvre K127",
+      "objectDate": "between circa 340 and circa 330 BC",
+      "credit": "Marie-Lan Nguyen (2006)",
+      "artist": "Underworld Painter",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Jason_Pelias_Louvre_K127.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1413,6 +1818,19 @@
     "sourceRefs": {
       "homer-iliad": "1.396–406, 18.429–441",
       "apollodorus": "3.13.5"
+    },
+    "image": {
+      "src": "/img/figures/thetis.jpg",
+      "thumb": "/img/figures/thetis-thumb.jpg",
+      "alt": "Thetis: Altamura Painter - Red-Figure Calyx Krater - Walters 48262 - Side A Detail white-balanced white-bg",
+      "title": "Altamura Painter - Red-Figure Calyx Krater - Walters 48262 - Side A Detail white-balanced white-bg",
+      "objectDate": "between circa 470 and circa 460 BCE",
+      "credit": "File:Altamura_Painter_-_Red-Figure_Calyx_Krater_-_Walters_48262_-_Side_A_Detail.jpg",
+      "artist": "Vase: Altamura Painter Photo: Walters Art Museum",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Altamura_Painter_-_Red-Figure_Calyx_Krater_-_Walters_48262_-_Side_A_Detail_white-balanced_white-bg.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1438,6 +1856,18 @@
     "sourceRefs": {
       "homer-iliad": "24.534–542",
       "apollodorus": "3.13.1–3.13.6"
+    },
+    "image": {
+      "src": "/img/figures/peleus.jpg",
+      "thumb": "/img/figures/peleus-thumb.jpg",
+      "alt": "Peleus: Atalanta Peleus Staatliche Antikensammlungen 596",
+      "title": "Atalanta Peleus Staatliche Antikensammlungen 596",
+      "objectDate": "9 February 2007",
+      "credit": "Own work",
+      "artist": "User:Bibi Saint-Pol",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Atalanta_Peleus_Staatliche_Antikensammlungen_596.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1464,6 +1894,18 @@
     "sourceRefs": {
       "homer-iliad": "1.1–7, 1.101–303, 24.468–676",
       "statius-achilleid": "1.133–134, 1.268–270"
+    },
+    "image": {
+      "src": "/img/figures/achilles.jpg",
+      "thumb": "/img/figures/achilles-thumb.jpg",
+      "alt": "Achilles: Achilles Hector Louvre G153",
+      "title": "Achilles Hector Louvre G153",
+      "objectDate": "2007",
+      "credit": "Own work",
+      "artist": "Marie-Lan Nguyen",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Achilles_Hector_Louvre_G153.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1490,6 +1932,17 @@
     "sourceRefs": {
       "homer-iliad": "1.101–303, 2.100–108",
       "homer-odyssey": "11.405–434"
+    },
+    "image": {
+      "src": "/img/figures/agamemnon.jpg",
+      "thumb": "/img/figures/agamemnon-thumb.jpg",
+      "alt": "Agamemnon: Chryses Agamemnon Louvre K1",
+      "title": "Chryses Agamemnon Louvre K1",
+      "credit": "Jastrow (2006)",
+      "artist": "Painter of Athens 1714",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Chryses_Agamemnon_Louvre_K1.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1514,6 +1967,17 @@
     "sourceRefs": {
       "homer-iliad": "24.468–676",
       "virgil-aeneid": "2.506–558"
+    },
+    "image": {
+      "src": "/img/figures/priam.jpg",
+      "thumb": "/img/figures/priam-thumb.jpg",
+      "alt": "Priam: Hektor ransom BM E75",
+      "title": "Hektor ransom BM E75",
+      "credit": "Marie-Lan Nguyen (2006)",
+      "artist": "Briseis Painter",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Hektor_ransom_BM_E75.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1538,6 +2002,17 @@
     ],
     "sourceRefs": {
       "homer-iliad": "3.15–75, 24.28–30"
+    },
+    "image": {
+      "src": "/img/figures/paris.jpg",
+      "thumb": "/img/figures/paris-thumb.jpg",
+      "alt": "Paris: Paris crater Louvre K6",
+      "title": "Paris crater Louvre K6",
+      "credit": "Jastrow (2006)",
+      "artist": "Painter of Stockholm 1999 (?)",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Paris_crater_Louvre_K6.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1566,6 +2041,17 @@
       "homer-iliad": "3.121–244, 3.418",
       "homer-odyssey": "4.120–305",
       "herodotus": "2.112–120"
+    },
+    "image": {
+      "src": "/img/figures/helen.jpg",
+      "thumb": "/img/figures/helen-thumb.jpg",
+      "alt": "Helen: Helene Paris Louvre K6",
+      "title": "Helene Paris Louvre K6",
+      "credit": "User:Bibi Saint-Pol, own work, 2007-06-15",
+      "artist": "Painter of Stockholm 1999",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Helene_Paris_Louvre_K6.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1593,6 +2079,17 @@
     "sourceRefs": {
       "homer-odyssey": "1.1–10, 9–12, 22",
       "strabo": "1.2.11–1.2.18"
+    },
+    "image": {
+      "src": "/img/figures/odysseus.jpg",
+      "thumb": "/img/figures/odysseus-thumb.jpg",
+      "alt": "Odysseus: Achilles weapons Louvre CA545",
+      "title": "Achilles weapons Louvre CA545",
+      "credit": "Jastrow (2006)",
+      "artist": "Edinburgh Painter",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Achilles_weapons_Louvre_CA545.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1615,6 +2112,17 @@
     ],
     "sourceRefs": {
       "homer-odyssey": "2.93–110, 19, 23.173–230"
+    },
+    "image": {
+      "src": "/img/figures/penelope.jpg",
+      "thumb": "/img/figures/penelope-thumb.jpg",
+      "alt": "Penelope: Пенелопа и Тепемах у ткацкого станка",
+      "title": "Пенелопа и Тепемах у ткацкого станка",
+      "credit": "http://www.booksite.ru/fulltext/nee/lov/tka/che/stvo/1.htm#1",
+      "artist": "Unknown authorUnknown author",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D0%BD%D0%B5%D0%BB%D0%BE%D0%BF%D0%B0_%D0%B8_%D0%A2%D0%B5%D0%BF%D0%B5%D0%BC%D0%B0%D1%85_%D1%83_%D1%82%D0%BA%D0%B0%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D1%82%D0%B0%D0%BD%D0%BA%D0%B0.jpg",
+      "source": "commons"
     }
   },
   {
@@ -1638,6 +2146,19 @@
     ],
     "sourceRefs": {
       "homer-odyssey": "1.68–75, 9.105–566"
+    },
+    "image": {
+      "src": "/img/figures/polyphemus.jpg",
+      "thumb": "/img/figures/polyphemus-thumb.jpg",
+      "alt": "Polyphemus: Odysseus Escaping from Polyphemos, Attic Column-Krater, 510-500 BC (10451425525)",
+      "title": "Odysseus Escaping from Polyphemos, Attic Column-Krater, 510-500 BC (10451425525)",
+      "objectDate": "2009-07-08 01:10",
+      "credit": "Odysseus Escaping from Polyphemos, Attic Column-Krater, 510-500 BC",
+      "artist": "Gary Todd from Xinzheng, China",
+      "licence": "CC0",
+      "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:Odysseus_Escaping_from_Polyphemos,_Attic_Column-Krater,_510-500_BC_(10451425525).jpg",
+      "source": "commons"
     }
   },
   {
@@ -1667,6 +2188,19 @@
       "homer-odyssey": "10.133–574",
       "hesiod-theogony": "956–957, 1011–1014",
       "strabo": "5.3.6"
+    },
+    "image": {
+      "src": "/img/figures/circe.jpg",
+      "thumb": "/img/figures/circe-thumb.jpg",
+      "alt": "Circe: Odysseus men turned into animals by Circe receive antidote photo by Lucas ancientartpodcast flickr cca2.0 8706785112 f6a311cafa o",
+      "title": "Odysseus men turned into animals by Circe receive antidote photo by Lucas ancientartpodcast flickr cca2.0 8706785112 f6a311cafa o",
+      "objectDate": "between circa 560 and circa 550 BCE",
+      "credit": "https://www.flickr.com/photos/ancientartpodcast/8706785112/in/photostream/",
+      "artist": "Painter of the Boston Polyphemos",
+      "licence": "CC BY 2.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Odysseus_men_turned_into_animals_by_Circe_receive_antidote_photo_by_Lucas_ancientartpodcast_flickr_cca2.0_8706785112_f6a311cafa_o.jpg",
+      "source": "commons"
     }
   },
   {

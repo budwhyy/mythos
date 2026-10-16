@@ -105,4 +105,19 @@ describe('raw data needs no Zod defaults', () => {
     expect(r.ok).toBe(true);
     if (r.ok) expect(JSON.parse(JSON.stringify(r.data))).toEqual(JSON.parse(JSON.stringify(raw)));
   });
+
+  it('exempts a bundled artefact image (evidence about the object) from the mythic-date rule, but not the prose', () => {
+    const d = minimal();
+    (d.entities as any[])[0].image = {
+      src: '/img/figures/chaos.jpg', alt: 'a', title: 'Marble head', objectDate: 'ca. 27 BCE–68 CE', credit: 'The Metropolitan Museum of Art', licence: 'CC0',
+      url: 'https://www.metmuseum.org/art/collection/search/1', source: 'met',
+    };
+    const errs = (x: RawDataset) => {
+      const r = validateDataset(x);
+      return r.ok ? [] : r.errors;
+    };
+    expect(errs(d)).toEqual([]);
+    (d.entities as any[])[0].summary.beginner = 'Carved in 27 BCE.';
+    expect(errs(d).some((e) => /absolute date/.test(e))).toBe(true);
+  });
 });
