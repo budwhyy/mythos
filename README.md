@@ -4,7 +4,8 @@
 
 > *Before the gods, before Olympus, before time had a story — there was Chaos.*
 
-- **Live site:** https://mythos-atlas-898.netlify.app
+- **Live site (GitHub Pages):** https://budwhyy.github.io/mythos/
+- **Netlify mirror:** https://mythos-atlas-898.netlify.app (paused while the Netlify account is over its free credit limit)
 - **Netlify site ID:** `c904cdb2-6b1d-47d2-aa11-409f30836d35`
 - **Repository:** https://github.com/budwhyy/mythos
 
@@ -163,7 +164,8 @@ Next.js 15 (App Router, `output: 'export'`) · TypeScript · React Three Fiber +
 
 ## Deployment
 
-Netlify serves `out/` as a static site (see [`netlify.toml`](netlify.toml)). Pushes to `main` deploy continuously.
+- **GitHub Pages** (primary): [`.github/workflows/pages.yml`](.github/workflows/pages.yml) runs the unit tests, builds with `NEXT_PUBLIC_BASE_PATH=/mythos` and publishes `out/` on every push to `main`. The base path is opt-in, because Pages serves a project site under `/mythos/`; code that builds its own asset URLs uses `withBase()` from `lib/asset.ts`.
+- **Netlify** (mirror): serves `out/` at a domain root with no base path (see [`netlify.toml`](netlify.toml)).
 
 ## Content standards
 

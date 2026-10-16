@@ -72,7 +72,11 @@ The first deploy stacked the desktop header (266 px, sticky), a two-line "Where 
 - Schema: `ImageSchema` with `objectDate`; the `image` subtree is exempt from the mythic-date scan (evidence about the object), covered by a unit test.
 - Not done: images for places and stages, and credit lines from Commons are sometimes terse ("Own work"); the link back is always present.
 
-## Deploy blocked (2026-10-16)
+## GitHub Pages (2026-10-16)
+
+Because Netlify's free credit ran out, the site is now also published on GitHub Pages: **https://budwhyy.github.io/mythos/**. Repo setting: Pages source = GitHub Actions (enabled through the API). Verified on the live URL: all routes 200, opening line, 3D tree canvas, portraits served with 200 from `/mythos/img/figures/`.
+
+## Deploy blocked on Netlify (2026-10-16)
 
 The images commit (`ff6e5ca`) is on GitHub but **not live**: Netlify skipped the Git build with "account credit usage exceeded", and a CLI upload (`netlify deploy --prod --dir=out`) was refused with 403 Forbidden. The free plan's monthly allowance is used up (the earlier deploys and builds during the mobile pass consumed it). Nothing in the repo is wrong.
 
