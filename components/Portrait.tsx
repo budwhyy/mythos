@@ -1,4 +1,5 @@
 import type { Entity } from '@/lib/schema';
+import { withBase } from '@/lib/asset';
 
 const GREEK_INITIAL: Record<string, string> = {};
 const initialOf = (e: Entity) => GREEK_INITIAL[e.id] ?? (e.greek ? e.greek[0] : e.name[0]);
@@ -13,7 +14,7 @@ export default function Portrait({ entity, size = 'hero' }: { entity: Entity; si
     const px = size === 'thumb' ? 56 : 28;
     return img ? (
       <img
-        src={img.thumb ?? img.src}
+        src={withBase(img.thumb ?? img.src)}
         alt=""
         width={px}
         height={px}
@@ -44,7 +45,7 @@ export default function Portrait({ entity, size = 'hero' }: { entity: Entity; si
   return (
     <figure className="mb-3">
       <img
-        src={img.src}
+        src={withBase(img.src)}
         alt={img.alt}
         className="max-h-72 w-full rounded-lg border border-gold/25 bg-cosmos-3 object-contain"
         style={{ objectPosition: img.focus ? `${img.focus.x}% ${img.focus.y}%` : 'center' }}

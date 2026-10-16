@@ -9,6 +9,7 @@ import { ALL_KINDS, CONFLICTED, EDGE_SOURCES, branchOf, curvatures, filterEdges,
 import { edgeColor } from '@/lib/tokens';
 import type { RelationshipKind } from '@/lib/schema';
 import PathSteps from '../PathSteps';
+import { withBase } from '@/lib/asset';
 import type { GLink, GNode } from './types';
 
 const loading = () => <div className="flex h-full items-center justify-center text-mist">Weaving the family tree…</div>;
@@ -57,7 +58,7 @@ export default function FamilyTreeView() {
     const curv = curvatures(edges);
     const nodes: GNode[] = [...visible].map((id) => {
       const e = entitiesById.get(id)!;
-      return { id, name: e.name, type: e.type, gen: gens.get(id) ?? 0, conflicted: CONFLICTED.includes(id), img: e.image?.thumb ?? e.image?.src };
+      return { id, name: e.name, type: e.type, gen: gens.get(id) ?? 0, conflicted: CONFLICTED.includes(id), img: e.image ? withBase(e.image.thumb ?? e.image.src) : undefined };
     });
     const links: GLink[] = edges
       .filter((r) => visible.has(r.from) && visible.has(r.to))
